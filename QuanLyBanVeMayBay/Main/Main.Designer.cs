@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.Header = new System.Windows.Forms.Panel();
             this.ExitBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -48,12 +48,12 @@
             this.HomePanel = new System.Windows.Forms.Panel();
             this.HomeLabel = new System.Windows.Forms.Label();
             this.ContentPanel = new System.Windows.Forms.Panel();
-            this.home1 = new QuanLyBanVeMayBay.Components.Home1();
-            this.ucBanve = new QuanLyBanVeMayBay.Components.UCBanve();
-            this.ucDoanhThu = new QuanLyBanVeMayBay.Components.UCDoanhThu();
-            this.ucHuyVe = new QuanLyBanVeMayBay.Components.UCHuyVe();
-            this.ucThongTin = new QuanLyBanVeMayBay.Components.UCThongTincs();
             this.ucttKhachHang = new QuanLyBanVeMayBay.Components.UCTTKhachHang();
+            this.ucThongTin = new QuanLyBanVeMayBay.Components.UCThongTincs();
+            this.ucHuyVe = new QuanLyBanVeMayBay.Components.UCHuyVe();
+            this.ucDoanhThu = new QuanLyBanVeMayBay.Components.UCDoanhThu();
+            this.ucBanve = new QuanLyBanVeMayBay.Components.UCBanve();
+            this.home1 = new QuanLyBanVeMayBay.Components.Home1();
             this.Header.SuspendLayout();
             this.panel2.SuspendLayout();
             this.DoanhThuPanel.SuspendLayout();
@@ -71,9 +71,11 @@
             this.Header.Controls.Add(this.ExitBtn);
             this.Header.Dock = System.Windows.Forms.DockStyle.Top;
             this.Header.Location = new System.Drawing.Point(0, 0);
+            this.Header.Margin = new System.Windows.Forms.Padding(2);
             this.Header.Name = "Header";
-            this.Header.Size = new System.Drawing.Size(1198, 45);
+            this.Header.Size = new System.Drawing.Size(898, 37);
             this.Header.TabIndex = 0;
+            this.Header.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Header_MouseDown);
             // 
             // ExitBtn
             // 
@@ -89,11 +91,11 @@
             this.ExitBtn.ColorContrastOnClick = 45;
             this.ExitBtn.ColorContrastOnHover = 45;
             this.ExitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.ExitBtn.CustomizableEdges = borderEdges7;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.ExitBtn.CustomizableEdges = borderEdges1;
             this.ExitBtn.DialogResult = System.Windows.Forms.DialogResult.None;
             this.ExitBtn.DisabledBorderColor = System.Drawing.Color.Empty;
             this.ExitBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -112,27 +114,28 @@
             this.ExitBtn.IdleIconLeftImage = null;
             this.ExitBtn.IdleIconRightImage = null;
             this.ExitBtn.IndicateFocus = false;
-            this.ExitBtn.Location = new System.Drawing.Point(1123, 7);
+            this.ExitBtn.Location = new System.Drawing.Point(842, 6);
+            this.ExitBtn.Margin = new System.Windows.Forms.Padding(2);
             this.ExitBtn.Name = "ExitBtn";
-            stateProperties13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties13.BorderRadius = 3;
-            stateProperties13.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties13.BorderThickness = 1;
-            stateProperties13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties13.ForeColor = System.Drawing.Color.White;
-            stateProperties13.IconLeftImage = null;
-            stateProperties13.IconRightImage = null;
-            this.ExitBtn.onHoverState = stateProperties13;
-            stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties14.BorderRadius = 3;
-            stateProperties14.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties14.BorderThickness = 1;
-            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties14.ForeColor = System.Drawing.Color.White;
-            stateProperties14.IconLeftImage = null;
-            stateProperties14.IconRightImage = null;
-            this.ExitBtn.OnPressedState = stateProperties14;
-            this.ExitBtn.Size = new System.Drawing.Size(63, 29);
+            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties1.BorderRadius = 3;
+            stateProperties1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties1.BorderThickness = 1;
+            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties1.ForeColor = System.Drawing.Color.White;
+            stateProperties1.IconLeftImage = null;
+            stateProperties1.IconRightImage = null;
+            this.ExitBtn.onHoverState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.BorderRadius = 3;
+            stateProperties2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties2.BorderThickness = 1;
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.ForeColor = System.Drawing.Color.White;
+            stateProperties2.IconLeftImage = null;
+            stateProperties2.IconRightImage = null;
+            this.ExitBtn.OnPressedState = stateProperties2;
+            this.ExitBtn.Size = new System.Drawing.Size(47, 24);
             this.ExitBtn.TabIndex = 2;
             this.ExitBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ExitBtn.TextMarginLeft = 0;
@@ -149,9 +152,10 @@
             this.panel2.Controls.Add(this.ThongTinPanel);
             this.panel2.Controls.Add(this.HomePanel);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 45);
+            this.panel2.Location = new System.Drawing.Point(0, 37);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(177, 575);
+            this.panel2.Size = new System.Drawing.Size(133, 467);
             this.panel2.TabIndex = 1;
             // 
             // DoanhThuPanel
@@ -159,9 +163,10 @@
             this.DoanhThuPanel.Controls.Add(this.DoanhThuLabel);
             this.DoanhThuPanel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DoanhThuPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.DoanhThuPanel.Location = new System.Drawing.Point(0, 325);
+            this.DoanhThuPanel.Location = new System.Drawing.Point(0, 265);
+            this.DoanhThuPanel.Margin = new System.Windows.Forms.Padding(2);
             this.DoanhThuPanel.Name = "DoanhThuPanel";
-            this.DoanhThuPanel.Size = new System.Drawing.Size(177, 65);
+            this.DoanhThuPanel.Size = new System.Drawing.Size(133, 53);
             this.DoanhThuPanel.TabIndex = 5;
             this.DoanhThuPanel.Click += new System.EventHandler(this.DoanhThuPanel_Click);
             // 
@@ -170,9 +175,10 @@
             this.DoanhThuLabel.AutoSize = true;
             this.DoanhThuLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DoanhThuLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.DoanhThuLabel.Location = new System.Drawing.Point(31, 15);
+            this.DoanhThuLabel.Location = new System.Drawing.Point(23, 12);
+            this.DoanhThuLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.DoanhThuLabel.Name = "DoanhThuLabel";
-            this.DoanhThuLabel.Size = new System.Drawing.Size(121, 29);
+            this.DoanhThuLabel.Size = new System.Drawing.Size(97, 24);
             this.DoanhThuLabel.TabIndex = 1;
             this.DoanhThuLabel.Text = "Doanh thu";
             this.DoanhThuLabel.Click += new System.EventHandler(this.DoanhThuPanel_Click);
@@ -182,9 +188,10 @@
             this.TTKhachHangPanel.Controls.Add(this.TTKhachHangLabel);
             this.TTKhachHangPanel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TTKhachHangPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TTKhachHangPanel.Location = new System.Drawing.Point(0, 260);
+            this.TTKhachHangPanel.Location = new System.Drawing.Point(0, 212);
+            this.TTKhachHangPanel.Margin = new System.Windows.Forms.Padding(2);
             this.TTKhachHangPanel.Name = "TTKhachHangPanel";
-            this.TTKhachHangPanel.Size = new System.Drawing.Size(177, 65);
+            this.TTKhachHangPanel.Size = new System.Drawing.Size(133, 53);
             this.TTKhachHangPanel.TabIndex = 4;
             this.TTKhachHangPanel.Click += new System.EventHandler(this.TTKhachHangPanel_Click);
             // 
@@ -193,9 +200,10 @@
             this.TTKhachHangLabel.AutoSize = true;
             this.TTKhachHangLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TTKhachHangLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.TTKhachHangLabel.Location = new System.Drawing.Point(4, 18);
+            this.TTKhachHangLabel.Location = new System.Drawing.Point(3, 15);
+            this.TTKhachHangLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TTKhachHangLabel.Name = "TTKhachHangLabel";
-            this.TTKhachHangLabel.Size = new System.Drawing.Size(173, 29);
+            this.TTKhachHangLabel.Size = new System.Drawing.Size(138, 24);
             this.TTKhachHangLabel.TabIndex = 1;
             this.TTKhachHangLabel.Text = "TT khách hàng";
             this.TTKhachHangLabel.Click += new System.EventHandler(this.TTKhachHangPanel_Click);
@@ -205,9 +213,10 @@
             this.HuyVePanel.Controls.Add(this.HuyVeLabel);
             this.HuyVePanel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.HuyVePanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.HuyVePanel.Location = new System.Drawing.Point(0, 195);
+            this.HuyVePanel.Location = new System.Drawing.Point(0, 159);
+            this.HuyVePanel.Margin = new System.Windows.Forms.Padding(2);
             this.HuyVePanel.Name = "HuyVePanel";
-            this.HuyVePanel.Size = new System.Drawing.Size(177, 65);
+            this.HuyVePanel.Size = new System.Drawing.Size(133, 53);
             this.HuyVePanel.TabIndex = 3;
             this.HuyVePanel.Click += new System.EventHandler(this.HuyVePanel_Click);
             // 
@@ -216,9 +225,10 @@
             this.HuyVeLabel.AutoSize = true;
             this.HuyVeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HuyVeLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.HuyVeLabel.Location = new System.Drawing.Point(50, 18);
+            this.HuyVeLabel.Location = new System.Drawing.Point(38, 15);
+            this.HuyVeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.HuyVeLabel.Name = "HuyVeLabel";
-            this.HuyVeLabel.Size = new System.Drawing.Size(85, 29);
+            this.HuyVeLabel.Size = new System.Drawing.Size(69, 24);
             this.HuyVeLabel.TabIndex = 1;
             this.HuyVeLabel.Text = "Hủy vé";
             this.HuyVeLabel.Click += new System.EventHandler(this.HuyVePanel_Click);
@@ -228,9 +238,10 @@
             this.BanVePanel.Controls.Add(this.BanVeLabel);
             this.BanVePanel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BanVePanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BanVePanel.Location = new System.Drawing.Point(0, 130);
+            this.BanVePanel.Location = new System.Drawing.Point(0, 106);
+            this.BanVePanel.Margin = new System.Windows.Forms.Padding(2);
             this.BanVePanel.Name = "BanVePanel";
-            this.BanVePanel.Size = new System.Drawing.Size(177, 65);
+            this.BanVePanel.Size = new System.Drawing.Size(133, 53);
             this.BanVePanel.TabIndex = 2;
             this.BanVePanel.Click += new System.EventHandler(this.BanVePanel_Click);
             // 
@@ -239,9 +250,10 @@
             this.BanVeLabel.AutoSize = true;
             this.BanVeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BanVeLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.BanVeLabel.Location = new System.Drawing.Point(49, 18);
+            this.BanVeLabel.Location = new System.Drawing.Point(37, 15);
+            this.BanVeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.BanVeLabel.Name = "BanVeLabel";
-            this.BanVeLabel.Size = new System.Drawing.Size(86, 29);
+            this.BanVeLabel.Size = new System.Drawing.Size(68, 24);
             this.BanVeLabel.TabIndex = 1;
             this.BanVeLabel.Text = "Bán vé";
             this.BanVeLabel.Click += new System.EventHandler(this.BanVePanel_Click);
@@ -251,9 +263,10 @@
             this.ThongTinPanel.Controls.Add(this.ThongTinLabel);
             this.ThongTinPanel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ThongTinPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ThongTinPanel.Location = new System.Drawing.Point(0, 65);
+            this.ThongTinPanel.Location = new System.Drawing.Point(0, 53);
+            this.ThongTinPanel.Margin = new System.Windows.Forms.Padding(2);
             this.ThongTinPanel.Name = "ThongTinPanel";
-            this.ThongTinPanel.Size = new System.Drawing.Size(177, 65);
+            this.ThongTinPanel.Size = new System.Drawing.Size(133, 53);
             this.ThongTinPanel.TabIndex = 1;
             this.ThongTinPanel.Click += new System.EventHandler(this.ThongTinPanel_Click);
             // 
@@ -262,9 +275,10 @@
             this.ThongTinLabel.AutoSize = true;
             this.ThongTinLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ThongTinLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.ThongTinLabel.Location = new System.Drawing.Point(38, 17);
+            this.ThongTinLabel.Location = new System.Drawing.Point(28, 14);
+            this.ThongTinLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ThongTinLabel.Name = "ThongTinLabel";
-            this.ThongTinLabel.Size = new System.Drawing.Size(114, 29);
+            this.ThongTinLabel.Size = new System.Drawing.Size(90, 24);
             this.ThongTinLabel.TabIndex = 1;
             this.ThongTinLabel.Text = "Thông tin";
             this.ThongTinLabel.Click += new System.EventHandler(this.ThongTinPanel_Click);
@@ -275,8 +289,9 @@
             this.HomePanel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.HomePanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.HomePanel.Location = new System.Drawing.Point(0, 0);
+            this.HomePanel.Margin = new System.Windows.Forms.Padding(2);
             this.HomePanel.Name = "HomePanel";
-            this.HomePanel.Size = new System.Drawing.Size(177, 65);
+            this.HomePanel.Size = new System.Drawing.Size(133, 53);
             this.HomePanel.TabIndex = 0;
             this.HomePanel.Click += new System.EventHandler(this.HomePanel_Click);
             // 
@@ -286,9 +301,10 @@
             this.HomeLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.HomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HomeLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.HomeLabel.Location = new System.Drawing.Point(33, 18);
+            this.HomeLabel.Location = new System.Drawing.Point(25, 15);
+            this.HomeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.HomeLabel.Name = "HomeLabel";
-            this.HomeLabel.Size = new System.Drawing.Size(121, 29);
+            this.HomeLabel.Size = new System.Drawing.Size(97, 24);
             this.HomeLabel.TabIndex = 0;
             this.HomeLabel.Text = "Trang chủ";
             this.HomeLabel.Click += new System.EventHandler(this.HomePanel_Click);
@@ -302,64 +318,72 @@
             this.ContentPanel.Controls.Add(this.ucBanve);
             this.ContentPanel.Controls.Add(this.home1);
             this.ContentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ContentPanel.Location = new System.Drawing.Point(177, 45);
+            this.ContentPanel.Location = new System.Drawing.Point(133, 37);
+            this.ContentPanel.Margin = new System.Windows.Forms.Padding(2);
             this.ContentPanel.Name = "ContentPanel";
-            this.ContentPanel.Size = new System.Drawing.Size(1021, 575);
+            this.ContentPanel.Size = new System.Drawing.Size(765, 467);
             this.ContentPanel.TabIndex = 2;
+            // 
+            // ucttKhachHang
+            // 
+            this.ucttKhachHang.Location = new System.Drawing.Point(0, 0);
+            this.ucttKhachHang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ucttKhachHang.Name = "ucttKhachHang";
+            this.ucttKhachHang.Size = new System.Drawing.Size(766, 467);
+            this.ucttKhachHang.TabIndex = 6;
+            // 
+            // ucThongTin
+            // 
+            this.ucThongTin.Location = new System.Drawing.Point(0, 0);
+            this.ucThongTin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ucThongTin.Name = "ucThongTin";
+            this.ucThongTin.Size = new System.Drawing.Size(766, 467);
+            this.ucThongTin.TabIndex = 5;
+            // 
+            // ucHuyVe
+            // 
+            this.ucHuyVe.Location = new System.Drawing.Point(0, 0);
+            this.ucHuyVe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ucHuyVe.Name = "ucHuyVe";
+            this.ucHuyVe.Size = new System.Drawing.Size(766, 467);
+            this.ucHuyVe.TabIndex = 4;
+            // 
+            // ucDoanhThu
+            // 
+            this.ucDoanhThu.Location = new System.Drawing.Point(0, 0);
+            this.ucDoanhThu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ucDoanhThu.Name = "ucDoanhThu";
+            this.ucDoanhThu.Size = new System.Drawing.Size(766, 467);
+            this.ucDoanhThu.TabIndex = 3;
+            // 
+            // ucBanve
+            // 
+            this.ucBanve.Location = new System.Drawing.Point(0, 0);
+            this.ucBanve.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ucBanve.Name = "ucBanve";
+            this.ucBanve.Size = new System.Drawing.Size(766, 467);
+            this.ucBanve.TabIndex = 2;
             // 
             // home1
             // 
             this.home1.BackColor = System.Drawing.Color.White;
             this.home1.Location = new System.Drawing.Point(0, 0);
+            this.home1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.home1.Name = "home1";
-            this.home1.Size = new System.Drawing.Size(1021, 575);
+            this.home1.Size = new System.Drawing.Size(766, 467);
             this.home1.TabIndex = 1;
-            // 
-            // ucBanve
-            // 
-            this.ucBanve.Location = new System.Drawing.Point(0, 0);
-            this.ucBanve.Name = "ucBanve";
-            this.ucBanve.Size = new System.Drawing.Size(1021, 575);
-            this.ucBanve.TabIndex = 2;
-            // 
-            // ucDoanhThu
-            // 
-            this.ucDoanhThu.Location = new System.Drawing.Point(0, 0);
-            this.ucDoanhThu.Name = "ucDoanhThu";
-            this.ucDoanhThu.Size = new System.Drawing.Size(1021, 575);
-            this.ucDoanhThu.TabIndex = 3;
-            // 
-            // ucHuyVe
-            // 
-            this.ucHuyVe.Location = new System.Drawing.Point(0, 0);
-            this.ucHuyVe.Name = "ucHuyVe";
-            this.ucHuyVe.Size = new System.Drawing.Size(1021, 575);
-            this.ucHuyVe.TabIndex = 4;
-            // 
-            // ucThongTin
-            // 
-            this.ucThongTin.Location = new System.Drawing.Point(0, 0);
-            this.ucThongTin.Name = "ucThongTin";
-            this.ucThongTin.Size = new System.Drawing.Size(1021, 575);
-            this.ucThongTin.TabIndex = 5;
-            // 
-            // ucttKhachHang
-            // 
-            this.ucttKhachHang.Location = new System.Drawing.Point(0, 0);
-            this.ucttKhachHang.Name = "ucttKhachHang";
-            this.ucttKhachHang.Size = new System.Drawing.Size(1021, 575);
-            this.ucttKhachHang.TabIndex = 6;
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1198, 620);
+            this.ClientSize = new System.Drawing.Size(898, 504);
             this.ControlBox = false;
             this.Controls.Add(this.ContentPanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.Header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Main";

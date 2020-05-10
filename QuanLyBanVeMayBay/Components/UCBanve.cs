@@ -16,5 +16,29 @@ namespace QuanLyBanVeMayBay.Components
         {
             InitializeComponent();
         }
+
+        private void Step1Btn_Click(object sender, EventArgs e)
+        {
+            ContentBanVePanel.Controls.Clear();
+            ContentBanVePanel.Controls.Add(step1);
+        }
+
+        private void Step2Btn_Click(object sender, EventArgs e)
+        {
+            ContentBanVePanel.Controls.Clear();
+            ContentBanVePanel.Controls.Add(step2);
+        }
+
+        private void Step3Btn_Click(object sender, EventArgs e)
+        {
+            ContentBanVePanel.Controls.Clear();
+            ContentBanVePanel.Controls.Add(step3);
+        }
+
+        private void UCBanve_Load(object sender, EventArgs e)
+        {
+            ContentBanVePanel.Controls.Clear();
+            ContentBanVePanel.Controls.Add(step1);
+        }
     }
 }

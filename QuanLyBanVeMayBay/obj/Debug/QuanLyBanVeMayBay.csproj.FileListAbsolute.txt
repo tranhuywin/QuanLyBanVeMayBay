@@ -12,7 +12,6 @@ C:\Users\tranh\Desktop\CNPM\QuanLyBanVeMayBay\QuanLyBanVeMayBay\obj\Debug\QuanLy
 C:\Users\tranh\Desktop\CNPM\QuanLyBanVeMayBay\QuanLyBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.exe
 C:\Users\tranh\Desktop\CNPM\QuanLyBanVeMayBay\QuanLyBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.pdb
 C:\Users\tranh\Desktop\CNPM\QuanLyBanVeMayBay\QuanLyBanVeMayBay\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
-C:\Users\tranh\Desktop\CNPM\QuanLyBanVeMayBay\QuanLyBanVeMayBay\bin\Debug\Bunifu.Core.dll
 C:\Users\tranh\Desktop\CNPM\QuanLyBanVeMayBay\QuanLyBanVeMayBay\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
 C:\Users\tranh\Desktop\CNPM\QuanLyBanVeMayBay\QuanLyBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.exe.config
 C:\Users\tranh\Desktop\CNPM\QuanLyBanVeMayBay\QuanLyBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.Main.Main.resources
@@ -22,3 +21,12 @@ C:\Users\tranh\Desktop\CNPM\QuanLyBanVeMayBay\QuanLyBanVeMayBay\obj\Debug\QuanLy
 C:\Users\tranh\Desktop\CNPM\QuanLyBanVeMayBay\QuanLyBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.Components.UCHuyVe.resources
 C:\Users\tranh\Desktop\CNPM\QuanLyBanVeMayBay\QuanLyBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.Components.UCThongTincs.resources
 C:\Users\tranh\Desktop\CNPM\QuanLyBanVeMayBay\QuanLyBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.Components.UCTTKhachHang.resources
+C:\Users\tranh\Desktop\CNPM\QuanLyBanVeMayBay\QuanLyBanVeMayBay\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+C:\Users\tranh\Desktop\CNPM\QuanLyBanVeMayBay\QuanLyBanVeMayBay\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.xml
+C:\Users\tranh\Desktop\CNPM\QuanLyBanVeMayBay\QuanLyBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.Components.ComponentsBanVe.Step1.resources
+C:\Users\tranh\Desktop\CNPM\QuanLyBanVeMayBay\QuanLyBanVeMayBay\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+C:\Users\tranh\Desktop\CNPM\QuanLyBanVeMayBay\QuanLyBanVeMayBay\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+C:\Users\tranh\Desktop\CNPM\QuanLyBanVeMayBay\QuanLyBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.Components.ComponentsBanVe.Step2.resources
+C:\Users\tranh\Desktop\CNPM\QuanLyBanVeMayBay\QuanLyBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.Components.ComponentsBanVe.Step3.resources
+C:\Users\tranh\Desktop\CNPM\QuanLyBanVeMayBay\QuanLyBanVeMayBay\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\tranh\Desktop\CNPM\QuanLyBanVeMayBay\QuanLyBanVeMayBay\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml

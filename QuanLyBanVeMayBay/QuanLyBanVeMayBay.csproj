@@ -33,8 +33,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu.Core, Version=1.11.4.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
     <Reference Include="Bunifu.UI.WinForms.BunifuButton">
       <HintPath>..\..\New folder\Bunifu UI WinForms 1.11.4.0_apptop1.net\Bunifu UI WinForms 1.11.4.0\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>..\..\New folder\Bunifu UI WinForms 1.11.4.0_apptop1.net\Bunifu UI WinForms 1.11.4.0\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>..\..\New folder\Bunifu UI WinForms 1.11.4.0_apptop1.net\Bunifu UI WinForms 1.11.4.0\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>..\..\New folder\Bunifu UI WinForms 1.11.4.0_apptop1.net\Bunifu UI WinForms 1.11.4.0\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>..\..\New folder\Bunifu UI WinForms 1.11.4.0_apptop1.net\Bunifu UI WinForms 1.11.4.0\Bunifu_UI_v1.5.3.dll</HintPath>
@@ -55,6 +65,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\ComponentsBanVe\Step1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ComponentsBanVe\Step1.Designer.cs">
+      <DependentUpon>Step1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ComponentsBanVe\Step2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ComponentsBanVe\Step2.Designer.cs">
+      <DependentUpon>Step2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ComponentsBanVe\Step3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ComponentsBanVe\Step3.Designer.cs">
+      <DependentUpon>Step3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\Home1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -105,6 +133,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Components\ComponentsBanVe\Step1.resx">
+      <DependentUpon>Step1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ComponentsBanVe\Step2.resx">
+      <DependentUpon>Step2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ComponentsBanVe\Step3.resx">
+      <DependentUpon>Step3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Components\Home1.resx">
       <DependentUpon>Home1.cs</DependentUpon>
     </EmbeddedResource>
