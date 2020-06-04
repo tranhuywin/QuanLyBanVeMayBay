@@ -65,6 +65,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClsConnectDB.cs" />
     <Compile Include="Components\ComponentsBanVe\Step1.cs">
       <SubType>UserControl</SubType>
     </Compile>

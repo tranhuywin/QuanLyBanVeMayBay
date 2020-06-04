@@ -54,8 +54,6 @@
             this.ucDoanhThu = new QuanLyBanVeMayBay.Components.UCDoanhThu();
             this.ucBanve = new QuanLyBanVeMayBay.Components.UCBanve();
             this.home1 = new QuanLyBanVeMayBay.Components.Home1();
-            this.TimkiemPanel = new System.Windows.Forms.Panel();
-            this.TimkiemLabel = new System.Windows.Forms.Label();
             this.Header.SuspendLayout();
             this.panel2.SuspendLayout();
             this.DoanhThuPanel.SuspendLayout();
@@ -65,7 +63,6 @@
             this.ThongTinPanel.SuspendLayout();
             this.HomePanel.SuspendLayout();
             this.ContentPanel.SuspendLayout();
-            this.TimkiemPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Header
@@ -148,7 +145,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel2.Controls.Add(this.TimkiemPanel);
             this.panel2.Controls.Add(this.DoanhThuPanel);
             this.panel2.Controls.Add(this.TTKhachHangPanel);
             this.panel2.Controls.Add(this.HuyVePanel);
@@ -159,7 +155,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 37);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(140, 467);
+            this.panel2.Size = new System.Drawing.Size(133, 467);
             this.panel2.TabIndex = 1;
             // 
             // DoanhThuPanel
@@ -170,7 +166,7 @@
             this.DoanhThuPanel.Location = new System.Drawing.Point(0, 265);
             this.DoanhThuPanel.Margin = new System.Windows.Forms.Padding(2);
             this.DoanhThuPanel.Name = "DoanhThuPanel";
-            this.DoanhThuPanel.Size = new System.Drawing.Size(140, 53);
+            this.DoanhThuPanel.Size = new System.Drawing.Size(133, 53);
             this.DoanhThuPanel.TabIndex = 5;
             this.DoanhThuPanel.Click += new System.EventHandler(this.DoanhThuPanel_Click);
             // 
@@ -195,7 +191,7 @@
             this.TTKhachHangPanel.Location = new System.Drawing.Point(0, 212);
             this.TTKhachHangPanel.Margin = new System.Windows.Forms.Padding(2);
             this.TTKhachHangPanel.Name = "TTKhachHangPanel";
-            this.TTKhachHangPanel.Size = new System.Drawing.Size(140, 53);
+            this.TTKhachHangPanel.Size = new System.Drawing.Size(133, 53);
             this.TTKhachHangPanel.TabIndex = 4;
             this.TTKhachHangPanel.Click += new System.EventHandler(this.TTKhachHangPanel_Click);
             // 
@@ -220,7 +216,7 @@
             this.HuyVePanel.Location = new System.Drawing.Point(0, 159);
             this.HuyVePanel.Margin = new System.Windows.Forms.Padding(2);
             this.HuyVePanel.Name = "HuyVePanel";
-            this.HuyVePanel.Size = new System.Drawing.Size(140, 53);
+            this.HuyVePanel.Size = new System.Drawing.Size(133, 53);
             this.HuyVePanel.TabIndex = 3;
             this.HuyVePanel.Click += new System.EventHandler(this.HuyVePanel_Click);
             // 
@@ -245,7 +241,7 @@
             this.BanVePanel.Location = new System.Drawing.Point(0, 106);
             this.BanVePanel.Margin = new System.Windows.Forms.Padding(2);
             this.BanVePanel.Name = "BanVePanel";
-            this.BanVePanel.Size = new System.Drawing.Size(140, 53);
+            this.BanVePanel.Size = new System.Drawing.Size(133, 53);
             this.BanVePanel.TabIndex = 2;
             this.BanVePanel.Click += new System.EventHandler(this.BanVePanel_Click);
             // 
@@ -270,7 +266,7 @@
             this.ThongTinPanel.Location = new System.Drawing.Point(0, 53);
             this.ThongTinPanel.Margin = new System.Windows.Forms.Padding(2);
             this.ThongTinPanel.Name = "ThongTinPanel";
-            this.ThongTinPanel.Size = new System.Drawing.Size(140, 53);
+            this.ThongTinPanel.Size = new System.Drawing.Size(133, 53);
             this.ThongTinPanel.TabIndex = 1;
             this.ThongTinPanel.Click += new System.EventHandler(this.ThongTinPanel_Click);
             // 
@@ -295,7 +291,7 @@
             this.HomePanel.Location = new System.Drawing.Point(0, 0);
             this.HomePanel.Margin = new System.Windows.Forms.Padding(2);
             this.HomePanel.Name = "HomePanel";
-            this.HomePanel.Size = new System.Drawing.Size(140, 53);
+            this.HomePanel.Size = new System.Drawing.Size(133, 53);
             this.HomePanel.TabIndex = 0;
             this.HomePanel.Click += new System.EventHandler(this.HomePanel_Click);
             // 
@@ -322,10 +318,10 @@
             this.ContentPanel.Controls.Add(this.ucBanve);
             this.ContentPanel.Controls.Add(this.home1);
             this.ContentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ContentPanel.Location = new System.Drawing.Point(140, 37);
+            this.ContentPanel.Location = new System.Drawing.Point(133, 37);
             this.ContentPanel.Margin = new System.Windows.Forms.Padding(2);
             this.ContentPanel.Name = "ContentPanel";
-            this.ContentPanel.Size = new System.Drawing.Size(758, 467);
+            this.ContentPanel.Size = new System.Drawing.Size(765, 467);
             this.ContentPanel.TabIndex = 2;
             // 
             // ucttKhachHang
@@ -363,7 +359,7 @@
             // ucBanve
             // 
             this.ucBanve.Location = new System.Drawing.Point(0, 0);
-            this.ucBanve.Margin = new System.Windows.Forms.Padding(2);
+            this.ucBanve.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ucBanve.Name = "ucBanve";
             this.ucBanve.Size = new System.Drawing.Size(766, 467);
             this.ucBanve.TabIndex = 2;
@@ -376,30 +372,6 @@
             this.home1.Name = "home1";
             this.home1.Size = new System.Drawing.Size(766, 467);
             this.home1.TabIndex = 1;
-            // 
-            // TimkiemPanel
-            // 
-            this.TimkiemPanel.Controls.Add(this.TimkiemLabel);
-            this.TimkiemPanel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TimkiemPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TimkiemPanel.Location = new System.Drawing.Point(0, 318);
-            this.TimkiemPanel.Margin = new System.Windows.Forms.Padding(2);
-            this.TimkiemPanel.Name = "TimkiemPanel";
-            this.TimkiemPanel.Size = new System.Drawing.Size(140, 53);
-            this.TimkiemPanel.TabIndex = 6;
-            // 
-            // TimkiemLabel
-            // 
-            this.TimkiemLabel.AutoSize = true;
-            this.TimkiemLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TimkiemLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.TimkiemLabel.Location = new System.Drawing.Point(23, 12);
-            this.TimkiemLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.TimkiemLabel.Name = "TimkiemLabel";
-            this.TimkiemLabel.Size = new System.Drawing.Size(87, 24);
-            this.TimkiemLabel.TabIndex = 1;
-            this.TimkiemLabel.Text = "Tìm kiếm";
-            this.TimkiemLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // Main
             // 
@@ -433,8 +405,6 @@
             this.HomePanel.ResumeLayout(false);
             this.HomePanel.PerformLayout();
             this.ContentPanel.ResumeLayout(false);
-            this.TimkiemPanel.ResumeLayout(false);
-            this.TimkiemPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -463,7 +433,5 @@
         private Components.UCThongTincs ucThongTin;
         private Components.UCHuyVe ucHuyVe;
         private Components.UCDoanhThu ucDoanhThu;
-        private System.Windows.Forms.Panel TimkiemPanel;
-        private System.Windows.Forms.Label TimkiemLabel;
     }
 }

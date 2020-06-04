@@ -61,9 +61,5 @@ namespace QuanLyBanVeMayBay.Main
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
