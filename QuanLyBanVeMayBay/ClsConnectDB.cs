@@ -10,7 +10,7 @@ namespace QuanLyBanVeMayBay
 {
     class ClsConnectDB
     {
-        //https://www.c-sharpcorner.com/UploadFile/f26fb0/connection-class-in-C-Sharp/ link Connection class in C#
+        //www.c-sharpcorner.com/UploadFile/f26fb0/connection-class-in-C-Sharp link Connection class in C#
         string ConnectionString = "";
         SqlConnection con;
         public void OpenConection()

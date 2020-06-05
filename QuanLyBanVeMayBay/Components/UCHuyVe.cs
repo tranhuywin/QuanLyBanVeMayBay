@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanLyBanVeMayBay.Components.ComponentsHuyVe;
 
 namespace QuanLyBanVeMayBay.Components
 {
@@ -15,6 +16,12 @@ namespace QuanLyBanVeMayBay.Components
         public UCHuyVe()
         {
             InitializeComponent();
+        }
+
+        private void UCHuyVe_Load(object sender, EventArgs e)
+        {
+            ContentDienTTPanel.Controls.Clear();
+            ContentDienTTPanel.Controls.Add(DienThongTinKH);
         }
     }
 }
