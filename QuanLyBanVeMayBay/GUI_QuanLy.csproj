@@ -69,7 +69,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClsConnectDB.cs" />
     <Compile Include="Components\ComponentsBanVe\Step1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -201,6 +200,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS_QuanLy\BUS_QuanLy.csproj">
+      <Project>{cbaf6f18-30f2-43b3-a80e-ad495835004e}</Project>
+      <Name>BUS_QuanLy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO_QuanLy\DTO_QuanLy.csproj">
+      <Project>{642a8f6e-125f-426f-8b78-f83d2483c6ab}</Project>
+      <Name>DTO_QuanLy</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

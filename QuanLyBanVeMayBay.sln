@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyBanVeMayBay", "QuanLyBanVeMayBay\QuanLyBanVeMayBay.csproj", "{F07C2803-A684-4726-8B39-EA8C707D835F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI_QuanLy", "QuanLyBanVeMayBay\GUI_QuanLy.csproj", "{F07C2803-A684-4726-8B39-EA8C707D835F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BUS_QuanLy", "BUS_QuanLy\BUS_QuanLy.csproj", "{CBAF6F18-30F2-43B3-A80E-AD495835004E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL_QuanLy", "DAL_QuanLy\DAL_QuanLy.csproj", "{4D360C2D-6E9C-43EF-B83A-286B4A67F110}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO_QuanLy", "DTO_QuanLy\DTO_QuanLy.csproj", "{642A8F6E-125F-426F-8B78-F83D2483C6AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{F07C2803-A684-4726-8B39-EA8C707D835F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F07C2803-A684-4726-8B39-EA8C707D835F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F07C2803-A684-4726-8B39-EA8C707D835F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBAF6F18-30F2-43B3-A80E-AD495835004E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBAF6F18-30F2-43B3-A80E-AD495835004E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBAF6F18-30F2-43B3-A80E-AD495835004E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBAF6F18-30F2-43B3-A80E-AD495835004E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D360C2D-6E9C-43EF-B83A-286B4A67F110}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D360C2D-6E9C-43EF-B83A-286B4A67F110}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D360C2D-6E9C-43EF-B83A-286B4A67F110}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D360C2D-6E9C-43EF-B83A-286B4A67F110}.Release|Any CPU.Build.0 = Release|Any CPU
+		{642A8F6E-125F-426F-8B78-F83D2483C6AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{642A8F6E-125F-426F-8B78-F83D2483C6AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{642A8F6E-125F-426F-8B78-F83D2483C6AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{642A8F6E-125F-426F-8B78-F83D2483C6AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
