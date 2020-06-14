@@ -35,7 +35,13 @@
             this.Header = new System.Windows.Forms.Panel();
             this.ExitBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.TimVepanel = new System.Windows.Forms.Panel();
+            this.TimVeLabel = new System.Windows.Forms.Label();
+            this.TimKHpanel = new System.Windows.Forms.Panel();
+            this.TimKiemKHLabel = new System.Windows.Forms.Label();
             this.DoanhThuPanel = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.DoanhThuLabel = new System.Windows.Forms.Label();
             this.TTKhachHangPanel = new System.Windows.Forms.Panel();
             this.TTKhachHangLabel = new System.Windows.Forms.Label();
@@ -56,7 +62,10 @@
             this.home1 = new QuanLyBanVeMayBay.Components.Home1();
             this.Header.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.TimVepanel.SuspendLayout();
+            this.TimKHpanel.SuspendLayout();
             this.DoanhThuPanel.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.TTKhachHangPanel.SuspendLayout();
             this.HuyVePanel.SuspendLayout();
             this.BanVePanel.SuspendLayout();
@@ -145,6 +154,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.panel2.Controls.Add(this.TimVepanel);
+            this.panel2.Controls.Add(this.TimKHpanel);
             this.panel2.Controls.Add(this.DoanhThuPanel);
             this.panel2.Controls.Add(this.TTKhachHangPanel);
             this.panel2.Controls.Add(this.HuyVePanel);
@@ -158,8 +169,58 @@
             this.panel2.Size = new System.Drawing.Size(133, 467);
             this.panel2.TabIndex = 1;
             // 
+            // TimVepanel
+            // 
+            this.TimVepanel.Controls.Add(this.TimVeLabel);
+            this.TimVepanel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TimVepanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TimVepanel.Location = new System.Drawing.Point(0, 371);
+            this.TimVepanel.Margin = new System.Windows.Forms.Padding(2);
+            this.TimVepanel.Name = "TimVepanel";
+            this.TimVepanel.Size = new System.Drawing.Size(133, 53);
+            this.TimVepanel.TabIndex = 8;
+            this.TimVepanel.Paint += new System.Windows.Forms.PaintEventHandler(this.TimVepanel_Paint);
+            // 
+            // TimVeLabel
+            // 
+            this.TimVeLabel.AllowDrop = true;
+            this.TimVeLabel.AutoSize = true;
+            this.TimVeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimVeLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.TimVeLabel.Location = new System.Drawing.Point(37, 16);
+            this.TimVeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TimVeLabel.Name = "TimVeLabel";
+            this.TimVeLabel.Size = new System.Drawing.Size(67, 24);
+            this.TimVeLabel.TabIndex = 1;
+            this.TimVeLabel.Text = "Tìm vé";
+            // 
+            // TimKHpanel
+            // 
+            this.TimKHpanel.Controls.Add(this.TimKiemKHLabel);
+            this.TimKHpanel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TimKHpanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TimKHpanel.Location = new System.Drawing.Point(0, 318);
+            this.TimKHpanel.Margin = new System.Windows.Forms.Padding(2);
+            this.TimKHpanel.Name = "TimKHpanel";
+            this.TimKHpanel.Size = new System.Drawing.Size(133, 53);
+            this.TimKHpanel.TabIndex = 7;
+            this.TimKHpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.TimKHpanel_Paint);
+            // 
+            // TimKiemKHLabel
+            // 
+            this.TimKiemKHLabel.AutoSize = true;
+            this.TimKiemKHLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimKiemKHLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.TimKiemKHLabel.Location = new System.Drawing.Point(32, 15);
+            this.TimKiemKHLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TimKiemKHLabel.Name = "TimKiemKHLabel";
+            this.TimKiemKHLabel.Size = new System.Drawing.Size(73, 24);
+            this.TimKiemKHLabel.TabIndex = 1;
+            this.TimKiemKHLabel.Text = "Tìm KH";
+            // 
             // DoanhThuPanel
             // 
+            this.DoanhThuPanel.Controls.Add(this.panel1);
             this.DoanhThuPanel.Controls.Add(this.DoanhThuLabel);
             this.DoanhThuPanel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DoanhThuPanel.Dock = System.Windows.Forms.DockStyle.Top;
@@ -169,6 +230,29 @@
             this.DoanhThuPanel.Size = new System.Drawing.Size(133, 53);
             this.DoanhThuPanel.TabIndex = 5;
             this.DoanhThuPanel.Click += new System.EventHandler(this.DoanhThuPanel_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(133, 53);
+            this.panel1.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(23, 12);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 24);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Doanh thu";
             // 
             // DoanhThuLabel
             // 
@@ -200,7 +284,7 @@
             this.TTKhachHangLabel.AutoSize = true;
             this.TTKhachHangLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TTKhachHangLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.TTKhachHangLabel.Location = new System.Drawing.Point(3, 15);
+            this.TTKhachHangLabel.Location = new System.Drawing.Point(3, 13);
             this.TTKhachHangLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TTKhachHangLabel.Name = "TTKhachHangLabel";
             this.TTKhachHangLabel.Size = new System.Drawing.Size(138, 24);
@@ -343,7 +427,7 @@
             // ucHuyVe
             // 
             this.ucHuyVe.Location = new System.Drawing.Point(0, 0);
-            this.ucHuyVe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ucHuyVe.Margin = new System.Windows.Forms.Padding(2);
             this.ucHuyVe.Name = "ucHuyVe";
             this.ucHuyVe.Size = new System.Drawing.Size(766, 467);
             this.ucHuyVe.TabIndex = 4;
@@ -359,7 +443,7 @@
             // ucBanve
             // 
             this.ucBanve.Location = new System.Drawing.Point(0, 0);
-            this.ucBanve.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ucBanve.Margin = new System.Windows.Forms.Padding(2);
             this.ucBanve.Name = "ucBanve";
             this.ucBanve.Size = new System.Drawing.Size(766, 467);
             this.ucBanve.TabIndex = 2;
@@ -392,8 +476,14 @@
             this.Text = "Main";
             this.Header.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.TimVepanel.ResumeLayout(false);
+            this.TimVepanel.PerformLayout();
+            this.TimKHpanel.ResumeLayout(false);
+            this.TimKHpanel.PerformLayout();
             this.DoanhThuPanel.ResumeLayout(false);
             this.DoanhThuPanel.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.TTKhachHangPanel.ResumeLayout(false);
             this.TTKhachHangPanel.PerformLayout();
             this.HuyVePanel.ResumeLayout(false);
@@ -433,5 +523,13 @@
         private Components.UCThongTincs ucThongTin;
         private Components.UCHuyVe ucHuyVe;
         private Components.UCDoanhThu ucDoanhThu;
+        private Components.UCTimKiemKH ucTimKiemKH;
+        private Components.UCTimVe ucTimVe;
+        private System.Windows.Forms.Panel TimVepanel;
+        private System.Windows.Forms.Label TimVeLabel;
+        private System.Windows.Forms.Panel TimKHpanel;
+        private System.Windows.Forms.Label TimKiemKHLabel;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
     }
 }

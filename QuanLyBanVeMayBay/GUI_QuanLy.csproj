@@ -93,6 +93,18 @@
     <Compile Include="Components\ComponentsHuyVe\DienThongTinkH.Designer.cs">
       <DependentUpon>DienThongTinkH.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\ComponentsTimKiemKH\TimKiemKH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ComponentsTimKiemKH\TimKiemKH.Designer.cs">
+      <DependentUpon>TimKiemKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ComponentsTimKiemVe\TimKiemVe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ComponentsTimKiemVe\TimKiemVe.Designer.cs">
+      <DependentUpon>TimKiemVe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\Home1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -122,6 +134,18 @@
     </Compile>
     <Compile Include="Components\UCThongTincs.Designer.cs">
       <DependentUpon>UCThongTincs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\UCTimKiemKH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\UCTimKiemKH.Designer.cs">
+      <DependentUpon>UCTimKiemKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\UCTimVe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\UCTimVe.Designer.cs">
+      <DependentUpon>UCTimVe.cs</DependentUpon>
     </Compile>
     <Compile Include="Components\UCTTKhachHang.cs">
       <SubType>UserControl</SubType>
@@ -155,6 +179,12 @@
     <EmbeddedResource Include="Components\ComponentsHuyVe\DienThongTinkH.resx">
       <DependentUpon>DienThongTinkH.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Components\ComponentsTimKiemKH\TimKiemKH.resx">
+      <DependentUpon>TimKiemKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ComponentsTimKiemVe\TimKiemVe.resx">
+      <DependentUpon>TimKiemVe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Components\Home1.resx">
       <DependentUpon>Home1.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,6 +199,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Components\UCThongTincs.resx">
       <DependentUpon>UCThongTincs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\UCTimKiemKH.resx">
+      <DependentUpon>UCTimKiemKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\UCTimVe.resx">
+      <DependentUpon>UCTimVe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\UCTTKhachHang.resx">
       <DependentUpon>UCTTKhachHang.cs</DependentUpon>
