@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using QuanLyBanVeMayBay.Components;
 
 namespace QuanLyBanVeMayBay.Main
 {
@@ -61,5 +62,16 @@ namespace QuanLyBanVeMayBay.Main
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
+        private void TimKHpanel_Paint(object sender, PaintEventArgs e)
+        {
+            ContentPanel.Controls.Clear();
+            ContentPanel.Controls.Add(ucTimKiemKH);
+        }
+
+        private void TimVepanel_Paint(object sender, PaintEventArgs e)
+        {
+            ContentPanel.Controls.Clear();
+            ContentPanel.Controls.Add(ucTimVe);
+        }
     }
 }
