@@ -30,7 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.pnl_TimVe = new System.Windows.Forms.Panel();
-            this.TimKiemVe = new Components.ComponentsTimKiemVe.TimKiemVe();
+            this.TimKiemVe = new QuanLyBanVeMayBay.Components.ComponentsTimKiemVe.TimKiemVe();
+            this.pnl_TimVe.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -45,11 +46,18 @@
             // 
             // pnl_TimVe
             // 
+            this.pnl_TimVe.Controls.Add(this.TimKiemVe);
             this.pnl_TimVe.Location = new System.Drawing.Point(0, 23);
             this.pnl_TimVe.Name = "pnl_TimVe";
-            this.pnl_TimVe.Size = new System.Drawing.Size(800, 450);
+            this.pnl_TimVe.Size = new System.Drawing.Size(1086, 579);
             this.pnl_TimVe.TabIndex = 1;
-            this.pnl_TimVe.Controls.Add(this.TimKiemVe);
+            // 
+            // TimKiemVe
+            // 
+            this.TimKiemVe.Location = new System.Drawing.Point(0, 3);
+            this.TimKiemVe.Name = "TimKiemVe";
+            this.TimKiemVe.Size = new System.Drawing.Size(1086, 579);
+            this.TimKiemVe.TabIndex = 0;
             // 
             // UCTimVe
             // 
@@ -58,7 +66,8 @@
             this.Controls.Add(this.pnl_TimVe);
             this.Controls.Add(this.label1);
             this.Name = "UCTimVe";
-            this.Size = new System.Drawing.Size(801, 474);
+            this.Size = new System.Drawing.Size(1086, 602);
+            this.pnl_TimVe.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

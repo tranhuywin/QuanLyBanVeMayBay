@@ -52,7 +52,7 @@
             this.pnl_TimKiemKH.Location = new System.Drawing.Point(-1, 33);
             this.pnl_TimKiemKH.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_TimKiemKH.Name = "pnl_TimKiemKH";
-            this.pnl_TimKiemKH.Size = new System.Drawing.Size(600, 366);
+            this.pnl_TimKiemKH.Size = new System.Drawing.Size(1087, 567);
             this.pnl_TimKiemKH.TabIndex = 1;
             // 
             // TimKiemKH
@@ -60,7 +60,7 @@
             this.TimKiemKH.Location = new System.Drawing.Point(1, 2);
             this.TimKiemKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TimKiemKH.Name = "TimKiemKH";
-            this.TimKiemKH.Size = new System.Drawing.Size(600, 366);
+            this.TimKiemKH.Size = new System.Drawing.Size(1084, 563);
             this.TimKiemKH.TabIndex = 2;
             // 
             // UCTimKiemKH
@@ -71,7 +71,7 @@
             this.Controls.Add(this.pnl_TimKiemKH);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UCTimKiemKH";
-            this.Size = new System.Drawing.Size(600, 400);
+            this.Size = new System.Drawing.Size(1086, 602);
             this.pnl_TimKiemKH.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

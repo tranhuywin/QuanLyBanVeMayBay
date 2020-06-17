@@ -37,11 +37,32 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuButton">
       <HintPath>..\..\New folder\Bunifu UI WinForms 1.11.4.0_apptop1.net\Bunifu UI WinForms 1.11.4.0\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCircleProgress">
+      <HintPath>..\..\..\CNPM\New folder\Bunifu UI WinForms 1.11.4.0_apptop1.net\Bunifu UI WinForms 1.11.4.0\Bunifu.UI.WinForms.BunifuCircleProgress.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
       <HintPath>..\..\New folder\Bunifu UI WinForms 1.11.4.0_apptop1.net\Bunifu UI WinForms 1.11.4.0\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>..\..\..\CNPM\New folder\Bunifu UI WinForms 1.11.4.0_apptop1.net\Bunifu UI WinForms 1.11.4.0\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>..\..\..\CNPM\New folder\Bunifu UI WinForms 1.11.4.0_apptop1.net\Bunifu UI WinForms 1.11.4.0\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGauge">
+      <HintPath>..\..\..\CNPM\New folder\Bunifu UI WinForms 1.11.4.0_apptop1.net\Bunifu UI WinForms 1.11.4.0\Bunifu.UI.WinForms.BunifuGauge.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
+      <HintPath>..\..\..\CNPM\New folder\Bunifu UI WinForms 1.11.4.0_apptop1.net\Bunifu UI WinForms 1.11.4.0\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
       <HintPath>..\..\New folder\Bunifu UI WinForms 1.11.4.0_apptop1.net\Bunifu UI WinForms 1.11.4.0\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
+      <HintPath>..\..\..\CNPM\New folder\Bunifu UI WinForms 1.11.4.0_apptop1.net\Bunifu UI WinForms 1.11.4.0\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
+      <HintPath>..\..\..\CNPM\New folder\Bunifu UI WinForms 1.11.4.0_apptop1.net\Bunifu UI WinForms 1.11.4.0\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
       <HintPath>..\..\New folder\Bunifu UI WinForms 1.11.4.0_apptop1.net\Bunifu UI WinForms 1.11.4.0\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
@@ -54,6 +75,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xaml" />
@@ -87,11 +109,29 @@
     <Compile Include="Components\ComponentsBanVe\Step3.Designer.cs">
       <DependentUpon>Step3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\ComponentsChinhSuaVe\UCChinhSuaVe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ComponentsChinhSuaVe\UCChinhSuaVe.Designer.cs">
+      <DependentUpon>UCChinhSuaVe.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\ComponentsHuyVe\DienThongTinkH.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Components\ComponentsHuyVe\DienThongTinkH.Designer.cs">
       <DependentUpon>DienThongTinkH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ComponentsKhachHang\UCChinhSuaKH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ComponentsKhachHang\UCChinhSuaKH.Designer.cs">
+      <DependentUpon>UCChinhSuaKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ComponentsKhachHang\UCKhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ComponentsKhachHang\UCKhachHang.Designer.cs">
+      <DependentUpon>UCKhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="Components\ComponentsTimKiemKH\TimKiemKH.cs">
       <SubType>UserControl</SubType>
@@ -147,12 +187,6 @@
     <Compile Include="Components\UCTimVe.Designer.cs">
       <DependentUpon>UCTimVe.cs</DependentUpon>
     </Compile>
-    <Compile Include="Components\UCTTKhachHang.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Components\UCTTKhachHang.Designer.cs">
-      <DependentUpon>UCTTKhachHang.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,8 +210,17 @@
     <EmbeddedResource Include="Components\ComponentsBanVe\Step3.resx">
       <DependentUpon>Step3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Components\ComponentsChinhSuaVe\UCChinhSuaVe.resx">
+      <DependentUpon>UCChinhSuaVe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Components\ComponentsHuyVe\DienThongTinkH.resx">
       <DependentUpon>DienThongTinkH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ComponentsKhachHang\UCChinhSuaKH.resx">
+      <DependentUpon>UCChinhSuaKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ComponentsKhachHang\UCKhachHang.resx">
+      <DependentUpon>UCKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\ComponentsTimKiemKH\TimKiemKH.resx">
       <DependentUpon>TimKiemKH.cs</DependentUpon>
@@ -205,9 +248,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Components\UCTimVe.resx">
       <DependentUpon>UCTimVe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Components\UCTTKhachHang.resx">
-      <DependentUpon>UCTTKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

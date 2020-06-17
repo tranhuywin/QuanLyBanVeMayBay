@@ -17,16 +17,6 @@ namespace QuanLyBanVeMayBay.Components.ComponentsBanVe
             InitializeComponent();
         }
 
-        private void bunifuCustomLabel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void NguoiLonTxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void NguoiLonTxt_KeyPress(object sender, KeyPressEventArgs e)
         {
             Char chr = e.KeyChar;

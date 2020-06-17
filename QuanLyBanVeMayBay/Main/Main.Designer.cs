@@ -29,439 +29,471 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.Header = new System.Windows.Forms.Panel();
-            this.ExitBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.MinisizeBtn = new Bunifu.Framework.UI.BunifuImageButton();
+            this.ExitBtn = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.TimVepanel = new System.Windows.Forms.Panel();
-            this.TimVeLabel = new System.Windows.Forms.Label();
-            this.TimKHpanel = new System.Windows.Forms.Panel();
-            this.TimKiemKHLabel = new System.Windows.Forms.Label();
-            this.DoanhThuPanel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.DoanhThuLabel = new System.Windows.Forms.Label();
-            this.TTKhachHangPanel = new System.Windows.Forms.Panel();
-            this.TTKhachHangLabel = new System.Windows.Forms.Label();
-            this.HuyVePanel = new System.Windows.Forms.Panel();
-            this.HuyVeLabel = new System.Windows.Forms.Label();
-            this.BanVePanel = new System.Windows.Forms.Panel();
-            this.BanVeLabel = new System.Windows.Forms.Label();
-            this.ThongTinPanel = new System.Windows.Forms.Panel();
-            this.ThongTinLabel = new System.Windows.Forms.Label();
-            this.HomePanel = new System.Windows.Forms.Panel();
-            this.HomeLabel = new System.Windows.Forms.Label();
+            this.DoanhThuBtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.TimKHBtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.TimVeBtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.ChinhSuaVeBtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.KhachHangBtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.HuyVeBtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.BanVeBtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.HomeBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ContentPanel = new System.Windows.Forms.Panel();
-            this.ucttKhachHang = new QuanLyBanVeMayBay.Components.UCTTKhachHang();
-            this.ucThongTin = new QuanLyBanVeMayBay.Components.UCThongTincs();
+            this.ucChinhSuaVe = new QuanLyBanVeMayBay.Components.ComponentsChinhSuaVe.UCChinhSuaVe();
+            this.ucTimVe1 = new QuanLyBanVeMayBay.Components.UCTimVe();
+            this.ucKhachHang = new QuanLyBanVeMayBay.Components.ComponentsKhachHang.UCKhachHang();
             this.ucHuyVe = new QuanLyBanVeMayBay.Components.UCHuyVe();
-            this.ucDoanhThu = new QuanLyBanVeMayBay.Components.UCDoanhThu();
             this.ucBanve = new QuanLyBanVeMayBay.Components.UCBanve();
-            this.home1 = new QuanLyBanVeMayBay.Components.Home1();
+            this.ucTimKiemKH1 = new QuanLyBanVeMayBay.Components.UCTimKiemKH();
             this.Header.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MinisizeBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExitBtn)).BeginInit();
             this.panel2.SuspendLayout();
-            this.TimVepanel.SuspendLayout();
-            this.TimKHpanel.SuspendLayout();
-            this.DoanhThuPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.TTKhachHangPanel.SuspendLayout();
-            this.HuyVePanel.SuspendLayout();
-            this.BanVePanel.SuspendLayout();
-            this.ThongTinPanel.SuspendLayout();
-            this.HomePanel.SuspendLayout();
             this.ContentPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Header
             // 
-            this.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(26)))));
+            this.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.Header.Controls.Add(this.MinisizeBtn);
             this.Header.Controls.Add(this.ExitBtn);
             this.Header.Dock = System.Windows.Forms.DockStyle.Top;
             this.Header.Location = new System.Drawing.Point(0, 0);
             this.Header.Margin = new System.Windows.Forms.Padding(2);
             this.Header.Name = "Header";
-            this.Header.Size = new System.Drawing.Size(898, 37);
+            this.Header.Size = new System.Drawing.Size(1300, 46);
             this.Header.TabIndex = 0;
             this.Header.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Header_MouseDown);
             // 
+            // MinisizeBtn
+            // 
+            this.MinisizeBtn.ErrorImage = null;
+            this.MinisizeBtn.Image = ((System.Drawing.Image)(resources.GetObject("MinisizeBtn.Image")));
+            this.MinisizeBtn.ImageActive = null;
+            this.MinisizeBtn.Location = new System.Drawing.Point(1215, 3);
+            this.MinisizeBtn.Name = "MinisizeBtn";
+            this.MinisizeBtn.Size = new System.Drawing.Size(30, 30);
+            this.MinisizeBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.MinisizeBtn.TabIndex = 7;
+            this.MinisizeBtn.TabStop = false;
+            this.MinisizeBtn.Zoom = 10;
+            this.MinisizeBtn.Click += new System.EventHandler(this.MinisizeBtn_Click);
+            // 
             // ExitBtn
             // 
-            this.ExitBtn.AllowToggling = false;
-            this.ExitBtn.AnimationSpeed = 200;
-            this.ExitBtn.AutoGenerateColors = false;
-            this.ExitBtn.BackColor = System.Drawing.Color.Transparent;
-            this.ExitBtn.BackColor1 = System.Drawing.Color.DodgerBlue;
-            this.ExitBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ExitBtn.BackgroundImage")));
-            this.ExitBtn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.ExitBtn.ButtonText = "Exit";
-            this.ExitBtn.ButtonTextMarginLeft = 0;
-            this.ExitBtn.ColorContrastOnClick = 45;
-            this.ExitBtn.ColorContrastOnHover = 45;
-            this.ExitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.ExitBtn.CustomizableEdges = borderEdges1;
-            this.ExitBtn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.ExitBtn.DisabledBorderColor = System.Drawing.Color.Empty;
-            this.ExitBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.ExitBtn.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.ExitBtn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.ExitBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.ExitBtn.ForeColor = System.Drawing.Color.White;
-            this.ExitBtn.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.ExitBtn.IconMarginLeft = 11;
-            this.ExitBtn.IconPadding = 10;
-            this.ExitBtn.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.ExitBtn.IdleBorderColor = System.Drawing.Color.DodgerBlue;
-            this.ExitBtn.IdleBorderRadius = 3;
-            this.ExitBtn.IdleBorderThickness = 1;
-            this.ExitBtn.IdleFillColor = System.Drawing.Color.DodgerBlue;
-            this.ExitBtn.IdleIconLeftImage = null;
-            this.ExitBtn.IdleIconRightImage = null;
-            this.ExitBtn.IndicateFocus = false;
-            this.ExitBtn.Location = new System.Drawing.Point(842, 6);
-            this.ExitBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.ExitBtn.ErrorImage = ((System.Drawing.Image)(resources.GetObject("ExitBtn.ErrorImage")));
+            this.ExitBtn.Image = ((System.Drawing.Image)(resources.GetObject("ExitBtn.Image")));
+            this.ExitBtn.ImageActive = null;
+            this.ExitBtn.Location = new System.Drawing.Point(1261, 6);
             this.ExitBtn.Name = "ExitBtn";
-            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties1.BorderRadius = 3;
-            stateProperties1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties1.BorderThickness = 1;
-            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties1.ForeColor = System.Drawing.Color.White;
-            stateProperties1.IconLeftImage = null;
-            stateProperties1.IconRightImage = null;
-            this.ExitBtn.onHoverState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties2.BorderRadius = 3;
-            stateProperties2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties2.BorderThickness = 1;
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties2.ForeColor = System.Drawing.Color.White;
-            stateProperties2.IconLeftImage = null;
-            stateProperties2.IconRightImage = null;
-            this.ExitBtn.OnPressedState = stateProperties2;
-            this.ExitBtn.Size = new System.Drawing.Size(47, 24);
-            this.ExitBtn.TabIndex = 2;
-            this.ExitBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ExitBtn.TextMarginLeft = 0;
-            this.ExitBtn.UseDefaultRadiusAndThickness = true;
-            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
+            this.ExitBtn.Size = new System.Drawing.Size(30, 30);
+            this.ExitBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ExitBtn.TabIndex = 8;
+            this.ExitBtn.TabStop = false;
+            this.ExitBtn.Zoom = 10;
+            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click_1);
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.panel2.Controls.Add(this.TimVepanel);
-            this.panel2.Controls.Add(this.TimKHpanel);
-            this.panel2.Controls.Add(this.DoanhThuPanel);
-            this.panel2.Controls.Add(this.TTKhachHangPanel);
-            this.panel2.Controls.Add(this.HuyVePanel);
-            this.panel2.Controls.Add(this.BanVePanel);
-            this.panel2.Controls.Add(this.ThongTinPanel);
-            this.panel2.Controls.Add(this.HomePanel);
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.panel2.Controls.Add(this.DoanhThuBtn);
+            this.panel2.Controls.Add(this.TimKHBtn);
+            this.panel2.Controls.Add(this.TimVeBtn);
+            this.panel2.Controls.Add(this.ChinhSuaVeBtn);
+            this.panel2.Controls.Add(this.KhachHangBtn);
+            this.panel2.Controls.Add(this.HuyVeBtn);
+            this.panel2.Controls.Add(this.BanVeBtn);
+            this.panel2.Controls.Add(this.HomeBtn);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 37);
+            this.panel2.Location = new System.Drawing.Point(0, 46);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(133, 467);
+            this.panel2.Size = new System.Drawing.Size(214, 604);
             this.panel2.TabIndex = 1;
             // 
-            // TimVepanel
+            // DoanhThuBtn
             // 
-            this.TimVepanel.Controls.Add(this.TimVeLabel);
-            this.TimVepanel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TimVepanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TimVepanel.Location = new System.Drawing.Point(0, 371);
-            this.TimVepanel.Margin = new System.Windows.Forms.Padding(2);
-            this.TimVepanel.Name = "TimVepanel";
-            this.TimVepanel.Size = new System.Drawing.Size(133, 53);
-            this.TimVepanel.TabIndex = 8;
-            this.TimVepanel.Paint += new System.Windows.Forms.PaintEventHandler(this.TimVepanel_Paint);
+            this.DoanhThuBtn.Active = false;
+            this.DoanhThuBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(230)))));
+            this.DoanhThuBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.DoanhThuBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.DoanhThuBtn.BorderRadius = 0;
+            this.DoanhThuBtn.ButtonText = "Doanh thu";
+            this.DoanhThuBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DoanhThuBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.DoanhThuBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.DoanhThuBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DoanhThuBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.DoanhThuBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("DoanhThuBtn.Iconimage")));
+            this.DoanhThuBtn.Iconimage_right = null;
+            this.DoanhThuBtn.Iconimage_right_Selected = null;
+            this.DoanhThuBtn.Iconimage_Selected = null;
+            this.DoanhThuBtn.IconMarginLeft = 10;
+            this.DoanhThuBtn.IconMarginRight = 10;
+            this.DoanhThuBtn.IconRightVisible = true;
+            this.DoanhThuBtn.IconRightZoom = 90D;
+            this.DoanhThuBtn.IconVisible = true;
+            this.DoanhThuBtn.IconZoom = 80D;
+            this.DoanhThuBtn.IsTab = false;
+            this.DoanhThuBtn.Location = new System.Drawing.Point(0, 399);
+            this.DoanhThuBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DoanhThuBtn.Name = "DoanhThuBtn";
+            this.DoanhThuBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.DoanhThuBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.DoanhThuBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.DoanhThuBtn.selected = false;
+            this.DoanhThuBtn.Size = new System.Drawing.Size(214, 57);
+            this.DoanhThuBtn.TabIndex = 14;
+            this.DoanhThuBtn.Text = "Doanh thu";
+            this.DoanhThuBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DoanhThuBtn.Textcolor = System.Drawing.Color.White;
+            this.DoanhThuBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DoanhThuBtn.Click += new System.EventHandler(this.DoanhThuBtn_Click);
             // 
-            // TimVeLabel
+            // TimKHBtn
             // 
-            this.TimVeLabel.AllowDrop = true;
-            this.TimVeLabel.AutoSize = true;
-            this.TimVeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TimVeLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.TimVeLabel.Location = new System.Drawing.Point(37, 16);
-            this.TimVeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.TimVeLabel.Name = "TimVeLabel";
-            this.TimVeLabel.Size = new System.Drawing.Size(67, 24);
-            this.TimVeLabel.TabIndex = 1;
-            this.TimVeLabel.Text = "Tìm vé";
+            this.TimKHBtn.Active = false;
+            this.TimKHBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(230)))));
+            this.TimKHBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.TimKHBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.TimKHBtn.BorderRadius = 0;
+            this.TimKHBtn.ButtonText = "Tìm khách hàng";
+            this.TimKHBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TimKHBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.TimKHBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TimKHBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimKHBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.TimKHBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("TimKHBtn.Iconimage")));
+            this.TimKHBtn.Iconimage_right = null;
+            this.TimKHBtn.Iconimage_right_Selected = null;
+            this.TimKHBtn.Iconimage_Selected = null;
+            this.TimKHBtn.IconMarginLeft = 10;
+            this.TimKHBtn.IconMarginRight = 10;
+            this.TimKHBtn.IconRightVisible = true;
+            this.TimKHBtn.IconRightZoom = 90D;
+            this.TimKHBtn.IconVisible = true;
+            this.TimKHBtn.IconZoom = 80D;
+            this.TimKHBtn.IsTab = false;
+            this.TimKHBtn.Location = new System.Drawing.Point(0, 342);
+            this.TimKHBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TimKHBtn.Name = "TimKHBtn";
+            this.TimKHBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.TimKHBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.TimKHBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.TimKHBtn.selected = false;
+            this.TimKHBtn.Size = new System.Drawing.Size(214, 57);
+            this.TimKHBtn.TabIndex = 13;
+            this.TimKHBtn.Text = "Tìm khách hàng";
+            this.TimKHBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TimKHBtn.Textcolor = System.Drawing.Color.White;
+            this.TimKHBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimKHBtn.Click += new System.EventHandler(this.TimKHBtn_Click);
             // 
-            // TimKHpanel
+            // TimVeBtn
             // 
-            this.TimKHpanel.Controls.Add(this.TimKiemKHLabel);
-            this.TimKHpanel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TimKHpanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TimKHpanel.Location = new System.Drawing.Point(0, 318);
-            this.TimKHpanel.Margin = new System.Windows.Forms.Padding(2);
-            this.TimKHpanel.Name = "TimKHpanel";
-            this.TimKHpanel.Size = new System.Drawing.Size(133, 53);
-            this.TimKHpanel.TabIndex = 7;
-            this.TimKHpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.TimKHpanel_Paint);
+            this.TimVeBtn.Active = false;
+            this.TimVeBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(230)))));
+            this.TimVeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.TimVeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.TimVeBtn.BorderRadius = 0;
+            this.TimVeBtn.ButtonText = "Tìm vé";
+            this.TimVeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TimVeBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.TimVeBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TimVeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimVeBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.TimVeBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("TimVeBtn.Iconimage")));
+            this.TimVeBtn.Iconimage_right = null;
+            this.TimVeBtn.Iconimage_right_Selected = null;
+            this.TimVeBtn.Iconimage_Selected = null;
+            this.TimVeBtn.IconMarginLeft = 10;
+            this.TimVeBtn.IconMarginRight = 10;
+            this.TimVeBtn.IconRightVisible = true;
+            this.TimVeBtn.IconRightZoom = 90D;
+            this.TimVeBtn.IconVisible = true;
+            this.TimVeBtn.IconZoom = 80D;
+            this.TimVeBtn.IsTab = false;
+            this.TimVeBtn.Location = new System.Drawing.Point(0, 285);
+            this.TimVeBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TimVeBtn.Name = "TimVeBtn";
+            this.TimVeBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.TimVeBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.TimVeBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.TimVeBtn.selected = false;
+            this.TimVeBtn.Size = new System.Drawing.Size(214, 57);
+            this.TimVeBtn.TabIndex = 12;
+            this.TimVeBtn.Text = "Tìm vé";
+            this.TimVeBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TimVeBtn.Textcolor = System.Drawing.Color.White;
+            this.TimVeBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimVeBtn.Click += new System.EventHandler(this.TimVeBtn_Click);
             // 
-            // TimKiemKHLabel
+            // ChinhSuaVeBtn
             // 
-            this.TimKiemKHLabel.AutoSize = true;
-            this.TimKiemKHLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TimKiemKHLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.TimKiemKHLabel.Location = new System.Drawing.Point(32, 15);
-            this.TimKiemKHLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.TimKiemKHLabel.Name = "TimKiemKHLabel";
-            this.TimKiemKHLabel.Size = new System.Drawing.Size(73, 24);
-            this.TimKiemKHLabel.TabIndex = 1;
-            this.TimKiemKHLabel.Text = "Tìm KH";
+            this.ChinhSuaVeBtn.Active = false;
+            this.ChinhSuaVeBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(230)))));
+            this.ChinhSuaVeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.ChinhSuaVeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ChinhSuaVeBtn.BorderRadius = 0;
+            this.ChinhSuaVeBtn.ButtonText = "Chỉnh sửa vé";
+            this.ChinhSuaVeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ChinhSuaVeBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.ChinhSuaVeBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ChinhSuaVeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChinhSuaVeBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.ChinhSuaVeBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("ChinhSuaVeBtn.Iconimage")));
+            this.ChinhSuaVeBtn.Iconimage_right = null;
+            this.ChinhSuaVeBtn.Iconimage_right_Selected = null;
+            this.ChinhSuaVeBtn.Iconimage_Selected = null;
+            this.ChinhSuaVeBtn.IconMarginLeft = 10;
+            this.ChinhSuaVeBtn.IconMarginRight = 10;
+            this.ChinhSuaVeBtn.IconRightVisible = true;
+            this.ChinhSuaVeBtn.IconRightZoom = 90D;
+            this.ChinhSuaVeBtn.IconVisible = true;
+            this.ChinhSuaVeBtn.IconZoom = 80D;
+            this.ChinhSuaVeBtn.IsTab = false;
+            this.ChinhSuaVeBtn.Location = new System.Drawing.Point(0, 228);
+            this.ChinhSuaVeBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ChinhSuaVeBtn.Name = "ChinhSuaVeBtn";
+            this.ChinhSuaVeBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.ChinhSuaVeBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.ChinhSuaVeBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.ChinhSuaVeBtn.selected = false;
+            this.ChinhSuaVeBtn.Size = new System.Drawing.Size(214, 57);
+            this.ChinhSuaVeBtn.TabIndex = 11;
+            this.ChinhSuaVeBtn.Text = "Chỉnh sửa vé";
+            this.ChinhSuaVeBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ChinhSuaVeBtn.Textcolor = System.Drawing.Color.White;
+            this.ChinhSuaVeBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChinhSuaVeBtn.Click += new System.EventHandler(this.ChinhSuaVeBtn_Click);
             // 
-            // DoanhThuPanel
+            // KhachHangBtn
             // 
-            this.DoanhThuPanel.Controls.Add(this.panel1);
-            this.DoanhThuPanel.Controls.Add(this.DoanhThuLabel);
-            this.DoanhThuPanel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DoanhThuPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.DoanhThuPanel.Location = new System.Drawing.Point(0, 265);
-            this.DoanhThuPanel.Margin = new System.Windows.Forms.Padding(2);
-            this.DoanhThuPanel.Name = "DoanhThuPanel";
-            this.DoanhThuPanel.Size = new System.Drawing.Size(133, 53);
-            this.DoanhThuPanel.TabIndex = 5;
-            this.DoanhThuPanel.Click += new System.EventHandler(this.DoanhThuPanel_Click);
+            this.KhachHangBtn.Active = false;
+            this.KhachHangBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(230)))));
+            this.KhachHangBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.KhachHangBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.KhachHangBtn.BorderRadius = 0;
+            this.KhachHangBtn.ButtonText = "Khách hàng";
+            this.KhachHangBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.KhachHangBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.KhachHangBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.KhachHangBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.KhachHangBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.KhachHangBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("KhachHangBtn.Iconimage")));
+            this.KhachHangBtn.Iconimage_right = null;
+            this.KhachHangBtn.Iconimage_right_Selected = null;
+            this.KhachHangBtn.Iconimage_Selected = null;
+            this.KhachHangBtn.IconMarginLeft = 10;
+            this.KhachHangBtn.IconMarginRight = 10;
+            this.KhachHangBtn.IconRightVisible = true;
+            this.KhachHangBtn.IconRightZoom = 90D;
+            this.KhachHangBtn.IconVisible = true;
+            this.KhachHangBtn.IconZoom = 80D;
+            this.KhachHangBtn.IsTab = false;
+            this.KhachHangBtn.Location = new System.Drawing.Point(0, 171);
+            this.KhachHangBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.KhachHangBtn.Name = "KhachHangBtn";
+            this.KhachHangBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.KhachHangBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.KhachHangBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.KhachHangBtn.selected = false;
+            this.KhachHangBtn.Size = new System.Drawing.Size(214, 57);
+            this.KhachHangBtn.TabIndex = 10;
+            this.KhachHangBtn.Text = "Khách hàng";
+            this.KhachHangBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.KhachHangBtn.Textcolor = System.Drawing.Color.White;
+            this.KhachHangBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.KhachHangBtn.Click += new System.EventHandler(this.KhachHangBtn_Click);
             // 
-            // panel1
+            // HuyVeBtn
             // 
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(133, 53);
-            this.panel1.TabIndex = 6;
+            this.HuyVeBtn.Active = false;
+            this.HuyVeBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(230)))));
+            this.HuyVeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.HuyVeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.HuyVeBtn.BorderRadius = 0;
+            this.HuyVeBtn.ButtonText = "Hủy vé";
+            this.HuyVeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.HuyVeBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.HuyVeBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.HuyVeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HuyVeBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.HuyVeBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("HuyVeBtn.Iconimage")));
+            this.HuyVeBtn.Iconimage_right = null;
+            this.HuyVeBtn.Iconimage_right_Selected = null;
+            this.HuyVeBtn.Iconimage_Selected = null;
+            this.HuyVeBtn.IconMarginLeft = 10;
+            this.HuyVeBtn.IconMarginRight = 10;
+            this.HuyVeBtn.IconRightVisible = true;
+            this.HuyVeBtn.IconRightZoom = 90D;
+            this.HuyVeBtn.IconVisible = true;
+            this.HuyVeBtn.IconZoom = 80D;
+            this.HuyVeBtn.IsTab = false;
+            this.HuyVeBtn.Location = new System.Drawing.Point(0, 114);
+            this.HuyVeBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HuyVeBtn.Name = "HuyVeBtn";
+            this.HuyVeBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.HuyVeBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.HuyVeBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.HuyVeBtn.selected = false;
+            this.HuyVeBtn.Size = new System.Drawing.Size(214, 57);
+            this.HuyVeBtn.TabIndex = 9;
+            this.HuyVeBtn.Text = "Hủy vé";
+            this.HuyVeBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.HuyVeBtn.Textcolor = System.Drawing.Color.White;
+            this.HuyVeBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HuyVeBtn.Click += new System.EventHandler(this.HuyVeBtn_Click);
             // 
-            // label1
+            // BanVeBtn
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(23, 12);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 24);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Doanh thu";
+            this.BanVeBtn.Active = false;
+            this.BanVeBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(230)))));
+            this.BanVeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.BanVeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BanVeBtn.BorderRadius = 0;
+            this.BanVeBtn.ButtonText = "Bán vé";
+            this.BanVeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BanVeBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.BanVeBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BanVeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BanVeBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.BanVeBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("BanVeBtn.Iconimage")));
+            this.BanVeBtn.Iconimage_right = null;
+            this.BanVeBtn.Iconimage_right_Selected = null;
+            this.BanVeBtn.Iconimage_Selected = null;
+            this.BanVeBtn.IconMarginLeft = 10;
+            this.BanVeBtn.IconMarginRight = 10;
+            this.BanVeBtn.IconRightVisible = true;
+            this.BanVeBtn.IconRightZoom = 90D;
+            this.BanVeBtn.IconVisible = true;
+            this.BanVeBtn.IconZoom = 80D;
+            this.BanVeBtn.IsTab = false;
+            this.BanVeBtn.Location = new System.Drawing.Point(0, 57);
+            this.BanVeBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BanVeBtn.Name = "BanVeBtn";
+            this.BanVeBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.BanVeBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.BanVeBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.BanVeBtn.selected = false;
+            this.BanVeBtn.Size = new System.Drawing.Size(214, 57);
+            this.BanVeBtn.TabIndex = 8;
+            this.BanVeBtn.Text = "Bán vé";
+            this.BanVeBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BanVeBtn.Textcolor = System.Drawing.Color.White;
+            this.BanVeBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BanVeBtn.Click += new System.EventHandler(this.BanVeBtn_Click);
             // 
-            // DoanhThuLabel
+            // HomeBtn
             // 
-            this.DoanhThuLabel.AutoSize = true;
-            this.DoanhThuLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DoanhThuLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.DoanhThuLabel.Location = new System.Drawing.Point(23, 12);
-            this.DoanhThuLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.DoanhThuLabel.Name = "DoanhThuLabel";
-            this.DoanhThuLabel.Size = new System.Drawing.Size(97, 24);
-            this.DoanhThuLabel.TabIndex = 1;
-            this.DoanhThuLabel.Text = "Doanh thu";
-            this.DoanhThuLabel.Click += new System.EventHandler(this.DoanhThuPanel_Click);
-            // 
-            // TTKhachHangPanel
-            // 
-            this.TTKhachHangPanel.Controls.Add(this.TTKhachHangLabel);
-            this.TTKhachHangPanel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TTKhachHangPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TTKhachHangPanel.Location = new System.Drawing.Point(0, 212);
-            this.TTKhachHangPanel.Margin = new System.Windows.Forms.Padding(2);
-            this.TTKhachHangPanel.Name = "TTKhachHangPanel";
-            this.TTKhachHangPanel.Size = new System.Drawing.Size(133, 53);
-            this.TTKhachHangPanel.TabIndex = 4;
-            this.TTKhachHangPanel.Click += new System.EventHandler(this.TTKhachHangPanel_Click);
-            // 
-            // TTKhachHangLabel
-            // 
-            this.TTKhachHangLabel.AutoSize = true;
-            this.TTKhachHangLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TTKhachHangLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.TTKhachHangLabel.Location = new System.Drawing.Point(3, 13);
-            this.TTKhachHangLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.TTKhachHangLabel.Name = "TTKhachHangLabel";
-            this.TTKhachHangLabel.Size = new System.Drawing.Size(138, 24);
-            this.TTKhachHangLabel.TabIndex = 1;
-            this.TTKhachHangLabel.Text = "TT khách hàng";
-            this.TTKhachHangLabel.Click += new System.EventHandler(this.TTKhachHangPanel_Click);
-            // 
-            // HuyVePanel
-            // 
-            this.HuyVePanel.Controls.Add(this.HuyVeLabel);
-            this.HuyVePanel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.HuyVePanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.HuyVePanel.Location = new System.Drawing.Point(0, 159);
-            this.HuyVePanel.Margin = new System.Windows.Forms.Padding(2);
-            this.HuyVePanel.Name = "HuyVePanel";
-            this.HuyVePanel.Size = new System.Drawing.Size(133, 53);
-            this.HuyVePanel.TabIndex = 3;
-            this.HuyVePanel.Click += new System.EventHandler(this.HuyVePanel_Click);
-            // 
-            // HuyVeLabel
-            // 
-            this.HuyVeLabel.AutoSize = true;
-            this.HuyVeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HuyVeLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.HuyVeLabel.Location = new System.Drawing.Point(38, 15);
-            this.HuyVeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.HuyVeLabel.Name = "HuyVeLabel";
-            this.HuyVeLabel.Size = new System.Drawing.Size(69, 24);
-            this.HuyVeLabel.TabIndex = 1;
-            this.HuyVeLabel.Text = "Hủy vé";
-            this.HuyVeLabel.Click += new System.EventHandler(this.HuyVePanel_Click);
-            // 
-            // BanVePanel
-            // 
-            this.BanVePanel.Controls.Add(this.BanVeLabel);
-            this.BanVePanel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BanVePanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BanVePanel.Location = new System.Drawing.Point(0, 106);
-            this.BanVePanel.Margin = new System.Windows.Forms.Padding(2);
-            this.BanVePanel.Name = "BanVePanel";
-            this.BanVePanel.Size = new System.Drawing.Size(133, 53);
-            this.BanVePanel.TabIndex = 2;
-            this.BanVePanel.Click += new System.EventHandler(this.BanVePanel_Click);
-            // 
-            // BanVeLabel
-            // 
-            this.BanVeLabel.AutoSize = true;
-            this.BanVeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BanVeLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.BanVeLabel.Location = new System.Drawing.Point(37, 15);
-            this.BanVeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.BanVeLabel.Name = "BanVeLabel";
-            this.BanVeLabel.Size = new System.Drawing.Size(68, 24);
-            this.BanVeLabel.TabIndex = 1;
-            this.BanVeLabel.Text = "Bán vé";
-            this.BanVeLabel.Click += new System.EventHandler(this.BanVePanel_Click);
-            // 
-            // ThongTinPanel
-            // 
-            this.ThongTinPanel.Controls.Add(this.ThongTinLabel);
-            this.ThongTinPanel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ThongTinPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ThongTinPanel.Location = new System.Drawing.Point(0, 53);
-            this.ThongTinPanel.Margin = new System.Windows.Forms.Padding(2);
-            this.ThongTinPanel.Name = "ThongTinPanel";
-            this.ThongTinPanel.Size = new System.Drawing.Size(133, 53);
-            this.ThongTinPanel.TabIndex = 1;
-            this.ThongTinPanel.Click += new System.EventHandler(this.ThongTinPanel_Click);
-            // 
-            // ThongTinLabel
-            // 
-            this.ThongTinLabel.AutoSize = true;
-            this.ThongTinLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThongTinLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.ThongTinLabel.Location = new System.Drawing.Point(28, 14);
-            this.ThongTinLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.ThongTinLabel.Name = "ThongTinLabel";
-            this.ThongTinLabel.Size = new System.Drawing.Size(90, 24);
-            this.ThongTinLabel.TabIndex = 1;
-            this.ThongTinLabel.Text = "Thông tin";
-            this.ThongTinLabel.Click += new System.EventHandler(this.ThongTinPanel_Click);
-            // 
-            // HomePanel
-            // 
-            this.HomePanel.Controls.Add(this.HomeLabel);
-            this.HomePanel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.HomePanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.HomePanel.Location = new System.Drawing.Point(0, 0);
-            this.HomePanel.Margin = new System.Windows.Forms.Padding(2);
-            this.HomePanel.Name = "HomePanel";
-            this.HomePanel.Size = new System.Drawing.Size(133, 53);
-            this.HomePanel.TabIndex = 0;
-            this.HomePanel.Click += new System.EventHandler(this.HomePanel_Click);
-            // 
-            // HomeLabel
-            // 
-            this.HomeLabel.AutoSize = true;
-            this.HomeLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.HomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HomeLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.HomeLabel.Location = new System.Drawing.Point(25, 15);
-            this.HomeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.HomeLabel.Name = "HomeLabel";
-            this.HomeLabel.Size = new System.Drawing.Size(97, 24);
-            this.HomeLabel.TabIndex = 0;
-            this.HomeLabel.Text = "Trang chủ";
-            this.HomeLabel.Click += new System.EventHandler(this.HomePanel_Click);
+            this.HomeBtn.Active = false;
+            this.HomeBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(230)))));
+            this.HomeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.HomeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.HomeBtn.BorderRadius = 0;
+            this.HomeBtn.ButtonText = "Trang chủ";
+            this.HomeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.HomeBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.HomeBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.HomeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HomeBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.HomeBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("HomeBtn.Iconimage")));
+            this.HomeBtn.Iconimage_right = null;
+            this.HomeBtn.Iconimage_right_Selected = null;
+            this.HomeBtn.Iconimage_Selected = null;
+            this.HomeBtn.IconMarginLeft = 10;
+            this.HomeBtn.IconMarginRight = 10;
+            this.HomeBtn.IconRightVisible = true;
+            this.HomeBtn.IconRightZoom = 90D;
+            this.HomeBtn.IconVisible = true;
+            this.HomeBtn.IconZoom = 80D;
+            this.HomeBtn.IsTab = false;
+            this.HomeBtn.Location = new System.Drawing.Point(0, 0);
+            this.HomeBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HomeBtn.Name = "HomeBtn";
+            this.HomeBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.HomeBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.HomeBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.HomeBtn.selected = false;
+            this.HomeBtn.Size = new System.Drawing.Size(214, 57);
+            this.HomeBtn.TabIndex = 7;
+            this.HomeBtn.Text = "Trang chủ";
+            this.HomeBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.HomeBtn.Textcolor = System.Drawing.Color.White;
+            this.HomeBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
             // 
             // ContentPanel
             // 
-            this.ContentPanel.Controls.Add(this.ucttKhachHang);
-            this.ContentPanel.Controls.Add(this.ucThongTin);
+            this.ContentPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.ContentPanel.Controls.Add(this.ucTimKiemKH1);
+            this.ContentPanel.Controls.Add(this.ucChinhSuaVe);
+            this.ContentPanel.Controls.Add(this.ucTimVe1);
+            this.ContentPanel.Controls.Add(this.ucKhachHang);
             this.ContentPanel.Controls.Add(this.ucHuyVe);
-            this.ContentPanel.Controls.Add(this.ucDoanhThu);
             this.ContentPanel.Controls.Add(this.ucBanve);
-            this.ContentPanel.Controls.Add(this.home1);
             this.ContentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ContentPanel.Location = new System.Drawing.Point(133, 37);
+            this.ContentPanel.Location = new System.Drawing.Point(214, 46);
             this.ContentPanel.Margin = new System.Windows.Forms.Padding(2);
             this.ContentPanel.Name = "ContentPanel";
-            this.ContentPanel.Size = new System.Drawing.Size(765, 467);
+            this.ContentPanel.Size = new System.Drawing.Size(1086, 604);
             this.ContentPanel.TabIndex = 2;
             // 
-            // ucttKhachHang
+            // ucChinhSuaVe
             // 
-            this.ucttKhachHang.Location = new System.Drawing.Point(0, 0);
-            this.ucttKhachHang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ucttKhachHang.Name = "ucttKhachHang";
-            this.ucttKhachHang.Size = new System.Drawing.Size(766, 467);
-            this.ucttKhachHang.TabIndex = 6;
+            this.ucChinhSuaVe.Location = new System.Drawing.Point(-2, 0);
+            this.ucChinhSuaVe.Margin = new System.Windows.Forms.Padding(2);
+            this.ucChinhSuaVe.Name = "ucChinhSuaVe";
+            this.ucChinhSuaVe.Size = new System.Drawing.Size(1086, 602);
+            this.ucChinhSuaVe.TabIndex = 9;
             // 
-            // ucThongTin
+            // ucTimVe1
             // 
-            this.ucThongTin.Location = new System.Drawing.Point(0, 0);
-            this.ucThongTin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ucThongTin.Name = "ucThongTin";
-            this.ucThongTin.Size = new System.Drawing.Size(766, 467);
-            this.ucThongTin.TabIndex = 5;
+            this.ucTimVe1.Location = new System.Drawing.Point(0, 0);
+            this.ucTimVe1.Name = "ucTimVe1";
+            this.ucTimVe1.Size = new System.Drawing.Size(1086, 602);
+            this.ucTimVe1.TabIndex = 8;
+            // 
+            // ucKhachHang
+            // 
+            this.ucKhachHang.Location = new System.Drawing.Point(2, 0);
+            this.ucKhachHang.Margin = new System.Windows.Forms.Padding(2);
+            this.ucKhachHang.Name = "ucKhachHang";
+            this.ucKhachHang.Size = new System.Drawing.Size(1086, 602);
+            this.ucKhachHang.TabIndex = 7;
             // 
             // ucHuyVe
             // 
-            this.ucHuyVe.Location = new System.Drawing.Point(0, 0);
+            this.ucHuyVe.Location = new System.Drawing.Point(2, 0);
             this.ucHuyVe.Margin = new System.Windows.Forms.Padding(2);
             this.ucHuyVe.Name = "ucHuyVe";
-            this.ucHuyVe.Size = new System.Drawing.Size(766, 467);
+            this.ucHuyVe.Size = new System.Drawing.Size(1086, 602);
             this.ucHuyVe.TabIndex = 4;
-            // 
-            // ucDoanhThu
-            // 
-            this.ucDoanhThu.Location = new System.Drawing.Point(0, 0);
-            this.ucDoanhThu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ucDoanhThu.Name = "ucDoanhThu";
-            this.ucDoanhThu.Size = new System.Drawing.Size(766, 467);
-            this.ucDoanhThu.TabIndex = 3;
             // 
             // ucBanve
             // 
-            this.ucBanve.Location = new System.Drawing.Point(0, 0);
+            this.ucBanve.Location = new System.Drawing.Point(2, 2);
             this.ucBanve.Margin = new System.Windows.Forms.Padding(2);
             this.ucBanve.Name = "ucBanve";
-            this.ucBanve.Size = new System.Drawing.Size(766, 467);
+            this.ucBanve.Size = new System.Drawing.Size(1082, 600);
             this.ucBanve.TabIndex = 2;
             // 
-            // home1
+            // ucTimKiemKH1
             // 
-            this.home1.BackColor = System.Drawing.Color.White;
-            this.home1.Location = new System.Drawing.Point(0, 0);
-            this.home1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.home1.Name = "home1";
-            this.home1.Size = new System.Drawing.Size(766, 467);
-            this.home1.TabIndex = 1;
+            this.ucTimKiemKH1.Location = new System.Drawing.Point(-2, 2);
+            this.ucTimKiemKH1.Margin = new System.Windows.Forms.Padding(2);
+            this.ucTimKiemKH1.Name = "ucTimKiemKH1";
+            this.ucTimKiemKH1.Size = new System.Drawing.Size(1086, 602);
+            this.ucTimKiemKH1.TabIndex = 10;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(898, 504);
+            this.ClientSize = new System.Drawing.Size(1300, 650);
             this.ControlBox = false;
             this.Controls.Add(this.ContentPanel);
             this.Controls.Add(this.panel2);
@@ -475,25 +507,9 @@
             this.ShowInTaskbar = false;
             this.Text = "Main";
             this.Header.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.MinisizeBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExitBtn)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.TimVepanel.ResumeLayout(false);
-            this.TimVepanel.PerformLayout();
-            this.TimKHpanel.ResumeLayout(false);
-            this.TimKHpanel.PerformLayout();
-            this.DoanhThuPanel.ResumeLayout(false);
-            this.DoanhThuPanel.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.TTKhachHangPanel.ResumeLayout(false);
-            this.TTKhachHangPanel.PerformLayout();
-            this.HuyVePanel.ResumeLayout(false);
-            this.HuyVePanel.PerformLayout();
-            this.BanVePanel.ResumeLayout(false);
-            this.BanVePanel.PerformLayout();
-            this.ThongTinPanel.ResumeLayout(false);
-            this.ThongTinPanel.PerformLayout();
-            this.HomePanel.ResumeLayout(false);
-            this.HomePanel.PerformLayout();
             this.ContentPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -503,33 +519,24 @@
 
         private System.Windows.Forms.Panel Header;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel DoanhThuPanel;
-        private System.Windows.Forms.Panel TTKhachHangPanel;
-        private System.Windows.Forms.Panel HuyVePanel;
-        private System.Windows.Forms.Panel BanVePanel;
-        private System.Windows.Forms.Panel ThongTinPanel;
-        private System.Windows.Forms.Panel HomePanel;
         private System.Windows.Forms.Panel ContentPanel;
-        private System.Windows.Forms.Label HomeLabel;
-        private System.Windows.Forms.Label DoanhThuLabel;
-        private System.Windows.Forms.Label TTKhachHangLabel;
-        private System.Windows.Forms.Label HuyVeLabel;
-        private System.Windows.Forms.Label BanVeLabel;
-        private System.Windows.Forms.Label ThongTinLabel;
-        private Components.Home1 home1;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton ExitBtn;
         private Components.UCBanve ucBanve;
-        private Components.UCTTKhachHang ucttKhachHang;
-        private Components.UCThongTincs ucThongTin;
         private Components.UCHuyVe ucHuyVe;
-        private Components.UCDoanhThu ucDoanhThu;
         private Components.UCTimKiemKH ucTimKiemKH;
         private Components.UCTimVe ucTimVe;
-        private System.Windows.Forms.Panel TimVepanel;
-        private System.Windows.Forms.Label TimVeLabel;
-        private System.Windows.Forms.Panel TimKHpanel;
-        private System.Windows.Forms.Label TimKiemKHLabel;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
+        private Bunifu.Framework.UI.BunifuImageButton MinisizeBtn;
+        private Bunifu.Framework.UI.BunifuImageButton ExitBtn;
+        private Bunifu.Framework.UI.BunifuFlatButton HomeBtn;
+        private Bunifu.Framework.UI.BunifuFlatButton DoanhThuBtn;
+        private Bunifu.Framework.UI.BunifuFlatButton TimKHBtn;
+        private Bunifu.Framework.UI.BunifuFlatButton TimVeBtn;
+        private Bunifu.Framework.UI.BunifuFlatButton ChinhSuaVeBtn;
+        private Bunifu.Framework.UI.BunifuFlatButton KhachHangBtn;
+        private Bunifu.Framework.UI.BunifuFlatButton HuyVeBtn;
+        private Bunifu.Framework.UI.BunifuFlatButton BanVeBtn;
+        private Components.ComponentsKhachHang.UCKhachHang ucKhachHang;
+        private Components.UCTimVe ucTimVe1;
+        private Components.ComponentsChinhSuaVe.UCChinhSuaVe ucChinhSuaVe;
+        private Components.UCTimKiemKH ucTimKiemKH1;
     }
 }

@@ -120,12 +120,13 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="NextStepBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAFEAAAAtCAYAAADWb4eMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD9SURBVGhD7duxbQJBFADRTYA2XIoroC24Whw7dSk0QOQG
-        7rygCU8IaRzOlyZZ/ejppzuaf5rtcvpYl8PXthy3eq/1evh+uEE4xnz42VusF12fkDcI5yXuLdVbQRii
-        CcIQTRCGaIIwRBOEIZogDNEEYYgmCEM0QRiiCcIQTRCGaIIwRBOEIZogDNEEYYgmCEM0QRiiCcIQTRCG
-        aIIwRBOEIZogDNEEYYgmCEM0QRiiCcIQTRCGaIIwRBOEIZogDNEEYYgmCEM0QRiiCcIQTRCGaIIwRBOE
-        IZogDNEE4fMfy21voV433X4hnJd4OX3Oh/veYu33AFyX4xnCxs0Yf4p21laf5rlfAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAF0AAAAtCAYAAADMU2cCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEDSURBVHhe7duhbQNBFADRJbbbSCmpIG3ZV0twaEpxA0Fp
+        4C5ra+DB84TMl4asPnr6dEfzT7NdL2/rcvrclvNWr2m9nb4ezpCPMR++9xbrwG5P+Dvk89L3luolQR66
+        GeShm0EeuhnkoZtBHroZ5KGbQR66GeShm0EeuhnkoZtBHroZ5KGbQR66GeShm0EeuhnkoZtBHroZ5KGb
+        QR66GeShm0EeuhnkoZtBHroZ5KGbQR66GeShm0EeuhnkoZtBHroZ5KGbQR66GeShm0EeuhnkoZtBHroZ
+        5KGbQR66GeShm0H+/Ed631uoY5vOv5DPS79e3ufDz95iHdMDfF3OH5A37ozxB9wK+tWW2XZpAAAAAElF
+        TkSuQmCC
 </value>
   </data>
 </root>

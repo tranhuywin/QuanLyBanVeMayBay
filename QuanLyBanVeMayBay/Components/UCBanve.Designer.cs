@@ -40,13 +40,13 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.panel1 = new System.Windows.Forms.Panel();
             this.ContentBanVePanel = new System.Windows.Forms.Panel();
-            this.step3 = new QuanLyBanVeMayBay.Components.ComponentsBanVe.Step3();
-            this.step2 = new QuanLyBanVeMayBay.Components.ComponentsBanVe.Step2();
-            this.step1 = new QuanLyBanVeMayBay.Components.ComponentsBanVe.Step1();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Step3Btn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Step2Btn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Step1Btn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.step11 = new QuanLyBanVeMayBay.Components.ComponentsBanVe.Step1();
+            this.step21 = new QuanLyBanVeMayBay.Components.ComponentsBanVe.Step2();
+            this.step31 = new QuanLyBanVeMayBay.Components.ComponentsBanVe.Step3();
             this.panel1.SuspendLayout();
             this.ContentBanVePanel.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -59,43 +59,19 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(766, 467);
+            this.panel1.Size = new System.Drawing.Size(1086, 602);
             this.panel1.TabIndex = 0;
             // 
             // ContentBanVePanel
             // 
-            this.ContentBanVePanel.Controls.Add(this.step3);
-            this.ContentBanVePanel.Controls.Add(this.step2);
-            this.ContentBanVePanel.Controls.Add(this.step1);
+            this.ContentBanVePanel.Controls.Add(this.step11);
+            this.ContentBanVePanel.Controls.Add(this.step21);
+            this.ContentBanVePanel.Controls.Add(this.step31);
             this.ContentBanVePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ContentBanVePanel.Location = new System.Drawing.Point(0, 47);
             this.ContentBanVePanel.Name = "ContentBanVePanel";
-            this.ContentBanVePanel.Size = new System.Drawing.Size(766, 420);
+            this.ContentBanVePanel.Size = new System.Drawing.Size(1086, 555);
             this.ContentBanVePanel.TabIndex = 1;
-            // 
-            // step3
-            // 
-            this.step3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.step3.Location = new System.Drawing.Point(0, 0);
-            this.step3.Name = "step3";
-            this.step3.Size = new System.Drawing.Size(766, 420);
-            this.step3.TabIndex = 2;
-            // 
-            // step2
-            // 
-            this.step2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.step2.Location = new System.Drawing.Point(0, 0);
-            this.step2.Name = "step2";
-            this.step2.Size = new System.Drawing.Size(766, 420);
-            this.step2.TabIndex = 1;
-            // 
-            // step1
-            // 
-            this.step1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.step1.Location = new System.Drawing.Point(0, 0);
-            this.step1.Name = "step1";
-            this.step1.Size = new System.Drawing.Size(766, 420);
-            this.step1.TabIndex = 0;
             // 
             // panel2
             // 
@@ -105,7 +81,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(766, 47);
+            this.panel2.Size = new System.Drawing.Size(1086, 47);
             this.panel2.TabIndex = 0;
             // 
             // Step3Btn
@@ -300,6 +276,27 @@
             this.Step1Btn.UseDefaultRadiusAndThickness = true;
             this.Step1Btn.Click += new System.EventHandler(this.Step1Btn_Click);
             // 
+            // step11
+            // 
+            this.step11.Location = new System.Drawing.Point(0, -2);
+            this.step11.Name = "step11";
+            this.step11.Size = new System.Drawing.Size(1086, 555);
+            this.step11.TabIndex = 2;
+            // 
+            // step21
+            // 
+            this.step21.Location = new System.Drawing.Point(3, 0);
+            this.step21.Name = "step21";
+            this.step21.Size = new System.Drawing.Size(1086, 555);
+            this.step21.TabIndex = 1;
+            // 
+            // step31
+            // 
+            this.step31.Location = new System.Drawing.Point(0, -2);
+            this.step31.Name = "step31";
+            this.step31.Size = new System.Drawing.Size(1086, 555);
+            this.step31.TabIndex = 0;
+            // 
             // UCBanve
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -307,7 +304,7 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UCBanve";
-            this.Size = new System.Drawing.Size(766, 467);
+            this.Size = new System.Drawing.Size(1086, 602);
             this.Load += new System.EventHandler(this.UCBanve_Load);
             this.panel1.ResumeLayout(false);
             this.ContentBanVePanel.ResumeLayout(false);
@@ -324,8 +321,8 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Step3Btn;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Step2Btn;
         private System.Windows.Forms.Panel ContentBanVePanel;
-        private ComponentsBanVe.Step1 step1;
-        private ComponentsBanVe.Step2 step2;
-        private ComponentsBanVe.Step3 step3;
+        private ComponentsBanVe.Step1 step11;
+        private ComponentsBanVe.Step2 step21;
+        private ComponentsBanVe.Step3 step31;
     }
 }

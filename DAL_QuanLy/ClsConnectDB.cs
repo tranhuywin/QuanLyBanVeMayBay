@@ -8,10 +8,9 @@ using System.Data.SqlClient;
 
 namespace DAL_QuanLy
 {
-    class ClsConnectDB
+    public class ClsConnectDB
     {
-        //www.c-sharpcorner.com/UploadFile/f26fb0/connection-class-in-C-Sharp link Connection class in C#
-        string ConnectionString = "";
+        string ConnectionString = Properties.Settings.Default.ConnectionString;
         SqlConnection con;
         public void OpenConection()
         {
@@ -27,11 +26,26 @@ namespace DAL_QuanLy
             SqlCommand cmd = new SqlCommand(Query_, con);
             cmd.ExecuteNonQuery();
         }
+        public void ExecuteQueriesStoredProcedure(SqlCommand cmd, string CommandText)
+        {
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = CommandText;
+            cmd.ExecuteNonQuery();
+        }
         public SqlDataReader DataReader(string Query_)
         {
             SqlCommand cmd = new SqlCommand(Query_, con);
             SqlDataReader dr = cmd.ExecuteReader();
             return dr;
+        }
+        public SqlDataReader DataReaderStoredProcedure(SqlCommand cmd, string CommandText)
+        {
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = CommandText;
+            SqlDataReader dta = cmd.ExecuteReader();
+            return dta;
         }
         public object ShowDataInGridView(string Query_)
         {
@@ -40,6 +54,10 @@ namespace DAL_QuanLy
             dr.Fill(ds);
             object dataum = ds.Tables[0];
             return dataum;
+        }
+        public object ShowDataInGridViewStoredProcedure(SqlCommand cmd, string CommandText)
+        {
+            return 1;
         }
     }
 }
