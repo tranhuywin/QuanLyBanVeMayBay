@@ -42,12 +42,12 @@
             this.BanVeBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.HomeBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ContentPanel = new System.Windows.Forms.Panel();
+            this.ucTimKiemKH1 = new QuanLyBanVeMayBay.Components.UCTimKiemKH();
             this.ucChinhSuaVe = new QuanLyBanVeMayBay.Components.ComponentsChinhSuaVe.UCChinhSuaVe();
             this.ucTimVe1 = new QuanLyBanVeMayBay.Components.UCTimVe();
             this.ucKhachHang = new QuanLyBanVeMayBay.Components.ComponentsKhachHang.UCKhachHang();
             this.ucHuyVe = new QuanLyBanVeMayBay.Components.UCHuyVe();
             this.ucBanve = new QuanLyBanVeMayBay.Components.UCBanve();
-            this.ucTimKiemKH1 = new QuanLyBanVeMayBay.Components.UCTimKiemKH();
             this.Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MinisizeBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExitBtn)).BeginInit();
@@ -442,6 +442,14 @@
             this.ContentPanel.Size = new System.Drawing.Size(1086, 604);
             this.ContentPanel.TabIndex = 2;
             // 
+            // ucTimKiemKH1
+            // 
+            this.ucTimKiemKH1.Location = new System.Drawing.Point(-2, 2);
+            this.ucTimKiemKH1.Margin = new System.Windows.Forms.Padding(2);
+            this.ucTimKiemKH1.Name = "ucTimKiemKH1";
+            this.ucTimKiemKH1.Size = new System.Drawing.Size(1086, 602);
+            this.ucTimKiemKH1.TabIndex = 10;
+            // 
             // ucChinhSuaVe
             // 
             this.ucChinhSuaVe.Location = new System.Drawing.Point(-2, 0);
@@ -480,14 +488,6 @@
             this.ucBanve.Name = "ucBanve";
             this.ucBanve.Size = new System.Drawing.Size(1082, 600);
             this.ucBanve.TabIndex = 2;
-            // 
-            // ucTimKiemKH1
-            // 
-            this.ucTimKiemKH1.Location = new System.Drawing.Point(-2, 2);
-            this.ucTimKiemKH1.Margin = new System.Windows.Forms.Padding(2);
-            this.ucTimKiemKH1.Name = "ucTimKiemKH1";
-            this.ucTimKiemKH1.Size = new System.Drawing.Size(1086, 602);
-            this.ucTimKiemKH1.TabIndex = 10;
             // 
             // Main
             // 

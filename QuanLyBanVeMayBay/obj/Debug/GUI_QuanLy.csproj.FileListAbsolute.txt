@@ -162,3 +162,6 @@ C:\Users\tranh\Desktop\QLBVMB_GiaoDien\QuanLyBanVeMayBay-master\QuanLyBanVeMayBa
 C:\Users\tranh\Desktop\QLBVMB_GiaoDien\QuanLyBanVeMayBay-master\QuanLyBanVeMayBay\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
 C:\Users\tranh\Desktop\QLBVMB_GiaoDien\QuanLyBanVeMayBay-master\QuanLyBanVeMayBay\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
 C:\Users\tranh\Desktop\QLBVMB_GiaoDien\QuanLyBanVeMayBay-master\QuanLyBanVeMayBay\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+C:\Users\tranh\Desktop\QLBVMB_GiaoDien\QuanLyBanVeMayBay-master\QuanLyBanVeMayBay\bin\Debug\DAL_QuanLy.dll
+C:\Users\tranh\Desktop\QLBVMB_GiaoDien\QuanLyBanVeMayBay-master\QuanLyBanVeMayBay\bin\Debug\DAL_QuanLy.pdb
+C:\Users\tranh\Desktop\QLBVMB_GiaoDien\QuanLyBanVeMayBay-master\QuanLyBanVeMayBay\bin\Debug\DAL_QuanLy.dll.config

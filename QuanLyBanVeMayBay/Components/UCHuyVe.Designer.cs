@@ -42,7 +42,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(766, 47);
+            this.panel1.Size = new System.Drawing.Size(1086, 47);
             this.panel1.TabIndex = 0;
             // 
             // bunifuCustomLabel1
@@ -62,14 +62,14 @@
             this.ContentDienTTPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ContentDienTTPanel.Location = new System.Drawing.Point(0, 47);
             this.ContentDienTTPanel.Name = "ContentDienTTPanel";
-            this.ContentDienTTPanel.Size = new System.Drawing.Size(766, 420);
+            this.ContentDienTTPanel.Size = new System.Drawing.Size(1086, 555);
             this.ContentDienTTPanel.TabIndex = 7;
             // 
             // DienThongTinKH
             // 
             this.DienThongTinKH.Location = new System.Drawing.Point(0, 0);
             this.DienThongTinKH.Name = "DienThongTinKH";
-            this.DienThongTinKH.Size = new System.Drawing.Size(766, 420);
+            this.DienThongTinKH.Size = new System.Drawing.Size(1086, 555);
             this.DienThongTinKH.TabIndex = 0;
             // 
             // UCHuyVe
@@ -80,7 +80,7 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UCHuyVe";
-            this.Size = new System.Drawing.Size(766, 467);
+            this.Size = new System.Drawing.Size(1086, 602);
             this.Load += new System.EventHandler(this.UCHuyVe_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
