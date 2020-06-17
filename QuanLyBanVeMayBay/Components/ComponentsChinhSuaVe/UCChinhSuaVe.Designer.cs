@@ -34,10 +34,14 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomTextbox1 = new Bunifu.Framework.BunifuCustomTextbox();
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.SearchBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.MaChuyenBayTxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,24 +49,13 @@
             // 
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(40, 28);
             this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(247, 26);
             this.bunifuCustomLabel1.TabIndex = 0;
             this.bunifuCustomLabel1.Text = "Chỉnh sửa chuyến bay";
-            // 
-            // bunifuCustomTextbox1
-            // 
-            this.bunifuCustomTextbox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
-            this.bunifuCustomTextbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomTextbox1.Location = new System.Drawing.Point(64, 77);
-            this.bunifuCustomTextbox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.bunifuCustomTextbox1.Name = "bunifuCustomTextbox1";
-            this.bunifuCustomTextbox1.Size = new System.Drawing.Size(176, 26);
-            this.bunifuCustomTextbox1.TabIndex = 2;
-            this.bunifuCustomTextbox1.Text = "Mã chuyến bay";
-            this.bunifuCustomTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // bunifuCustomDataGrid1
             // 
@@ -85,7 +78,7 @@
             this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(28, 120);
-            this.bunifuCustomDataGrid1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuCustomDataGrid1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
             this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.bunifuCustomDataGrid1.RowHeadersWidth = 51;
@@ -158,15 +151,88 @@
             this.SearchBtn.UseDefaultRadiusAndThickness = true;
             this.SearchBtn.Click += new System.EventHandler(this.SearchBtn_Click);
             // 
+            // MaChuyenBayTxt
+            // 
+            this.MaChuyenBayTxt.AcceptsReturn = false;
+            this.MaChuyenBayTxt.AcceptsTab = false;
+            this.MaChuyenBayTxt.AnimationSpeed = 200;
+            this.MaChuyenBayTxt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.MaChuyenBayTxt.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.MaChuyenBayTxt.BackColor = System.Drawing.Color.Transparent;
+            this.MaChuyenBayTxt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("MaChuyenBayTxt.BackgroundImage")));
+            this.MaChuyenBayTxt.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
+            this.MaChuyenBayTxt.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.MaChuyenBayTxt.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
+            this.MaChuyenBayTxt.BorderColorIdle = System.Drawing.Color.Silver;
+            this.MaChuyenBayTxt.BorderRadius = 1;
+            this.MaChuyenBayTxt.BorderThickness = 1;
+            this.MaChuyenBayTxt.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.MaChuyenBayTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.MaChuyenBayTxt.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.MaChuyenBayTxt.DefaultText = "";
+            this.MaChuyenBayTxt.FillColor = System.Drawing.Color.White;
+            this.MaChuyenBayTxt.HideSelection = true;
+            this.MaChuyenBayTxt.IconLeft = null;
+            this.MaChuyenBayTxt.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.MaChuyenBayTxt.IconPadding = 10;
+            this.MaChuyenBayTxt.IconRight = null;
+            this.MaChuyenBayTxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.MaChuyenBayTxt.Lines = new string[0];
+            this.MaChuyenBayTxt.Location = new System.Drawing.Point(58, 75);
+            this.MaChuyenBayTxt.MaxLength = 32767;
+            this.MaChuyenBayTxt.MinimumSize = new System.Drawing.Size(100, 35);
+            this.MaChuyenBayTxt.Modified = false;
+            this.MaChuyenBayTxt.Multiline = false;
+            this.MaChuyenBayTxt.Name = "MaChuyenBayTxt";
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.MaChuyenBayTxt.OnActiveState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Empty;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.MaChuyenBayTxt.OnDisabledState = stateProperties4;
+            stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.MaChuyenBayTxt.OnHoverState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.Silver;
+            stateProperties6.FillColor = System.Drawing.Color.White;
+            stateProperties6.ForeColor = System.Drawing.Color.Empty;
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.MaChuyenBayTxt.OnIdleState = stateProperties6;
+            this.MaChuyenBayTxt.PasswordChar = '\0';
+            this.MaChuyenBayTxt.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.MaChuyenBayTxt.PlaceholderText = "Mã chuyến bay";
+            this.MaChuyenBayTxt.ReadOnly = false;
+            this.MaChuyenBayTxt.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.MaChuyenBayTxt.SelectedText = "";
+            this.MaChuyenBayTxt.SelectionLength = 0;
+            this.MaChuyenBayTxt.SelectionStart = 0;
+            this.MaChuyenBayTxt.ShortcutsEnabled = true;
+            this.MaChuyenBayTxt.Size = new System.Drawing.Size(182, 35);
+            this.MaChuyenBayTxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
+            this.MaChuyenBayTxt.TabIndex = 22;
+            this.MaChuyenBayTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.MaChuyenBayTxt.TextMarginBottom = 0;
+            this.MaChuyenBayTxt.TextMarginLeft = 5;
+            this.MaChuyenBayTxt.TextMarginTop = 0;
+            this.MaChuyenBayTxt.TextPlaceholder = "Mã chuyến bay";
+            this.MaChuyenBayTxt.UseSystemPasswordChar = false;
+            this.MaChuyenBayTxt.WordWrap = true;
+            // 
             // UCChinhSuaVe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.MaChuyenBayTxt);
             this.Controls.Add(this.SearchBtn);
             this.Controls.Add(this.bunifuCustomDataGrid1);
-            this.Controls.Add(this.bunifuCustomTextbox1);
             this.Controls.Add(this.bunifuCustomLabel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UCChinhSuaVe";
             this.Size = new System.Drawing.Size(1086, 602);
             this.Load += new System.EventHandler(this.UCChinhSuaVe_Load);
@@ -179,8 +245,8 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private Bunifu.Framework.BunifuCustomTextbox bunifuCustomTextbox1;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton SearchBtn;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox MaChuyenBayTxt;
     }
 }

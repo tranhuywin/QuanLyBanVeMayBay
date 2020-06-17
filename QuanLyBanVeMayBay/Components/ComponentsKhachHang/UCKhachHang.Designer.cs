@@ -37,12 +37,20 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             this.SearchBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.bunifuCustomTextbox1 = new Bunifu.Framework.BunifuCustomTextbox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomTextbox2 = new Bunifu.Framework.BunifuCustomTextbox();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.HoTenKHTxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.CMNDTxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,7 +91,7 @@
             this.SearchBtn.IdleIconLeftImage = null;
             this.SearchBtn.IdleIconRightImage = null;
             this.SearchBtn.IndicateFocus = false;
-            this.SearchBtn.Location = new System.Drawing.Point(473, 80);
+            this.SearchBtn.Location = new System.Drawing.Point(874, 80);
             this.SearchBtn.Name = "SearchBtn";
             stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(51)))));
             stateProperties1.BorderRadius = 3;
@@ -130,50 +138,27 @@
             this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
             this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(60, 125);
-            this.bunifuCustomDataGrid1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(21, 117);
+            this.bunifuCustomDataGrid1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
             this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.bunifuCustomDataGrid1.RowHeadersWidth = 51;
             this.bunifuCustomDataGrid1.RowTemplate.Height = 24;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(664, 309);
+            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(1041, 470);
             this.bunifuCustomDataGrid1.TabIndex = 11;
             this.bunifuCustomDataGrid1.Visible = false;
-            // 
-            // bunifuCustomTextbox1
-            // 
-            this.bunifuCustomTextbox1.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomTextbox1.Location = new System.Drawing.Point(60, 85);
-            this.bunifuCustomTextbox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.bunifuCustomTextbox1.Name = "bunifuCustomTextbox1";
-            this.bunifuCustomTextbox1.Size = new System.Drawing.Size(176, 23);
-            this.bunifuCustomTextbox1.TabIndex = 10;
-            this.bunifuCustomTextbox1.Text = "Họ và Tên";
-            this.bunifuCustomTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(40, 32);
             this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(347, 26);
             this.bunifuCustomLabel1.TabIndex = 9;
             this.bunifuCustomLabel1.Text = "Chỉnh sửa thông tin khách hàng";
-            // 
-            // bunifuCustomTextbox2
-            // 
-            this.bunifuCustomTextbox2.BorderColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomTextbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomTextbox2.Location = new System.Drawing.Point(279, 85);
-            this.bunifuCustomTextbox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.bunifuCustomTextbox2.Name = "bunifuCustomTextbox2";
-            this.bunifuCustomTextbox2.Size = new System.Drawing.Size(124, 23);
-            this.bunifuCustomTextbox2.TabIndex = 13;
-            this.bunifuCustomTextbox2.Text = "CMND";
-            this.bunifuCustomTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // bunifuButton1
             // 
@@ -212,7 +197,7 @@
             this.bunifuButton1.IdleIconLeftImage = null;
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.IndicateFocus = false;
-            this.bunifuButton1.Location = new System.Drawing.Point(582, 80);
+            this.bunifuButton1.Location = new System.Drawing.Point(983, 80);
             this.bunifuButton1.Name = "bunifuButton1";
             stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(51)))));
             stateProperties3.BorderRadius = 3;
@@ -238,17 +223,163 @@
             this.bunifuButton1.TextMarginLeft = 0;
             this.bunifuButton1.UseDefaultRadiusAndThickness = true;
             // 
+            // HoTenKHTxt
+            // 
+            this.HoTenKHTxt.AcceptsReturn = false;
+            this.HoTenKHTxt.AcceptsTab = false;
+            this.HoTenKHTxt.AnimationSpeed = 200;
+            this.HoTenKHTxt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.HoTenKHTxt.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.HoTenKHTxt.BackColor = System.Drawing.Color.Transparent;
+            this.HoTenKHTxt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HoTenKHTxt.BackgroundImage")));
+            this.HoTenKHTxt.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
+            this.HoTenKHTxt.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.HoTenKHTxt.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
+            this.HoTenKHTxt.BorderColorIdle = System.Drawing.Color.Silver;
+            this.HoTenKHTxt.BorderRadius = 1;
+            this.HoTenKHTxt.BorderThickness = 1;
+            this.HoTenKHTxt.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.HoTenKHTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.HoTenKHTxt.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.HoTenKHTxt.DefaultText = "";
+            this.HoTenKHTxt.FillColor = System.Drawing.Color.White;
+            this.HoTenKHTxt.HideSelection = true;
+            this.HoTenKHTxt.IconLeft = null;
+            this.HoTenKHTxt.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.HoTenKHTxt.IconPadding = 10;
+            this.HoTenKHTxt.IconRight = null;
+            this.HoTenKHTxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.HoTenKHTxt.Lines = new string[0];
+            this.HoTenKHTxt.Location = new System.Drawing.Point(21, 73);
+            this.HoTenKHTxt.MaxLength = 32767;
+            this.HoTenKHTxt.MinimumSize = new System.Drawing.Size(100, 35);
+            this.HoTenKHTxt.Modified = false;
+            this.HoTenKHTxt.Multiline = false;
+            this.HoTenKHTxt.Name = "HoTenKHTxt";
+            stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.HoTenKHTxt.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.Empty;
+            stateProperties6.FillColor = System.Drawing.Color.White;
+            stateProperties6.ForeColor = System.Drawing.Color.Empty;
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.HoTenKHTxt.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.HoTenKHTxt.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.Silver;
+            stateProperties8.FillColor = System.Drawing.Color.White;
+            stateProperties8.ForeColor = System.Drawing.Color.Empty;
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.HoTenKHTxt.OnIdleState = stateProperties8;
+            this.HoTenKHTxt.PasswordChar = '\0';
+            this.HoTenKHTxt.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.HoTenKHTxt.PlaceholderText = "Họ tên của khách hàng";
+            this.HoTenKHTxt.ReadOnly = false;
+            this.HoTenKHTxt.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.HoTenKHTxt.SelectedText = "";
+            this.HoTenKHTxt.SelectionLength = 0;
+            this.HoTenKHTxt.SelectionStart = 0;
+            this.HoTenKHTxt.ShortcutsEnabled = true;
+            this.HoTenKHTxt.Size = new System.Drawing.Size(270, 35);
+            this.HoTenKHTxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
+            this.HoTenKHTxt.TabIndex = 23;
+            this.HoTenKHTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.HoTenKHTxt.TextMarginBottom = 0;
+            this.HoTenKHTxt.TextMarginLeft = 5;
+            this.HoTenKHTxt.TextMarginTop = 0;
+            this.HoTenKHTxt.TextPlaceholder = "Họ tên của khách hàng";
+            this.HoTenKHTxt.UseSystemPasswordChar = false;
+            this.HoTenKHTxt.WordWrap = true;
+            // 
+            // CMNDTxt
+            // 
+            this.CMNDTxt.AcceptsReturn = false;
+            this.CMNDTxt.AcceptsTab = false;
+            this.CMNDTxt.AnimationSpeed = 200;
+            this.CMNDTxt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.CMNDTxt.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.CMNDTxt.BackColor = System.Drawing.Color.Transparent;
+            this.CMNDTxt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CMNDTxt.BackgroundImage")));
+            this.CMNDTxt.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
+            this.CMNDTxt.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.CMNDTxt.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
+            this.CMNDTxt.BorderColorIdle = System.Drawing.Color.Silver;
+            this.CMNDTxt.BorderRadius = 1;
+            this.CMNDTxt.BorderThickness = 1;
+            this.CMNDTxt.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.CMNDTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.CMNDTxt.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.CMNDTxt.DefaultText = "";
+            this.CMNDTxt.FillColor = System.Drawing.Color.White;
+            this.CMNDTxt.HideSelection = true;
+            this.CMNDTxt.IconLeft = null;
+            this.CMNDTxt.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.CMNDTxt.IconPadding = 10;
+            this.CMNDTxt.IconRight = null;
+            this.CMNDTxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.CMNDTxt.Lines = new string[0];
+            this.CMNDTxt.Location = new System.Drawing.Point(355, 73);
+            this.CMNDTxt.MaxLength = 32767;
+            this.CMNDTxt.MinimumSize = new System.Drawing.Size(100, 35);
+            this.CMNDTxt.Modified = false;
+            this.CMNDTxt.Multiline = false;
+            this.CMNDTxt.Name = "CMNDTxt";
+            stateProperties9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
+            stateProperties9.FillColor = System.Drawing.Color.Empty;
+            stateProperties9.ForeColor = System.Drawing.Color.Empty;
+            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.CMNDTxt.OnActiveState = stateProperties9;
+            stateProperties10.BorderColor = System.Drawing.Color.Empty;
+            stateProperties10.FillColor = System.Drawing.Color.White;
+            stateProperties10.ForeColor = System.Drawing.Color.Empty;
+            stateProperties10.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.CMNDTxt.OnDisabledState = stateProperties10;
+            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
+            stateProperties11.FillColor = System.Drawing.Color.Empty;
+            stateProperties11.ForeColor = System.Drawing.Color.Empty;
+            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.CMNDTxt.OnHoverState = stateProperties11;
+            stateProperties12.BorderColor = System.Drawing.Color.Silver;
+            stateProperties12.FillColor = System.Drawing.Color.White;
+            stateProperties12.ForeColor = System.Drawing.Color.Empty;
+            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.CMNDTxt.OnIdleState = stateProperties12;
+            this.CMNDTxt.PasswordChar = '\0';
+            this.CMNDTxt.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.CMNDTxt.PlaceholderText = "Số chứng minh nhân dân khách hàng";
+            this.CMNDTxt.ReadOnly = false;
+            this.CMNDTxt.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.CMNDTxt.SelectedText = "";
+            this.CMNDTxt.SelectionLength = 0;
+            this.CMNDTxt.SelectionStart = 0;
+            this.CMNDTxt.ShortcutsEnabled = true;
+            this.CMNDTxt.Size = new System.Drawing.Size(270, 35);
+            this.CMNDTxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
+            this.CMNDTxt.TabIndex = 26;
+            this.CMNDTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.CMNDTxt.TextMarginBottom = 0;
+            this.CMNDTxt.TextMarginLeft = 5;
+            this.CMNDTxt.TextMarginTop = 0;
+            this.CMNDTxt.TextPlaceholder = "Số chứng minh nhân dân khách hàng";
+            this.CMNDTxt.UseSystemPasswordChar = false;
+            this.CMNDTxt.WordWrap = true;
+            // 
             // UCKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.CMNDTxt);
+            this.Controls.Add(this.HoTenKHTxt);
             this.Controls.Add(this.bunifuButton1);
-            this.Controls.Add(this.bunifuCustomTextbox2);
             this.Controls.Add(this.SearchBtn);
             this.Controls.Add(this.bunifuCustomDataGrid1);
-            this.Controls.Add(this.bunifuCustomTextbox1);
             this.Controls.Add(this.bunifuCustomLabel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UCKhachHang";
             this.Size = new System.Drawing.Size(1086, 602);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
@@ -261,9 +392,9 @@
 
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton SearchBtn;
         private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
-        private Bunifu.Framework.BunifuCustomTextbox bunifuCustomTextbox1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private Bunifu.Framework.BunifuCustomTextbox bunifuCustomTextbox2;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox HoTenKHTxt;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox CMNDTxt;
     }
 }

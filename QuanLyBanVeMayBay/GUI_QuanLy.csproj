@@ -169,12 +169,6 @@
     <Compile Include="Components\UCHuyVe.Designer.cs">
       <DependentUpon>UCHuyVe.cs</DependentUpon>
     </Compile>
-    <Compile Include="Components\UCThongTincs.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Components\UCThongTincs.Designer.cs">
-      <DependentUpon>UCThongTincs.cs</DependentUpon>
-    </Compile>
     <Compile Include="Components\UCTimKiemKH.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -239,9 +233,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Components\UCHuyVe.resx">
       <DependentUpon>UCHuyVe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Components\UCThongTincs.resx">
-      <DependentUpon>UCThongTincs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\UCTimKiemKH.resx">
       <DependentUpon>UCTimKiemKH.cs</DependentUpon>

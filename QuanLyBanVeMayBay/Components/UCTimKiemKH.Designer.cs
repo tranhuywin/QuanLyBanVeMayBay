@@ -38,6 +38,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
             this.label1.Location = new System.Drawing.Point(9, 7);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
@@ -58,7 +59,7 @@
             // TimKiemKH
             // 
             this.TimKiemKH.Location = new System.Drawing.Point(1, 2);
-            this.TimKiemKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TimKiemKH.Margin = new System.Windows.Forms.Padding(2);
             this.TimKiemKH.Name = "TimKiemKH";
             this.TimKiemKH.Size = new System.Drawing.Size(1084, 563);
             this.TimKiemKH.TabIndex = 2;

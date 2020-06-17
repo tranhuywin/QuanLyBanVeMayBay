@@ -117,4 +117,41 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="HoTenKHTxt.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAQ4AAAAjCAYAAABl9OT5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACpSURBVHhe7dSxDQIxAARB91+VXy6DMigAZMkJycMSz0iX
+        XAE7AP6y1nrMOV9mZnfbrTjZGGMfAN/sVpxsCAfwG+EAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEA
+        MuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAso9w
+        XNf13IeZ2d12K042AIox3tSk8/SOURg0AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="EmailTxt.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAQ4AAAAjCAYAAABl9OT5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACpSURBVHhe7dSxDQIxAARB91+VXy6DMigAZMkJycMSz0iX
+        XAE7AP6y1nrMOV9mZnfbrTjZGGMfAN/sVpxsCAfwG+EAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEA
+        MuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAso9w
+        XNf13IeZ2d12K042AIox3tSk8/SOURg0AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="SDTTxt.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAQ4AAAAjCAYAAABl9OT5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACpSURBVHhe7dSxDQIxAARB91+VXy6DMigAZMkJycMSz0iX
+        XAE7AP6y1nrMOV9mZnfbrTjZGGMfAN/sVpxsCAfwG+EAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEA
+        MuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAso9w
+        XNf13IeZ2d12K042AIox3tSk8/SOURg0AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="CMNDTxt.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAQ4AAAAjCAYAAABl9OT5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACpSURBVHhe7dSxDQIxAARB91+VXy6DMigAZMkJycMSz0iX
+        XAE7AP6y1nrMOV9mZnfbrTjZGGMfAN/sVpxsCAfwG+EAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEA
+        MuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAso9w
+        XNf13IeZ2d12K042AIox3tSk8/SOURg0AAAAAElFTkSuQmCC
+</value>
+  </data>
 </root>
