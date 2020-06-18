@@ -32,12 +32,6 @@ namespace QuanLyBanVeMayBay.Main
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void TimKHpanel_Paint(object sender, PaintEventArgs e)
-        {
-            ContentPanel.Controls.Clear();
-            ContentPanel.Controls.Add(ucTimKiemKH);
-        }
-
         private void HomeBtn_Click(object sender, EventArgs e)
         {
         }

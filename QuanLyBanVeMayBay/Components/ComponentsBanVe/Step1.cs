@@ -15,6 +15,8 @@ namespace QuanLyBanVeMayBay.Components.ComponentsBanVe
         public Step1()
         {
             InitializeComponent();
+            dateTimePicker1.Format = DateTimePickerFormat.Time;
+            dateTimePicker1.ShowUpDown = true;
         }
 
         private void NguoiLonTxt_KeyPress(object sender, KeyPressEventArgs e)
@@ -46,5 +48,6 @@ namespace QuanLyBanVeMayBay.Components.ComponentsBanVe
                 MessageBox.Show("Vui long nhap so !");
             }
         }
+
     }
 }

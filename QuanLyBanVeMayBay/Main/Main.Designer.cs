@@ -522,8 +522,6 @@
         private System.Windows.Forms.Panel ContentPanel;
         private Components.UCBanve ucBanve;
         private Components.UCHuyVe ucHuyVe;
-        private Components.UCTimKiemKH ucTimKiemKH;
-        private Components.UCTimVe ucTimVe;
         private Bunifu.Framework.UI.BunifuImageButton MinisizeBtn;
         private Bunifu.Framework.UI.BunifuImageButton ExitBtn;
         private Bunifu.Framework.UI.BunifuFlatButton HomeBtn;
