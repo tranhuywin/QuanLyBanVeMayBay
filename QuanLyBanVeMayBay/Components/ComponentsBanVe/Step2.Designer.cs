@@ -40,6 +40,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.NextStepBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuDataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.SoGheTrong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SanBayTrungGian = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThoiGianChuyenbay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThoiGianBay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NoiDen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.XuatPhat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
@@ -157,6 +164,14 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.bunifuDataGridView1.ColumnHeadersHeight = 40;
+            this.bunifuDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.STT,
+            this.XuatPhat,
+            this.NoiDen,
+            this.ThoiGianBay,
+            this.ThoiGianChuyenbay,
+            this.SanBayTrungGian,
+            this.SoGheTrong});
             this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -195,6 +210,41 @@
             this.bunifuDataGridView1.TabIndex = 0;
             this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
+            // SoGheTrong
+            // 
+            this.SoGheTrong.HeaderText = "Số ghế còn trống";
+            this.SoGheTrong.Name = "SoGheTrong";
+            // 
+            // SanBayTrungGian
+            // 
+            this.SanBayTrungGian.HeaderText = "Sân bay trung gian";
+            this.SanBayTrungGian.Name = "SanBayTrungGian";
+            // 
+            // ThoiGianChuyenbay
+            // 
+            this.ThoiGianChuyenbay.HeaderText = "Thời gian bay";
+            this.ThoiGianChuyenbay.Name = "ThoiGianChuyenbay";
+            // 
+            // ThoiGianBay
+            // 
+            this.ThoiGianBay.HeaderText = "Thời gian xuất phát";
+            this.ThoiGianBay.Name = "ThoiGianBay";
+            // 
+            // NoiDen
+            // 
+            this.NoiDen.HeaderText = "Nơi đến";
+            this.NoiDen.Name = "NoiDen";
+            // 
+            // XuatPhat
+            // 
+            this.XuatPhat.HeaderText = "Nơi xuất phát";
+            this.XuatPhat.Name = "XuatPhat";
+            // 
+            // STT
+            // 
+            this.STT.HeaderText = "STT";
+            this.STT.Name = "STT";
+            // 
             // Step2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -218,5 +268,12 @@
         private System.Windows.Forms.Panel panel1;
         private Bunifu.UI.WinForms.BunifuDataGridView bunifuDataGridView1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton NextStepBtn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn XuatPhat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NoiDen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ThoiGianBay;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ThoiGianChuyenbay;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SanBayTrungGian;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoGheTrong;
     }
 }

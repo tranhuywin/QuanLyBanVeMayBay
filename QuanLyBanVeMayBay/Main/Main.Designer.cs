@@ -48,6 +48,7 @@
             this.ucKhachHang = new QuanLyBanVeMayBay.Components.ComponentsKhachHang.UCKhachHang();
             this.ucHuyVe = new QuanLyBanVeMayBay.Components.UCHuyVe();
             this.ucBanve = new QuanLyBanVeMayBay.Components.UCBanve();
+            this.ucDoanhThu = new QuanLyBanVeMayBay.Components.UCDoanhThu();
             this.Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MinisizeBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExitBtn)).BeginInit();
@@ -429,6 +430,7 @@
             // ContentPanel
             // 
             this.ContentPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.ContentPanel.Controls.Add(this.ucDoanhThu);
             this.ContentPanel.Controls.Add(this.ucTimKiemKH1);
             this.ContentPanel.Controls.Add(this.ucChinhSuaVe);
             this.ContentPanel.Controls.Add(this.ucTimVe1);
@@ -489,6 +491,14 @@
             this.ucBanve.Size = new System.Drawing.Size(1082, 600);
             this.ucBanve.TabIndex = 2;
             // 
+            // ucDoanhThu
+            // 
+            this.ucDoanhThu.Location = new System.Drawing.Point(-2, 2);
+            this.ucDoanhThu.Margin = new System.Windows.Forms.Padding(2);
+            this.ucDoanhThu.Name = "ucDoanhThu";
+            this.ucDoanhThu.Size = new System.Drawing.Size(1086, 602);
+            this.ucDoanhThu.TabIndex = 11;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -536,5 +546,6 @@
         private Components.UCTimVe ucTimVe1;
         private Components.ComponentsChinhSuaVe.UCChinhSuaVe ucChinhSuaVe;
         private Components.UCTimKiemKH ucTimKiemKH1;
+        private Components.UCDoanhThu ucDoanhThu;
     }
 }

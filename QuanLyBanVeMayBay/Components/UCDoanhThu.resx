@@ -117,4 +117,41 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="TimKiemBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAF0AAAAgCAYAAABwzXTcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADUSURBVGhD7dqxDYNAEAXRS4A2XIorcFtALY6duhQacOQG
+        wAea8EL4TmalSU4bPW14xfnTbONwW+fuuc39Zte0Tt1rd4a8lPrwbi3aiU0H/AJ5vfTWkl0S5KIng1z0
+        ZJCLngxy0ZNBLnoyyEVPBrnoySAXPRnkoieDXPRkkIueDHLRk0EuejLIRU8GuejJIBc9GeSiJ4Nc9GSQ
+        i54MctGTQS56MshFTwa56MkgFz0Z5KIng/z4Vre0FuzcqvMX8nrp43CvD5/Wop3TDr7O/QNyJzul/ACZ
+        MjCdZJ/dlgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="bunifuDatePicker2.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF+SURBVFhH7ZZdTsMwEISNuEEbIXGBPvLIMwfgMNyAnADR
+        5hYcCIlUPUvIWDths7ZTJ06QkPiklbLjWe+2dn+cpXZ1h5B0NqX1/wP8/gDvd5cHXRR7zo1UPXogj0IT
+        4rT7eow958ZUvbQL0SYECpc0Z6TqpV2INW4V0i4kZt4ipF1IzLxFSLuQq4ZC/t4AzEt1ktIHrIF5qU5S
+        +oA1MC/Vs7GFerMSPZvFhQma6nI47s+1HgoBDWti+4EGSRfTue7mWLUvumks4IFXysIBtDlHB9jQrjdV
+        +/xWfd4j8GzXhyEo+KRHm3J0oF95sz8/iRyANfpQ40UKPulhnqvjXKnp5tZH9BD+Tlgj81xdXziRPDGN
+        cO1Uta+TxhxYj3MWyTO1r74Tg/HDdbeyPgvW47KJ5KEu6Qh4h3U+zA3Z6+oANrA2GkD/KZ0TvksP89QR
+        2MDa6AhKSV3CKej3l7CU1McwRfAxXIOiL6I1KPoqXgtsqN+JVMCzenMNzjX/59i5bwuUmqSDAaS8AAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="bunifuDatePicker1.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF+SURBVFhH7ZZdTsMwEISNuEEbIXGBPvLIMwfgMNyAnADR
+        5hYcCIlUPUvIWDths7ZTJ06QkPiklbLjWe+2dn+cpXZ1h5B0NqX1/wP8/gDvd5cHXRR7zo1UPXogj0IT
+        4rT7eow958ZUvbQL0SYECpc0Z6TqpV2INW4V0i4kZt4ipF1IzLxFSLuQq4ZC/t4AzEt1ktIHrIF5qU5S
+        +oA1MC/Vs7GFerMSPZvFhQma6nI47s+1HgoBDWti+4EGSRfTue7mWLUvumks4IFXysIBtDlHB9jQrjdV
+        +/xWfd4j8GzXhyEo+KRHm3J0oF95sz8/iRyANfpQ40UKPulhnqvjXKnp5tZH9BD+Tlgj81xdXziRPDGN
+        cO1Uta+TxhxYj3MWyTO1r74Tg/HDdbeyPgvW47KJ5KEu6Qh4h3U+zA3Z6+oANrA2GkD/KZ0TvksP89QR
+        2MDa6AhKSV3CKej3l7CU1McwRfAxXIOiL6I1KPoqXgtsqN+JVMCzenMNzjX/59i5bwuUmqSDAaS8AAAA
+        AElFTkSuQmCC
+</value>
+  </data>
 </root>

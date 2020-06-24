@@ -32,3 +32,4 @@ C:\Users\tranh\Desktop\QLBVMB_GiaoDien\QuanLyBanVeMayBay-master\BUS_QuanLy\obj\D
 C:\Users\tranh\Desktop\QLBVMB_GiaoDien\QuanLyBanVeMayBay-master\BUS_QuanLy\obj\Debug\BUS_QuanLy.csproj.CopyComplete
 C:\Users\tranh\Desktop\QLBVMB_GiaoDien\QuanLyBanVeMayBay-master\BUS_QuanLy\obj\Debug\BUS_QuanLy.dll
 C:\Users\tranh\Desktop\QLBVMB_GiaoDien\QuanLyBanVeMayBay-master\BUS_QuanLy\obj\Debug\BUS_QuanLy.pdb
+C:\Users\tranh\Desktop\CNPM\QuanLyBanVeMayBay\BUS_QuanLy\bin\Debug\DAL_QuanLy.dll.config

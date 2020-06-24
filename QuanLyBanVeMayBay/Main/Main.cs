@@ -74,7 +74,8 @@ namespace QuanLyBanVeMayBay.Main
 
         private void DoanhThuBtn_Click(object sender, EventArgs e)
         {
-
+            ContentPanel.Controls.Clear();
+            ContentPanel.Controls.Add(ucDoanhThu);
         }
     }
 }

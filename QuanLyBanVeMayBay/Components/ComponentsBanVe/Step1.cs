@@ -29,25 +29,6 @@ namespace QuanLyBanVeMayBay.Components.ComponentsBanVe
             }
         }
 
-        private void TreEmtxt_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            Char chr = e.KeyChar;
-            if (!Char.IsDigit(chr) && chr != 8)
-            {
-                e.Handled = true;
-                MessageBox.Show("Vui long nhap so !");
-            }
-        }
-
-        private void SoSinhtxt_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            Char chr = e.KeyChar;
-            if (!Char.IsDigit(chr) && chr != 8)
-            {
-                e.Handled = true;
-                MessageBox.Show("Vui long nhap so !");
-            }
-        }
 
     }
 }

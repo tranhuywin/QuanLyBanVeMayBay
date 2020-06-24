@@ -16,8 +16,8 @@ namespace DAL_QuanLy
             {
                 OpenConection(); // open connection
                 SqlCommand command = new SqlCommand();
-                command.Parameters.Add(new SqlParameter("@User", user._User_User));         //them parameter vao command.parameter
-                command.Parameters.Add(new SqlParameter("@Password", user._User_Password));
+                command.Parameters.Add(new SqlParameter("@User", user.User));         //them parameter vao command.parameter
+                command.Parameters.Add(new SqlParameter("@Password", user.Password));
                 command.Parameters.Add(new SqlParameter("@ChucVu", "0"));
                 SqlDataReader dta = DataReaderStoredProcedure(command, "SelectTaiKhoan");   //su dung command.parameter va ExecuteReader de tra ve gia tri DateReader
                 if (dta.Read())         // neu co gia tri tra ve
