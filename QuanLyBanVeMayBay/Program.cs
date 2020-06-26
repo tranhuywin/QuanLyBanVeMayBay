@@ -16,8 +16,8 @@ namespace QuanLyBanVeMayBay
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogin()); //Open form login
-            //Application.Run(new Main.Main());  //Open form Main
+            //Application.Run(new FormLogin()); //Open form login
+            Application.Run(new Main.Main());  //Open form Main
         }
     }
 }

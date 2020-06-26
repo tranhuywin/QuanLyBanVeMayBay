@@ -55,9 +55,15 @@ namespace DAL_QuanLy
             object dataum = ds.Tables[0];
             return dataum;
         }
-        public object ShowDataInGridViewStoredProcedure(SqlCommand cmd, string CommandText)
+        public DataTable ShowDataInGridViewStoredProcedure(SqlCommand cmd, string CommandText)
         {
-            return 1;
+            DataTable dt = new DataTable();
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = CommandText;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            return dt;
         }
     }
 }

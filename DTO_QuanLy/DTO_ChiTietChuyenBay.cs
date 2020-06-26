@@ -8,16 +8,8 @@ namespace DTO_QuanLy
 {
     public class DTO_ChiTietChuyenBay
     {
-        private string CTChuyenBay_SanBayTrungGian;
-        private string CTChuyenBay_ThoiGianDung;
+        public string SanBayTrungGian { get; set; }
+        public string ThoiGianDung { get; set; }
 
-        public DTO_ChiTietChuyenBay(string cTChuyenBay_SanBayTrungGian, string cTChuyenBay_ThoiGianDung)
-        {
-            CTChuyenBay_SanBayTrungGian = cTChuyenBay_SanBayTrungGian;
-            CTChuyenBay_ThoiGianDung = cTChuyenBay_ThoiGianDung;
-        }
-
-        public string _CTChuyenBay_SanBayTrungGian { get => CTChuyenBay_SanBayTrungGian; set => CTChuyenBay_SanBayTrungGian = value; }
-        public string _CTChuyenBay_ThoiGianDung { get => CTChuyenBay_ThoiGianDung; set => CTChuyenBay_ThoiGianDung = value; }
     }
 }
