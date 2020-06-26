@@ -14,7 +14,7 @@ namespace QuanLyBanVeMayBay.Components.ComponentsBanVe
 {
     public partial class Step1 : UserControl
     {
-        BUS_Step1 busStep1 = new BUS_Step1();
+        private BUS_Step1 busStep1 = new BUS_Step1();
         
         public Step1()
         {
@@ -28,9 +28,13 @@ namespace QuanLyBanVeMayBay.Components.ComponentsBanVe
        
         private void ConstructorDiaChiComBoBox()
         {
-            XuatPhatDrDwn.DataSource = busStep1.LoadSanBayComboBox();
+            XuatPhatDrDwn.DataSource = busStep1.LoadSanBayComboBox(); // load du lieu tu BUS len combo box
             XuatPhatDrDwn.DisplayMember = "TenSanBay";
             XuatPhatDrDwn.ValueMember = "TenSanBay";
+
+            NoiDenDrpDwn.DataSource = busStep1.LoadSanBayComboBox();// load du lieu tu BUS len combo box
+            NoiDenDrpDwn.DisplayMember = "TenSanBay";
+            NoiDenDrpDwn.ValueMember = "TenSanBay";
         }
         private void NguoiLonTxt_KeyPress(object sender, KeyPressEventArgs e)   // nguoitontxt chi duoc nhap so, sai thi thong bao
         {
@@ -63,6 +67,18 @@ namespace QuanLyBanVeMayBay.Components.ComponentsBanVe
                 MessageBox.Show("Ngày khứ hồi phải lớn hơn ngày xuất phát !!!");
             }
             
+        }
+
+        private void NoiDenDrpDwn_SelectedIndexChanged(object sender, EventArgs e)  // kiem tra noi den va noi xuat phat co trung nhau khong
+        {
+            if(NoiDenDrpDwn.SelectedValue.ToString() == XuatPhatDrDwn.SelectedValue.ToString())
+            {
+                MessageBox.Show("Nơi đến phải khác nơi xuất phát !!!");
+            }
+        }
+
+        private void NextStep2Btn_Click(object sender, EventArgs e)
+        {
         }
     }
 }

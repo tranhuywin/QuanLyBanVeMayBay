@@ -12,6 +12,9 @@ namespace QuanLyBanVeMayBay.Components
 {
     public partial class UCBanve : UserControl
     {
+        protected string XuatPhat, NoiDen, XuatPhatTime, NoiDenTime, XuatPhatDate, NoiDenDate;
+        protected int SoGhe;
+        protected bool KhuHoi;
         public UCBanve()
         {
             InitializeComponent();

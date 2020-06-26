@@ -1,17 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
-using DTO_QuanLy;
-using System.Data;
 
 namespace DAL_QuanLy.DAL_BanVe
 {
-    public class DAL_Step1: ClsConnectDB
+    public class DAL_Step2: ClsConnectDB
     {
-        public DataTable LoadSanBayComboBox()
+        public DataTable LoadVeMayBayDataGridView()
         {
             DataTable dt = new DataTable();
             try

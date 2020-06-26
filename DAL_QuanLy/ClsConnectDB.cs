@@ -21,16 +21,10 @@ namespace DAL_QuanLy
         {
             con.Close();
         }
-        public void ExecuteQueries(string Query_)
+        // Cac cau function thuc thi cac cau lenh Sql Server truc tiep
+        /*public void ExecuteQueries(string Query_)
         {
             SqlCommand cmd = new SqlCommand(Query_, con);
-            cmd.ExecuteNonQuery();
-        }
-        public void ExecuteQueriesStoredProcedure(SqlCommand cmd, string CommandText)
-        {
-            cmd.Connection = con;
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.CommandText = CommandText;
             cmd.ExecuteNonQuery();
         }
         public SqlDataReader DataReader(string Query_)
@@ -39,14 +33,6 @@ namespace DAL_QuanLy
             SqlDataReader dr = cmd.ExecuteReader();
             return dr;
         }
-        public SqlDataReader DataReaderStoredProcedure(SqlCommand cmd, string CommandText)
-        {
-            cmd.Connection = con;
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.CommandText = CommandText;
-            SqlDataReader dta = cmd.ExecuteReader();
-            return dta;
-        }
         public object ShowDataInGridView(string Query_)
         {
             SqlDataAdapter dr = new SqlDataAdapter(Query_, ConnectionString);
@@ -54,8 +40,25 @@ namespace DAL_QuanLy
             dr.Fill(ds);
             object dataum = ds.Tables[0];
             return dataum;
+        }*/
+
+        public void ExecuteQueriesStoredProcedure(SqlCommand cmd, string CommandText)   // Thuong thuc thi insert, update, delete
+        {
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = CommandText;
+            cmd.ExecuteNonQuery();
         }
-        public DataTable ShowDataInGridViewStoredProcedure(SqlCommand cmd, string CommandText)
+        public SqlDataReader DataReaderStoredProcedure(SqlCommand cmd, string CommandText)  // cac cau select thong thuong
+        {
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = CommandText;
+            SqlDataReader dta = cmd.ExecuteReader();
+            return dta;
+        }
+
+        public DataTable ShowDataInTableStoredProcedure(SqlCommand cmd, string CommandText) // do du lieu tu Table cua CSDL vao DataTable. Combobox va DataGridView
         {
             DataTable dt = new DataTable();
             cmd.Connection = con;

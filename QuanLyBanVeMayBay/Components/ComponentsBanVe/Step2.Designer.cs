@@ -39,17 +39,10 @@
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.NextStepBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.bunifuDataGridView1 = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.SoGheTrong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SanBayTrungGian = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThoiGianChuyenbay = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThoiGianBay = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NoiDen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.XuatPhat = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VemayBayDataGridView = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VemayBayDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -75,7 +68,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.NextStepBtn);
-            this.panel1.Controls.Add(this.bunifuDataGridView1);
+            this.panel1.Controls.Add(this.VemayBayDataGridView);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 33);
             this.panel1.Name = "panel1";
@@ -145,16 +138,16 @@
             this.NextStepBtn.TextMarginLeft = 0;
             this.NextStepBtn.UseDefaultRadiusAndThickness = true;
             // 
-            // bunifuDataGridView1
+            // VemayBayDataGridView
             // 
-            this.bunifuDataGridView1.AllowCustomTheming = false;
+            this.VemayBayDataGridView.AllowCustomTheming = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bunifuDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.bunifuDataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuDataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.bunifuDataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.VemayBayDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.VemayBayDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.VemayBayDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.VemayBayDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.VemayBayDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
@@ -162,32 +155,24 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuDataGridView1.ColumnHeadersHeight = 40;
-            this.bunifuDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.STT,
-            this.XuatPhat,
-            this.NoiDen,
-            this.ThoiGianBay,
-            this.ThoiGianChuyenbay,
-            this.SanBayTrungGian,
-            this.SoGheTrong});
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.CurrentTheme.BackColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridView1.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.CurrentTheme.Name = null;
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridView1.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.VemayBayDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.VemayBayDataGridView.ColumnHeadersHeight = 40;
+            this.VemayBayDataGridView.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.VemayBayDataGridView.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.VemayBayDataGridView.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.VemayBayDataGridView.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.VemayBayDataGridView.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.VemayBayDataGridView.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.VemayBayDataGridView.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.VemayBayDataGridView.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.VemayBayDataGridView.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.VemayBayDataGridView.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.VemayBayDataGridView.CurrentTheme.Name = null;
+            this.VemayBayDataGridView.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.VemayBayDataGridView.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.VemayBayDataGridView.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.VemayBayDataGridView.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.VemayBayDataGridView.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
@@ -195,55 +180,20 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bunifuDataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.bunifuDataGridView1.EnableHeadersVisualStyles = false;
-            this.bunifuDataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.bunifuDataGridView1.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuDataGridView1.HeaderBgColor = System.Drawing.Color.Empty;
-            this.bunifuDataGridView1.HeaderForeColor = System.Drawing.Color.White;
-            this.bunifuDataGridView1.Location = new System.Drawing.Point(8, 13);
-            this.bunifuDataGridView1.Name = "bunifuDataGridView1";
-            this.bunifuDataGridView1.RowHeadersVisible = false;
-            this.bunifuDataGridView1.RowTemplate.Height = 40;
-            this.bunifuDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.bunifuDataGridView1.Size = new System.Drawing.Size(959, 473);
-            this.bunifuDataGridView1.TabIndex = 0;
-            this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
-            // 
-            // SoGheTrong
-            // 
-            this.SoGheTrong.HeaderText = "Số ghế còn trống";
-            this.SoGheTrong.Name = "SoGheTrong";
-            // 
-            // SanBayTrungGian
-            // 
-            this.SanBayTrungGian.HeaderText = "Sân bay trung gian";
-            this.SanBayTrungGian.Name = "SanBayTrungGian";
-            // 
-            // ThoiGianChuyenbay
-            // 
-            this.ThoiGianChuyenbay.HeaderText = "Thời gian bay";
-            this.ThoiGianChuyenbay.Name = "ThoiGianChuyenbay";
-            // 
-            // ThoiGianBay
-            // 
-            this.ThoiGianBay.HeaderText = "Thời gian xuất phát";
-            this.ThoiGianBay.Name = "ThoiGianBay";
-            // 
-            // NoiDen
-            // 
-            this.NoiDen.HeaderText = "Nơi đến";
-            this.NoiDen.Name = "NoiDen";
-            // 
-            // XuatPhat
-            // 
-            this.XuatPhat.HeaderText = "Nơi xuất phát";
-            this.XuatPhat.Name = "XuatPhat";
-            // 
-            // STT
-            // 
-            this.STT.HeaderText = "STT";
-            this.STT.Name = "STT";
+            this.VemayBayDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            this.VemayBayDataGridView.EnableHeadersVisualStyles = false;
+            this.VemayBayDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.VemayBayDataGridView.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.VemayBayDataGridView.HeaderBgColor = System.Drawing.Color.Empty;
+            this.VemayBayDataGridView.HeaderForeColor = System.Drawing.Color.White;
+            this.VemayBayDataGridView.Location = new System.Drawing.Point(8, 13);
+            this.VemayBayDataGridView.Name = "VemayBayDataGridView";
+            this.VemayBayDataGridView.RowHeadersVisible = false;
+            this.VemayBayDataGridView.RowTemplate.Height = 40;
+            this.VemayBayDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.VemayBayDataGridView.Size = new System.Drawing.Size(959, 473);
+            this.VemayBayDataGridView.TabIndex = 0;
+            this.VemayBayDataGridView.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
             // Step2
             // 
@@ -256,7 +206,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VemayBayDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -266,14 +216,7 @@
         private System.Windows.Forms.Panel panel2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private System.Windows.Forms.Panel panel1;
-        private Bunifu.UI.WinForms.BunifuDataGridView bunifuDataGridView1;
+        private Bunifu.UI.WinForms.BunifuDataGridView VemayBayDataGridView;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton NextStepBtn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn STT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn XuatPhat;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NoiDen;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ThoiGianBay;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ThoiGianChuyenbay;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SanBayTrungGian;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoGheTrong;
     }
 }
