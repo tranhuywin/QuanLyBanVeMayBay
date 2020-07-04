@@ -40,13 +40,13 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.panel1 = new System.Windows.Forms.Panel();
             this.ContentBanVePanel = new System.Windows.Forms.Panel();
-            this.step11 = new QuanLyBanVeMayBay.Components.ComponentsBanVe.Step1();
-            this.step21 = new QuanLyBanVeMayBay.Components.ComponentsBanVe.Step2();
-            this.step31 = new QuanLyBanVeMayBay.Components.ComponentsBanVe.Step3();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Step3Btn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Step2Btn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Step1Btn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.step11 = new QuanLyBanVeMayBay.Components.ComponentsBanVe.Step1();
+            this.step21 = new QuanLyBanVeMayBay.Components.ComponentsBanVe.Step2();
+            this.step31 = new QuanLyBanVeMayBay.Components.ComponentsBanVe.Step3();
             this.panel1.SuspendLayout();
             this.ContentBanVePanel.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -72,27 +72,6 @@
             this.ContentBanVePanel.Name = "ContentBanVePanel";
             this.ContentBanVePanel.Size = new System.Drawing.Size(1086, 555);
             this.ContentBanVePanel.TabIndex = 1;
-            // 
-            // step11
-            // 
-            this.step11.Location = new System.Drawing.Point(0, -2);
-            this.step11.Name = "step11";
-            this.step11.Size = new System.Drawing.Size(1086, 555);
-            this.step11.TabIndex = 2;
-            // 
-            // step21
-            // 
-            this.step21.Location = new System.Drawing.Point(3, 0);
-            this.step21.Name = "step21";
-            this.step21.Size = new System.Drawing.Size(1086, 555);
-            this.step21.TabIndex = 1;
-            // 
-            // step31
-            // 
-            this.step31.Location = new System.Drawing.Point(0, -2);
-            this.step31.Name = "step31";
-            this.step31.Size = new System.Drawing.Size(1086, 555);
-            this.step31.TabIndex = 0;
             // 
             // panel2
             // 
@@ -296,6 +275,27 @@
             this.Step1Btn.TextMarginLeft = 0;
             this.Step1Btn.UseDefaultRadiusAndThickness = true;
             this.Step1Btn.Click += new System.EventHandler(this.Step1Btn_Click);
+            // 
+            // step11
+            // 
+            this.step11.Location = new System.Drawing.Point(0, -2);
+            this.step11.Name = "step11";
+            this.step11.Size = new System.Drawing.Size(1086, 555);
+            this.step11.TabIndex = 2;
+            // 
+            // step21
+            // 
+            this.step21.Location = new System.Drawing.Point(3, 0);
+            this.step21.Name = "step21";
+            this.step21.Size = new System.Drawing.Size(1086, 555);
+            this.step21.TabIndex = 1;
+            // 
+            // step31
+            // 
+            this.step31.Location = new System.Drawing.Point(0, -2);
+            this.step31.Name = "step31";
+            this.step31.Size = new System.Drawing.Size(1086, 555);
+            this.step31.TabIndex = 0;
             // 
             // UCBanve
             // 

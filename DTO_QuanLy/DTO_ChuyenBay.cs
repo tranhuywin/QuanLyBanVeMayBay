@@ -8,13 +8,13 @@ namespace DTO_QuanLy
 {
     public class DTO_ChuyenBay
     {
-        public string ChuyenBay_MaChuyenBay { get; set; }
-        public string Chuyenbay_NgayGio { get; set; }
-        public string Chuyenbay_ThoiGianBay { get; set; }
-        public int Chuyenbay_SoGheHang1 { get; set; }
-        public int ChuyenBay_SoGheHang2 { get; set; }
-        public string ChuyenBay_MaTuyenBay { get; set; }
-        public string ChuyenBay_MaChiTietChuyenBay { get; set; }
+        public string MaChuyenBay { get; set; }
+        public string NgayGio { get; set; }
+        public string ThoiGianBay { get; set; }
+        public int SoGheHang1 { get; set; }
+        public int SoGheHang2 { get; set; }
+        public string MaTuyenBay { get; set; }
+        public string MaChiTietChuyenBay { get; set; }
 
     }
 }

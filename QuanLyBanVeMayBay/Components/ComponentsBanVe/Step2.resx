@@ -118,7 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="NextStepBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="TiepBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAH8AAAAtCAYAAACH+7TvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEHSURBVHhe7dyxcQIxFADRS4A2KMUVuC24WhyTuhQacEQD
+        dxbMhleBdv/MJpqfPSnV0shnv12u23r62dfzXnO33U+Ptzf0yzIOfo8Wa8LunwvwhH68/KOlmjrowzcG
+        ffjGoA/fGPThG4M+fGPQh28M+vCNQR++MejDNwZ9+MagD98Y9OEbgz58Y9CHbwz68I1BH74x6MM3Bn34
+        xqAP3xj04RuDPnxj0IdvDPrwjUEfvjHowzcGffjGoA/fGPThG4M+fGPQh28M+vCNQR++MejDNwZ9+Mag
+        D98Y9OEbgz58Y9CHbwz6zz98z6OFmrPh/YJ+vPzb5Wsc/B0t1ly94bf1/A1945xl+QcTIYz0Y7akoAAA
+        AABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="XongBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAF0AAAAtCAYAAADMU2cCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEDSURBVHhe7duhbQNBFADRJbbbSCmpIG3ZV0twaEpxA0Fp

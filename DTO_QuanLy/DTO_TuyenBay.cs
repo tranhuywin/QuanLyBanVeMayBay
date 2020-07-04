@@ -9,10 +9,10 @@ namespace DTO_QuanLy
 {
     public class DTO_TuyenBay
     {
-        public string TuyenBay_MaTuyenBay { get; set; }
-        public string TuyenBay_SanBayDi { get; set; }
-        public string TuyenBay_SanBayDen { get; set; }
-        public string TuyenBay_MaSanBay { get; set; }
+        public string MaTuyenBay { get; set; }
+        public string SanBayDi { get; set; }
+        public string SanBayDen { get; set; }
+        public string MaSanBay { get; set; }
 
       
     }

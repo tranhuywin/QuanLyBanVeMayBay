@@ -9,7 +9,7 @@ namespace DTO_QuanLy
     public class DTO_SanBay
     {
         public string MaSanBay { get; set; }
-        public string STenSanBay { get; set; }
+        public string TenSanBay { get; set; }
 
       
     }

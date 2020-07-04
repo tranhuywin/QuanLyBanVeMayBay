@@ -38,6 +38,8 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.HangVeDrpDwn = new Bunifu.UI.WinForms.BunifuDropdown();
             this.KhuHoiTime = new System.Windows.Forms.DateTimePicker();
             this.KhuHoiDate = new System.Windows.Forms.DateTimePicker();
             this.XuatPhatDate = new System.Windows.Forms.DateTimePicker();
@@ -72,6 +74,8 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Controls.Add(this.bunifuCustomLabel3);
+            this.panel3.Controls.Add(this.HangVeDrpDwn);
             this.panel3.Controls.Add(this.KhuHoiTime);
             this.panel3.Controls.Add(this.KhuHoiDate);
             this.panel3.Controls.Add(this.XuatPhatDate);
@@ -92,6 +96,51 @@
             this.panel3.Size = new System.Drawing.Size(1086, 522);
             this.panel3.TabIndex = 5;
             // 
+            // bunifuCustomLabel3
+            // 
+            this.bunifuCustomLabel3.AutoSize = true;
+            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(597, 240);
+            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(86, 24);
+            this.bunifuCustomLabel3.TabIndex = 38;
+            this.bunifuCustomLabel3.Text = "Hạng vé:";
+            // 
+            // HangVeDrpDwn
+            // 
+            this.HangVeDrpDwn.BackColor = System.Drawing.Color.Transparent;
+            this.HangVeDrpDwn.BorderRadius = 1;
+            this.HangVeDrpDwn.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
+            this.HangVeDrpDwn.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.HangVeDrpDwn.DisabledColor = System.Drawing.Color.Gray;
+            this.HangVeDrpDwn.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.HangVeDrpDwn.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thick;
+            this.HangVeDrpDwn.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.HangVeDrpDwn.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.HangVeDrpDwn.FillDropDown = false;
+            this.HangVeDrpDwn.FillIndicator = false;
+            this.HangVeDrpDwn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HangVeDrpDwn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HangVeDrpDwn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
+            this.HangVeDrpDwn.FormattingEnabled = true;
+            this.HangVeDrpDwn.Icon = null;
+            this.HangVeDrpDwn.IndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
+            this.HangVeDrpDwn.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.HangVeDrpDwn.ItemBackColor = System.Drawing.Color.White;
+            this.HangVeDrpDwn.ItemBorderColor = System.Drawing.Color.White;
+            this.HangVeDrpDwn.ItemForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
+            this.HangVeDrpDwn.ItemHeight = 26;
+            this.HangVeDrpDwn.ItemHighLightColor = System.Drawing.Color.White;
+            this.HangVeDrpDwn.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.HangVeDrpDwn.Location = new System.Drawing.Point(686, 232);
+            this.HangVeDrpDwn.Name = "HangVeDrpDwn";
+            this.HangVeDrpDwn.Size = new System.Drawing.Size(141, 32);
+            this.HangVeDrpDwn.TabIndex = 37;
+            this.HangVeDrpDwn.Text = "1";
+            // 
             // KhuHoiTime
             // 
             this.KhuHoiTime.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -108,9 +157,10 @@
             // 
             this.KhuHoiDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.KhuHoiDate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.KhuHoiDate.CustomFormat = "yyyy/MM/dd";
             this.KhuHoiDate.Enabled = false;
             this.KhuHoiDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.KhuHoiDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.KhuHoiDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.KhuHoiDate.Location = new System.Drawing.Point(866, 162);
             this.KhuHoiDate.Name = "KhuHoiDate";
             this.KhuHoiDate.Size = new System.Drawing.Size(133, 26);
@@ -121,8 +171,9 @@
             // 
             this.XuatPhatDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.XuatPhatDate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.XuatPhatDate.CustomFormat = "yyyy/MM/dd";
             this.XuatPhatDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.XuatPhatDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.XuatPhatDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.XuatPhatDate.Location = new System.Drawing.Point(399, 160);
             this.XuatPhatDate.Name = "XuatPhatDate";
             this.XuatPhatDate.Size = new System.Drawing.Size(133, 26);
@@ -283,7 +334,7 @@
             this.SoGheTxt.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.SoGheTxt.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.SoGheTxt.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.SoGheTxt.DefaultText = "";
+            this.SoGheTxt.DefaultText = "1";
             this.SoGheTxt.FillColor = System.Drawing.Color.White;
             this.SoGheTxt.HideSelection = true;
             this.SoGheTxt.IconLeft = null;
@@ -291,8 +342,9 @@
             this.SoGheTxt.IconPadding = 10;
             this.SoGheTxt.IconRight = null;
             this.SoGheTxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.SoGheTxt.Lines = new string[0];
-            this.SoGheTxt.Location = new System.Drawing.Point(484, 233);
+            this.SoGheTxt.Lines = new string[] {
+        "1"};
+            this.SoGheTxt.Location = new System.Drawing.Point(366, 230);
             this.SoGheTxt.MaxLength = 32767;
             this.SoGheTxt.MinimumSize = new System.Drawing.Size(100, 35);
             this.SoGheTxt.Modified = false;
@@ -325,7 +377,7 @@
             this.SoGheTxt.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.SoGheTxt.SelectedText = "";
             this.SoGheTxt.SelectionLength = 0;
-            this.SoGheTxt.SelectionStart = 0;
+            this.SoGheTxt.SelectionStart = 1;
             this.SoGheTxt.ShortcutsEnabled = true;
             this.SoGheTxt.Size = new System.Drawing.Size(182, 35);
             this.SoGheTxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
@@ -337,13 +389,14 @@
             this.SoGheTxt.TextPlaceholder = "Số ghế cần đặt";
             this.SoGheTxt.UseSystemPasswordChar = false;
             this.SoGheTxt.WordWrap = true;
+            this.SoGheTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SoGheTxt_KeyPress);
             // 
             // bunifuCustomLabel2
             // 
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(396, 243);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(278, 240);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(76, 24);
             this.bunifuCustomLabel2.TabIndex = 18;
@@ -358,7 +411,7 @@
             this.NextStep2Btn.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
             this.NextStep2Btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("NextStep2Btn.BackgroundImage")));
             this.NextStep2Btn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.NextStep2Btn.ButtonText = "Tới bước 2";
+            this.NextStep2Btn.ButtonText = "Xong";
             this.NextStep2Btn.ButtonTextMarginLeft = 0;
             this.NextStep2Btn.ColorContrastOnClick = 45;
             this.NextStep2Btn.ColorContrastOnHover = 45;
@@ -469,5 +522,7 @@
         private System.Windows.Forms.DateTimePicker XuatPhatDate;
         private System.Windows.Forms.DateTimePicker KhuHoiDate;
         private System.Windows.Forms.DateTimePicker KhuHoiTime;
+        private Bunifu.UI.WinForms.BunifuDropdown HangVeDrpDwn;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
     }
 }

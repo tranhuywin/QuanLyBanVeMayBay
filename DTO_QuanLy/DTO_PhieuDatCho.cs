@@ -8,11 +8,11 @@ namespace DTO_QuanLy
 {
     public class DTO_PhieuDatCho
     {
-        public string PhieuDatCho_MaPhieu { get; set; }
-        public string PhieuDatCho_NgayDat { get; set; }
-        public string PhieuDatCho_SoGhe { get; set; }
-        public string PhieuDatCho_MaKH { get; set; }
-        public string PhieuDatCho_MaChuyenBay { get; set; }
+        public string MaPhieu { get; set; }
+        public string NgayDat { get; set; }
+        public string SoGhe { get; set; }
+        public string MaKH { get; set; }
+        public string MaChuyenBay { get; set; }
 
     }
 }
