@@ -130,7 +130,7 @@
     <value>#bunifu-label { padding: 1.2px; font-family: 'Microsoft Sans Serif'; font-size: 7.8pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: Gray; text-align: left; }</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="SearchBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="XongBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFEAAAAgCAYAAABq8ZRSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADQSURBVGhD7dqxDYNAEAXRS4A2XIorcFtALY6duhQacOQG
