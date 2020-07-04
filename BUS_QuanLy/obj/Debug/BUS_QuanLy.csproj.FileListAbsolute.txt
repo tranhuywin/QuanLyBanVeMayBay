@@ -33,15 +33,3 @@ C:\Users\tranh\Desktop\QLBVMB_GiaoDien\QuanLyBanVeMayBay-master\BUS_QuanLy\obj\D
 C:\Users\tranh\Desktop\QLBVMB_GiaoDien\QuanLyBanVeMayBay-master\BUS_QuanLy\obj\Debug\BUS_QuanLy.dll
 C:\Users\tranh\Desktop\QLBVMB_GiaoDien\QuanLyBanVeMayBay-master\BUS_QuanLy\obj\Debug\BUS_QuanLy.pdb
 C:\Users\tranh\Desktop\CNPM\QuanLyBanVeMayBay\BUS_QuanLy\bin\Debug\DAL_QuanLy.dll.config
-D:\QuanLyBanVeMayBay\BUS_QuanLy\bin\Debug\BUS_QuanLy.dll
-D:\QuanLyBanVeMayBay\BUS_QuanLy\bin\Debug\BUS_QuanLy.pdb
-D:\QuanLyBanVeMayBay\BUS_QuanLy\bin\Debug\DAL_QuanLy.dll
-D:\QuanLyBanVeMayBay\BUS_QuanLy\bin\Debug\DTO_QuanLy.dll
-D:\QuanLyBanVeMayBay\BUS_QuanLy\bin\Debug\DAL_QuanLy.pdb
-D:\QuanLyBanVeMayBay\BUS_QuanLy\bin\Debug\DAL_QuanLy.dll.config
-D:\QuanLyBanVeMayBay\BUS_QuanLy\bin\Debug\DTO_QuanLy.pdb
-D:\QuanLyBanVeMayBay\BUS_QuanLy\obj\Debug\BUS_QuanLy.csprojAssemblyReference.cache
-D:\QuanLyBanVeMayBay\BUS_QuanLy\obj\Debug\BUS_QuanLy.csproj.CoreCompileInputs.cache
-D:\QuanLyBanVeMayBay\BUS_QuanLy\obj\Debug\BUS_QuanLy.csproj.CopyComplete
-D:\QuanLyBanVeMayBay\BUS_QuanLy\obj\Debug\BUS_QuanLy.dll
-D:\QuanLyBanVeMayBay\BUS_QuanLy\obj\Debug\BUS_QuanLy.pdb

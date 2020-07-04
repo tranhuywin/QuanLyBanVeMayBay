@@ -43,13 +43,8 @@
   <ItemGroup>
     <Compile Include="BUS_BanVe\BUS_Step1.cs" />
     <Compile Include="BUS_BanVe\BUS_Step2.cs" />
-<<<<<<< HEAD
-    <Compile Include="BUS_KhachHang\BUS_ChinhSuaKH.cs" />
-    <Compile Include="BUS_KhachHang\BUS_KhachHang.cs" />
-=======
     <Compile Include="BUS_BanVe\BUS_Step3.cs" />
     <Compile Include="BUS_HuyVe\BUS_HuyVe.cs" />
->>>>>>> d6c9637d4854ae4a3e330d3c09124d7d05e12619
     <Compile Include="BUS_Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

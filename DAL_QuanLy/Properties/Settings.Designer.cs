@@ -26,8 +26,8 @@ namespace DAL_QuanLy.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-23LKFNO\\LONG;Initial Catalog=QLBanVeMayBay;Integrated Securit" +
-            "y=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-GVIP3GB;Initial Catalog=QLBanVeMayBay;Integrated Security=Tru" +
+            "e")]
         public string ConnectionString {
             get {
                 return ((string)(this["ConnectionString"]));
