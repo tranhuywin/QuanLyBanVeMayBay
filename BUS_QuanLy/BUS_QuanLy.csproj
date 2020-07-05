@@ -46,6 +46,7 @@
     <Compile Include="BUS_BanVe\BUS_Step3.cs" />
     <Compile Include="BUS_HuyVe\BUS_HuyVe.cs" />
     <Compile Include="BUS_Login.cs" />
+    <Compile Include="BUS_TimKiemKH\BUS_TimKiemKH.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -58,6 +59,8 @@
       <Name>DTO_QuanLy</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="BUS_TimKiemVe\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
