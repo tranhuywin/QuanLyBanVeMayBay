@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 using DAL_QuanLy;
 using DAL_QuanLy.DAL_TimKiemKH;
 using DTO_QuanLy;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace BUS_QuanLy.BUS_TimKiemKH
 {
-    class BUS_TimKiemKH
+    public class BUS_TimKiemKH
     {
         DAL_TimKiemKH dal_TimKiemKH = new DAL_TimKiemKH();
 
-        public bool TimKiemKH(List<DTO_KhachHang> lsObj, String _hoten, String _email,
+        public DataTable LoadDataTableTimKiemKH(List<DTO_KhachHang> lsObj, String _hoten, String _email,
             String _sdt, String _cmnd)
         {
-            if (dal_TimKiemKH.TimKiemKH(lsObj, _hoten, _email, _sdt, _cmnd) != null)
-                return true;
-            else return false;
+            return dal_TimKiemKH.LoadDataTableTimKiemKH(lsObj, _hoten, _email, _sdt, _cmnd);
         }
     }
 }

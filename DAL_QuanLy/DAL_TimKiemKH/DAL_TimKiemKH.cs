@@ -12,17 +12,17 @@ namespace DAL_QuanLy.DAL_TimKiemKH
 {
     public class DAL_TimKiemKH : ClsConnectDB
     {
-        public DataTable TimKiemKH(List<DTO_KhachHang> lsObj,
+        public DataTable LoadDataTableTimKiemKH(List<DTO_KhachHang> lsObj,
             String _hoten, String _email, String _sdt, String _cmnd)
         {
             String query = String.Empty;
             query += " SELECT * ";
             query += " FROM [KhachHang]";
             query += " WHERE";
-            query += " [HoTenKH] = @HotenKH OR";
-            query += " [Email] = @Email OR";
-            query += " [SDT] = @SDT OR";
-            query += " [CMND] = @CMND";
+            query += " [HoTenKH] LIKE CONCAT('%',@HoTenKH,'%')) OR";
+            query += " [Email] LIKE CONCAT('%',@Email,'%')) OR";
+            query += " [SDT] LIKE CONCAT('%',@SDT,'%')) OR";
+            query += " [CMND] LIKE CONCAT('%',@CMND,'%')) OR";
 
             DataTable dt = new DataTable();
 

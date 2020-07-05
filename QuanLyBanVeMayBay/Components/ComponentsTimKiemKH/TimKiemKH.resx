@@ -120,38 +120,42 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="HoTenKHTxt.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAQ4AAAAjCAYAAABl9OT5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACpSURBVHhe7dSxDQIxAARB91+VXy6DMigAZMkJycMSz0iX
-        XAE7AP6y1nrMOV9mZnfbrTjZGGMfAN/sVpxsCAfwG+EAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEA
-        MuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAso9w
-        XNf13IeZ2d12K042AIox3tSk8/SOURg0AAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAWgAAAArCAYAAABVXhKjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADVSURBVHhe7dQxDQMxAARB80dlyzACIwDysuQmCH6LGema
+        A7ADgLC992fO+TMzs/d3mnzzPMY5AGg4Tb55FmiAEoEGiBJogCiBBogSaIAogQaIEmiAKIEGiBJogCiB
+        BogSaIAogQaIEmiAKIEGiBJogCiBBogSaIAogQaIEmiAKIEGiBJogCiBBogSaIAogQaIEmiAKIEGiBJo
+        gCiBBogSaIAogQaIEmiAKIEGiBJogCiBBogSaIAogQaIEmiAKIEGiPoL9Frrew4zM3t/p8k3zwD0jPEA
+        pH41bdzJFykAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="EmailTxt.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAQ4AAAAjCAYAAABl9OT5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACpSURBVHhe7dSxDQIxAARB91+VXy6DMigAZMkJycMSz0iX
-        XAE7AP6y1nrMOV9mZnfbrTjZGGMfAN/sVpxsCAfwG+EAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEA
-        MuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAso9w
-        XNf13IeZ2d12K042AIox3tSk8/SOURg0AAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAWgAAAArCAYAAABVXhKjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADVSURBVHhe7dQxDQMxAARB80dlyzACIwDysuQmCH6LGema
+        A7ADgLC992fO+TMzs/d3mnzzPMY5AGg4Tb55FmiAEoEGiBJogCiBBogSaIAogQaIEmiAKIEGiBJogCiB
+        BogSaIAogQaIEmiAKIEGiBJogCiBBogSaIAogQaIEmiAKIEGiBJogCiBBogSaIAogQaIEmiAKIEGiBJo
+        gCiBBogSaIAogQaIEmiAKIEGiBJogCiBBogSaIAogQaIEmiAKIEGiPoL9Frrew4zM3t/p8k3zwD0jPEA
+        pH41bdzJFykAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="SDTTxt.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAQ4AAAAjCAYAAABl9OT5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACpSURBVHhe7dSxDQIxAARB91+VXy6DMigAZMkJycMSz0iX
-        XAE7AP6y1nrMOV9mZnfbrTjZGGMfAN/sVpxsCAfwG+EAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEA
-        MuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAso9w
-        XNf13IeZ2d12K042AIox3tSk8/SOURg0AAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAWgAAAArCAYAAABVXhKjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADVSURBVHhe7dQxDQMxAARB80dlyzACIwDysuQmCH6LGema
+        A7ADgLC992fO+TMzs/d3mnzzPMY5AGg4Tb55FmiAEoEGiBJogCiBBogSaIAogQaIEmiAKIEGiBJogCiB
+        BogSaIAogQaIEmiAKIEGiBJogCiBBogSaIAogQaIEmiAKIEGiBJogCiBBogSaIAogQaIEmiAKIEGiBJo
+        gCiBBogSaIAogQaIEmiAKIEGiBJogCiBBogSaIAogQaIEmiAKIEGiPoL9Frrew4zM3t/p8k3zwD0jPEA
+        pH41bdzJFykAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="CMNDTxt.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAQ4AAAAjCAYAAABl9OT5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACpSURBVHhe7dSxDQIxAARB91+VXy6DMigAZMkJycMSz0iX
-        XAE7AP6y1nrMOV9mZnfbrTjZGGMfAN/sVpxsCAfwG+EAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEA
-        MuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAMuEAso9w
-        XNf13IeZ2d12K042AIox3tSk8/SOURg0AAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAWgAAAArCAYAAABVXhKjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADVSURBVHhe7dQxDQMxAARB80dlyzACIwDysuQmCH6LGema
+        A7ADgLC992fO+TMzs/d3mnzzPMY5AGg4Tb55FmiAEoEGiBJogCiBBogSaIAogQaIEmiAKIEGiBJogCiB
+        BogSaIAogQaIEmiAKIEGiBJogCiBBogSaIAogQaIEmiAKIEGiBJogCiBBogSaIAogQaIEmiAKIEGiBJo
+        gCiBBogSaIAogQaIEmiAKIEGiBJogCiBBogSaIAogQaIEmiAKIEGiPoL9Frrew4zM3t/p8k3zwD0jPEA
+        pH41bdzJFykAAAAASUVORK5CYII=
 </value>
   </data>
 </root>
