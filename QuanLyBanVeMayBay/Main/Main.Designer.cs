@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.Header = new System.Windows.Forms.Panel();
             this.MinisizeBtn = new Bunifu.Framework.UI.BunifuImageButton();
@@ -42,13 +43,14 @@
             this.BanVeBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.HomeBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ContentPanel = new System.Windows.Forms.Panel();
+            this.ucDoanhThu = new QuanLyBanVeMayBay.Components.UCDoanhThu();
             this.ucTimKiemKH1 = new QuanLyBanVeMayBay.Components.UCTimKiemKH();
             this.ucChinhSuaVe = new QuanLyBanVeMayBay.Components.ComponentsChinhSuaVe.UCChinhSuaVe();
-            this.ucTimVe1 = new QuanLyBanVeMayBay.Components.UCTimVe();
+            this.ucTimVe1 = new QuanLyBanVeMayBay.Components.UCTaiKhoan();
             this.ucKhachHang = new QuanLyBanVeMayBay.Components.ComponentsKhachHang.UCKhachHang();
             this.ucHuyVe = new QuanLyBanVeMayBay.Components.UCHuyVe();
             this.ucBanve = new QuanLyBanVeMayBay.Components.UCBanve();
-            this.ucDoanhThu = new QuanLyBanVeMayBay.Components.UCDoanhThu();
+            this.bunifuFormFadeTransition1 = new Bunifu.Framework.UI.BunifuFormFadeTransition(this.components);
             this.Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MinisizeBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ExitBtn)).BeginInit();
@@ -444,6 +446,14 @@
             this.ContentPanel.Size = new System.Drawing.Size(1086, 604);
             this.ContentPanel.TabIndex = 2;
             // 
+            // ucDoanhThu
+            // 
+            this.ucDoanhThu.Location = new System.Drawing.Point(-2, 2);
+            this.ucDoanhThu.Margin = new System.Windows.Forms.Padding(2);
+            this.ucDoanhThu.Name = "ucDoanhThu";
+            this.ucDoanhThu.Size = new System.Drawing.Size(1086, 602);
+            this.ucDoanhThu.TabIndex = 11;
+            // 
             // ucTimKiemKH1
             // 
             this.ucTimKiemKH1.Location = new System.Drawing.Point(-2, 2);
@@ -491,13 +501,9 @@
             this.ucBanve.Size = new System.Drawing.Size(1082, 600);
             this.ucBanve.TabIndex = 2;
             // 
-            // ucDoanhThu
+            // bunifuFormFadeTransition1
             // 
-            this.ucDoanhThu.Location = new System.Drawing.Point(-2, 2);
-            this.ucDoanhThu.Margin = new System.Windows.Forms.Padding(2);
-            this.ucDoanhThu.Name = "ucDoanhThu";
-            this.ucDoanhThu.Size = new System.Drawing.Size(1086, 602);
-            this.ucDoanhThu.TabIndex = 11;
+            this.bunifuFormFadeTransition1.Delay = 1;
             // 
             // Main
             // 
@@ -543,9 +549,10 @@
         private Bunifu.Framework.UI.BunifuFlatButton HuyVeBtn;
         private Bunifu.Framework.UI.BunifuFlatButton BanVeBtn;
         private Components.ComponentsKhachHang.UCKhachHang ucKhachHang;
-        private Components.UCTimVe ucTimVe1;
+        private Components.UCTaiKhoan ucTimVe1;
         private Components.ComponentsChinhSuaVe.UCChinhSuaVe ucChinhSuaVe;
         private Components.UCTimKiemKH ucTimKiemKH1;
         private Components.UCDoanhThu ucDoanhThu;
+        private Bunifu.Framework.UI.BunifuFormFadeTransition bunifuFormFadeTransition1;
     }
 }

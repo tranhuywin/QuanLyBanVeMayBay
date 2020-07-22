@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using QuanLyBanVeMayBay.Components;
+using DTO_QuanLy;
 
 namespace QuanLyBanVeMayBay.Main
 {
@@ -10,6 +11,7 @@ namespace QuanLyBanVeMayBay.Main
         public Main()
         {
             InitializeComponent();
+            bunifuFormFadeTransition1.ShowAsyc(this);
         }
         //handle header move
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -60,13 +62,16 @@ namespace QuanLyBanVeMayBay.Main
             ContentPanel.Controls.Add(ucChinhSuaVe);
         }
 
-        private void TimVeBtn_Click(object sender, EventArgs e)
+        public DTO_User dtoUser = new DTO_User();
+        private void TimVeBtn_Click(object sender, EventArgs e)//UC TaiKhoan
         {
             ContentPanel.Controls.Clear();
+            ucTimVe1.dtoUser = dtoUser;
+            ucTimVe1.LoadUser();
             ContentPanel.Controls.Add(ucTimVe1);
         }
 
-        private void TimKHBtn_Click(object sender, EventArgs e)
+        private void TimKHBtn_Click(object sender, EventArgs e) 
         {
             ContentPanel.Controls.Clear();
             ContentPanel.Controls.Add(ucTimKiemKH1);

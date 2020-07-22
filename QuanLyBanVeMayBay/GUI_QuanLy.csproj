@@ -33,7 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu.Core, Version=1.11.4.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
     <Reference Include="Bunifu.UI.WinForms.BunifuButton">
       <HintPath>..\..\New folder\Bunifu UI WinForms 1.11.4.0_apptop1.net\Bunifu UI WinForms 1.11.4.0\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
     </Reference>
@@ -66,6 +65,9 @@
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
       <HintPath>..\..\New folder\Bunifu UI WinForms 1.11.4.0_apptop1.net\Bunifu UI WinForms 1.11.4.0\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="BunifuDataViz">
+      <HintPath>..\..\..\..\Downloads\Bunifu-Dataviz-Advanced-1.1.1.5_ShareAppsCrack.com\Bunifu Dataviz Advanced 1.1.1.5\BunifuDataViz.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>..\..\New folder\Bunifu UI WinForms 1.11.4.0_apptop1.net\Bunifu UI WinForms 1.11.4.0\Bunifu_UI_v1.5.3.dll</HintPath>
@@ -153,17 +155,11 @@
     <Compile Include="Components\ComponentsTimKiemKH\TimKiemKH.Designer.cs">
       <DependentUpon>TimKiemKH.cs</DependentUpon>
     </Compile>
-    <Compile Include="Components\ComponentsTimKiemVe\TimKiemVe.cs">
+    <Compile Include="Components\ComponentsTaiKhoan\UCEditTaiKhoan.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Components\ComponentsTimKiemVe\TimKiemVe.Designer.cs">
-      <DependentUpon>TimKiemVe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Components\Home1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Components\Home1.Designer.cs">
-      <DependentUpon>Home1.cs</DependentUpon>
+    <Compile Include="Components\ComponentsTaiKhoan\UCEditTaiKhoan.Designer.cs">
+      <DependentUpon>UCEditTaiKhoan.cs</DependentUpon>
     </Compile>
     <Compile Include="Components\UCBanve.cs">
       <SubType>UserControl</SubType>
@@ -189,11 +185,11 @@
     <Compile Include="Components\UCTimKiemKH.Designer.cs">
       <DependentUpon>UCTimKiemKH.cs</DependentUpon>
     </Compile>
-    <Compile Include="Components\UCTimVe.cs">
+    <Compile Include="Components\UCTaiKhoan.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Components\UCTimVe.Designer.cs">
-      <DependentUpon>UCTimVe.cs</DependentUpon>
+    <Compile Include="Components\UCTaiKhoan.Designer.cs">
+      <DependentUpon>UCTaiKhoan.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI_Login.cs">
       <SubType>Form</SubType>
@@ -236,11 +232,8 @@
     <EmbeddedResource Include="Components\ComponentsTimKiemKH\TimKiemKH.resx">
       <DependentUpon>TimKiemKH.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Components\ComponentsTimKiemVe\TimKiemVe.resx">
-      <DependentUpon>TimKiemVe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Components\Home1.resx">
-      <DependentUpon>Home1.cs</DependentUpon>
+    <EmbeddedResource Include="Components\ComponentsTaiKhoan\UCEditTaiKhoan.resx">
+      <DependentUpon>UCEditTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\UCBanve.resx">
       <DependentUpon>UCBanve.cs</DependentUpon>
@@ -254,8 +247,8 @@
     <EmbeddedResource Include="Components\UCTimKiemKH.resx">
       <DependentUpon>UCTimKiemKH.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Components\UCTimVe.resx">
-      <DependentUpon>UCTimVe.cs</DependentUpon>
+    <EmbeddedResource Include="Components\UCTaiKhoan.resx">
+      <DependentUpon>UCTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_Login.resx">
       <DependentUpon>GUI_Login.cs</DependentUpon>

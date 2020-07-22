@@ -35,5 +35,48 @@ namespace DAL_QuanLy.DAL_BanVe
                 CloseConnection();
             }
         }
+        public bool ChangeTrangThaiVe( DTO_PhieuDatCho dtoPhieuDatChoXuatPhat)
+        {
+            try
+            {
+                OpenConection();
+                SqlCommand command = new SqlCommand();
+                command.Parameters.Add(new SqlParameter("@MaChuyenBay", dtoPhieuDatChoXuatPhat.MaChuyenBay));
+                command.Parameters.Add(new SqlParameter("@MaPhieu", dtoPhieuDatChoXuatPhat.MaPhieu));
+                command.Parameters.Add(new SqlParameter("@SoGhe", dtoPhieuDatChoXuatPhat.SoGhe));
+                ExecuteQueriesStoredProcedure(command, "UpdateTrangThaiVeChuyenBay");
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                CloseConnection();
+            }
+        }
+        public bool InsertPhieu(DTO_PhieuDatCho dtoPhieuDatChoXuatPhat)
+        {
+            /*try
+            {*/
+                OpenConection();
+                SqlCommand command = new SqlCommand();
+                command.Parameters.Add(new SqlParameter("@MaChuyenBay", dtoPhieuDatChoXuatPhat.MaChuyenBay));
+                command.Parameters.Add(new SqlParameter("@MaPhieu", dtoPhieuDatChoXuatPhat.MaPhieu.Remove(10)));
+                command.Parameters.Add(new SqlParameter("@SoGhe", dtoPhieuDatChoXuatPhat.SoGhe));
+                command.Parameters.Add(new SqlParameter("@MaKH", dtoPhieuDatChoXuatPhat.MaKH.Remove(10)));
+                ExecuteQueriesStoredProcedure(command, "InsertPhieuDatCho");
+                return true;
+            /*}
+            catch
+            {
+                return false;
+            }
+            finally
+            {*/
+                CloseConnection();
+            //}
+        }
     }
 }

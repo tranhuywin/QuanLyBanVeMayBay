@@ -19,5 +19,14 @@ namespace BUS_QuanLy.BUS_BanVe
             else
                 return false;
         }
+        public bool ChangeTrangThaiVe( DTO_PhieuDatCho dtoPhieuDatChoXuatPhat)
+        {
+            bool insert = dalstep3.InsertPhieu(dtoPhieuDatChoXuatPhat);
+            if (!insert)
+            {
+                return false;
+            }
+            return (dalstep3.ChangeTrangThaiVe( dtoPhieuDatChoXuatPhat));
+        }
     }
 }

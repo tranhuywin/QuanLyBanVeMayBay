@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL_QuanLy.DAL_HuyVe
+namespace DAL_QuanLy.DAL_TimKiemKH
 {
-    public class DAL_HuyVe : ClsConnectDB
+    public class DAL_TimKiemKH : ClsConnectDB
     {
-        public DataTable LoadDataTableHuyVe(DTO_KhachHang dtoKhachHang, DTO_VeChuyenBay dtoVeChuyenbay)
+        public DataTable LoadKhachHang(DTO_KhachHang dtoKhachHang)
         {
             DataTable dt = new DataTable();
             try
@@ -19,8 +19,10 @@ namespace DAL_QuanLy.DAL_HuyVe
                 OpenConection();
                 SqlCommand command = new SqlCommand();
                 command.Parameters.Add(new SqlParameter("@CMND", dtoKhachHang.CMND));
-                command.Parameters.Add(new SqlParameter("@MaVeChuyenBay", dtoVeChuyenbay.MaVeChuyenBay));
-                dt = ShowDataInTableStoredProcedure(command, "UpdateTrangThaiVeChuyenBay");
+                command.Parameters.Add(new SqlParameter("@HoTenKH", dtoKhachHang.HoTenKH));
+                command.Parameters.Add(new SqlParameter("@Email", dtoKhachHang.Email));
+                command.Parameters.Add(new SqlParameter("@SDT", dtoKhachHang.SDT));
+                dt = ShowDataInTableStoredProcedure(command, "SelectKhachHang");
                 return dt;
             }
             catch
@@ -31,10 +33,6 @@ namespace DAL_QuanLy.DAL_HuyVe
             {
                 CloseConnection();
             }
-        }
-        public bool DeleteVeChuyenBay(DTO_VeChuyenBay dtoVeChuyenBay)
-        {
-            return true;
         }
     }
 }

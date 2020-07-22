@@ -49,7 +49,8 @@ namespace QuanLyBanVeMayBay.Components.ComponentsBanVe
             {
                 DTO_KhachHang dtokhachhang = new DTO_KhachHang { CMND = CmndTxt.Text, Email = EmailTxt.Text, GioiTinh = GioiTinhComboBox.Text, HoTenKH = HoTenKHTxt.Text, SDT = SDTTxt.Text, MaKhachHang = generateID() };
                 bool insertKH = busstep3.InsertKhachHang(dtokhachhang);
-                if (insertKH)
+                
+                if (insertKH)   // them khach hang vao trong CSDL
                 {
                     MessageBox.Show("Thêm khách hàng thành công");
                 }
@@ -57,6 +58,19 @@ namespace QuanLyBanVeMayBay.Components.ComponentsBanVe
                 {
                     MessageBox.Show("Thêm khách hàng thất bại!!!");
                 }
+                dtoPhieuDatChoXuatPhat.MaKH = dtokhachhang.MaKhachHang;
+                dtoPhieuDatChoXuatPhat.MaPhieu = generateID();
+                if (SoGheHang1XuatPhatLabel.Text == "0")
+                    dtoPhieuDatChoXuatPhat.SoGhe = SoGheHang2XuatPhatLabel.Text;
+                else dtoPhieuDatChoXuatPhat.SoGhe = SoGheHang1XuatPhatLabel.Text;
+
+                bool changeTrangThaiVeMayBayXuatPhat = busstep3.ChangeTrangThaiVe(dtoPhieuDatChoXuatPhat);
+                if (changeTrangThaiVeMayBayXuatPhat)    // Thay doi trang thai ve thanh da dat
+                {
+                    MessageBox.Show("Đặt vé thành công");
+                }
+                else
+                    MessageBox.Show("Đặt vé thất bại");
             }
             else
             {

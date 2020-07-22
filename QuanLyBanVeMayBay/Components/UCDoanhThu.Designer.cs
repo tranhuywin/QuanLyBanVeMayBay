@@ -32,21 +32,17 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel2 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.DoanhThuChart = new Bunifu.DataViz.WinForms.BunifuDataViz();
             this.TimKiemBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.bunifuDatePicker2 = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuDatePicker1 = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -72,8 +68,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.DoanhThuChart);
             this.panel1.Controls.Add(this.TimKiemBtn);
-            this.panel1.Controls.Add(this.chart1);
             this.panel1.Controls.Add(this.bunifuDatePicker2);
             this.panel1.Controls.Add(this.bunifuCustomLabel2);
             this.panel1.Controls.Add(this.bunifuDatePicker1);
@@ -83,6 +79,34 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1086, 569);
             this.panel1.TabIndex = 6;
+            // 
+            // DoanhThuChart
+            // 
+            this.DoanhThuChart.animationEnabled = false;
+            this.DoanhThuChart.AxisLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
+            this.DoanhThuChart.AxisXFontColor = System.Drawing.Color.Gray;
+            this.DoanhThuChart.AxisXGridColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.DoanhThuChart.AxisXGridThickness = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.DoanhThuChart.AxisYFontColor = System.Drawing.Color.Gray;
+            this.DoanhThuChart.AxisYGridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
+            this.DoanhThuChart.AxisYGridThickness = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.DoanhThuChart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.DoanhThuChart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DoanhThuChart.Location = new System.Drawing.Point(3, 62);
+            this.DoanhThuChart.Name = "DoanhThuChart";
+            this.DoanhThuChart.Size = new System.Drawing.Size(1080, 504);
+            this.DoanhThuChart.TabIndex = 37;
+            this.DoanhThuChart.Theme = Bunifu.DataViz.WinForms.BunifuDataViz._theme.theme2;
+            this.DoanhThuChart.Title = "";
+            this.DoanhThuChart.Load += new System.EventHandler(this.DoanhThuChart_Load);
             // 
             // TimKiemBtn
             // 
@@ -146,22 +170,7 @@
             this.TimKiemBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.TimKiemBtn.TextMarginLeft = 0;
             this.TimKiemBtn.UseDefaultRadiusAndThickness = true;
-            // 
-            // chart1
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(20, 66);
-            this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(1045, 487);
-            this.chart1.TabIndex = 35;
-            this.chart1.Text = "chart1";
+            this.TimKiemBtn.Click += new System.EventHandler(this.TimKiemBtn_Click);
             // 
             // bunifuDatePicker2
             // 
@@ -238,7 +247,6 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -249,10 +257,10 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private Bunifu.UI.WinForms.BunifuDatePicker bunifuDatePicker2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.UI.WinForms.BunifuDatePicker bunifuDatePicker1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton TimKiemBtn;
+        private Bunifu.DataViz.WinForms.BunifuDataViz DoanhThuChart;
     }
 }
