@@ -24,16 +24,9 @@ namespace QuanLyBanVeMayBay.Components.ComponentsHuyVe
 
         private void TimKiemBtn_Click(object sender, EventArgs e)
         {
-            if(CMNDTxt.Text != "" && MaVeChuyenBayTxt.Text != "")
-            {
-                dtoKhachHang.CMND = CMNDTxt.Text;
-                dtoVeChuyenbay.MaVeChuyenBay = MaVeChuyenBayTxt.Text;
-                HuyVeDataGridView.DataSource = busHuyVe.LoadDataGridViewHuyVe(dtoKhachHang, dtoVeChuyenbay);
-            }
-            else
-            {
-                MessageBox.Show("Vui lòng điền đầy đủ thông tin!!!");
-            }
+            dtoKhachHang.CMND = CMNDTxt.Text;
+            dtoVeChuyenbay.MaVeChuyenBay = MaVeChuyenBayTxt.Text;
+            HuyVeDataGridView.DataSource = busHuyVe.LoadDataGridViewHuyVe(dtoKhachHang, dtoVeChuyenbay);
         }
 
         private void HuyVeDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
