@@ -10,6 +10,7 @@ namespace DTO_QuanLy
     {
         public string SanBayTrungGian { get; set; }
         public string ThoiGianDung { get; set; }
+        public string MaChiTietChuyenBay { get; set; }
 
     }
 }
