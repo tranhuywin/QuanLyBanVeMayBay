@@ -45,7 +45,14 @@
     <Compile Include="DAL_BanVe\DAL_Step1.cs" />
     <Compile Include="DAL_BanVe\DAL_Step2.cs" />
     <Compile Include="DAL_BanVe\DAL_Step3.cs" />
+    <Compile Include="DAL_ChinhSuaVe\DAL_ChinhSuaVe.cs" />
+    <Compile Include="DAL_ChinhSuaVe\DAL_EditChuyenBay.cs" />
+    <Compile Include="DAL_ChinhSuaVe\DAL_ThemChuyenBay.cs" />
     <Compile Include="DAL_HuyVe\DAL_HuyVe.cs" />
+    <Compile Include="DAL_KhachHang1\DAL_ChinhSuaKH.cs" />
+    <Compile Include="DAL_KhachHang1\DAL_KhachHang.cs" />
+    <Compile Include="DAL_KhachHang1\DAL_UpdateKH.cs" />
+    <Compile Include="DAL_KhachHang1\DAL_XoaKH.cs" />
     <Compile Include="DAL_Login.cs" />
     <Compile Include="DAL_TaiKhoan\DAL_TaiKhoan.cs" />
     <Compile Include="DAL_TaoTaiKhoan\DAL_TaoTaiKhoan.cs" />

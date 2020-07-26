@@ -8,6 +8,7 @@ namespace DTO_QuanLy
 {
     public class DTO_ChiTietChuyenBay
     {
+        public string MaChiTietChuyenBay { get; set; }
         public string SanBayTrungGian { get; set; }
         public string ThoiGianDung { get; set; }
 

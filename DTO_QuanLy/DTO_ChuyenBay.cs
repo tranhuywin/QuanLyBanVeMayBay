@@ -14,6 +14,7 @@ namespace DTO_QuanLy
         public int SoGheHang1 { get; set; }
         public int SoGheHang2 { get; set; }
         public string MaTuyenBay { get; set; }
+        public string TenMayBay { get; set; }
         public string MaChiTietChuyenBay { get; set; }
 
     }

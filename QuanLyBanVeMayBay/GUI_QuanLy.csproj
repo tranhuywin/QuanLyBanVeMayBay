@@ -131,6 +131,12 @@
     <Compile Include="Components\ComponentsChinhSuaVe\UCChinhSuaVe.Designer.cs">
       <DependentUpon>UCChinhSuaVe.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\ComponentsChinhSuaVe\UCEditChuyenBay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ComponentsChinhSuaVe\UCEditChuyenBay.Designer.cs">
+      <DependentUpon>UCEditChuyenBay.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\ComponentsHuyVe\DienThongTinkH.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -148,6 +154,12 @@
     </Compile>
     <Compile Include="Components\ComponentsKhachHang\UCKhachHang.Designer.cs">
       <DependentUpon>UCKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ComponentsKhachHang\UCUpdateKhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ComponentsKhachHang\UCUpdateKhachHang.Designer.cs">
+      <DependentUpon>UCUpdateKhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="Components\ComponentsTaoTaiKhoan\UCTaoTaiKhoan.cs">
       <SubType>UserControl</SubType>
@@ -197,6 +209,12 @@
     <Compile Include="Components\UCTaiKhoan.Designer.cs">
       <DependentUpon>UCTaiKhoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\UCTimVe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\UCTimVe.Designer.cs">
+      <DependentUpon>UCTimVe.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,6 +244,9 @@
     <EmbeddedResource Include="Components\ComponentsChinhSuaVe\UCChinhSuaVe.resx">
       <DependentUpon>UCChinhSuaVe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Components\ComponentsChinhSuaVe\UCEditChuyenBay.resx">
+      <DependentUpon>UCEditChuyenBay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Components\ComponentsHuyVe\DienThongTinkH.resx">
       <DependentUpon>DienThongTinkH.cs</DependentUpon>
     </EmbeddedResource>
@@ -234,6 +255,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Components\ComponentsKhachHang\UCKhachHang.resx">
       <DependentUpon>UCKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ComponentsKhachHang\UCUpdateKhachHang.resx">
+      <DependentUpon>UCUpdateKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\ComponentsTaoTaiKhoan\UCTaoTaiKhoan.resx">
       <DependentUpon>UCTaoTaiKhoan.cs</DependentUpon>
@@ -258,6 +282,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Components\UCTaiKhoan.resx">
       <DependentUpon>UCTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\UCTimVe.resx">
+      <DependentUpon>UCTimVe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_Login.resx">
       <DependentUpon>GUI_Login.cs</DependentUpon>

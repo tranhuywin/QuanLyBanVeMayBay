@@ -44,7 +44,14 @@
     <Compile Include="BUS_BanVe\BUS_Step1.cs" />
     <Compile Include="BUS_BanVe\BUS_Step2.cs" />
     <Compile Include="BUS_BanVe\BUS_Step3.cs" />
+    <Compile Include="BUS_ChinhSuaVe\BUS_ChinhSuaVe.cs" />
+    <Compile Include="BUS_ChinhSuaVe\BUS_EditChuyenBay.cs" />
+    <Compile Include="BUS_ChinhSuaVe\BUS_ThemChuyenBay.cs" />
     <Compile Include="BUS_HuyVe\BUS_HuyVe.cs" />
+    <Compile Include="BUS_KhachHang\BUS_ChinhSuaKH.cs" />
+    <Compile Include="BUS_KhachHang\BUS_KhachHang.cs" />
+    <Compile Include="BUS_KhachHang\BUS_UpdateKH.cs" />
+    <Compile Include="BUS_KhachHang\BUS_XoaKH.cs" />
     <Compile Include="BUS_Login.cs" />
     <Compile Include="BUS_TaiKhoan\BUS_TaiKhoan.cs" />
     <Compile Include="BUS_TaoTaiKhoan\BUS_TaoTaiKhoan.cs" />
