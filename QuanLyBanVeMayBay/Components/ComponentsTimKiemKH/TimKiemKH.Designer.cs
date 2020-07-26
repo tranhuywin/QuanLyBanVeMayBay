@@ -45,23 +45,16 @@
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.HoTenKHTxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.EmailTxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.SDTTxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.CMNDTxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.TimKiemBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.KhachHangDataGridView = new Bunifu.UI.WinForms.BunifuDataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.KhachHangDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -81,7 +74,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
-            this.label2.Location = new System.Drawing.Point(545, 14);
+            this.label2.Location = new System.Drawing.Point(626, 14);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 24);
@@ -105,12 +98,23 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
-            this.label4.Location = new System.Drawing.Point(545, 61);
+            this.label4.Location = new System.Drawing.Point(626, 61);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 24);
             this.label4.TabIndex = 6;
             this.label4.Text = "CMND";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(11, 100);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1061, 450);
+            this.dataGridView1.TabIndex = 8;
             // 
             // HoTenKHTxt
             // 
@@ -285,7 +289,7 @@
             this.SDTTxt.IconRight = null;
             this.SDTTxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.SDTTxt.Lines = new string[0];
-            this.SDTTxt.Location = new System.Drawing.Point(616, 3);
+            this.SDTTxt.Location = new System.Drawing.Point(697, 3);
             this.SDTTxt.MaxLength = 32767;
             this.SDTTxt.MinimumSize = new System.Drawing.Size(100, 35);
             this.SDTTxt.Modified = false;
@@ -358,7 +362,7 @@
             this.CMNDTxt.IconRight = null;
             this.CMNDTxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.CMNDTxt.Lines = new string[0];
-            this.CMNDTxt.Location = new System.Drawing.Point(616, 50);
+            this.CMNDTxt.Location = new System.Drawing.Point(697, 50);
             this.CMNDTxt.MaxLength = 32767;
             this.CMNDTxt.MinimumSize = new System.Drawing.Size(100, 35);
             this.CMNDTxt.Modified = false;
@@ -404,140 +408,15 @@
             this.CMNDTxt.UseSystemPasswordChar = false;
             this.CMNDTxt.WordWrap = true;
             // 
-            // TimKiemBtn
-            // 
-            this.TimKiemBtn.AllowToggling = false;
-            this.TimKiemBtn.AnimationSpeed = 200;
-            this.TimKiemBtn.AutoGenerateColors = false;
-            this.TimKiemBtn.BackColor = System.Drawing.Color.Transparent;
-            this.TimKiemBtn.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
-            this.TimKiemBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TimKiemBtn.BackgroundImage")));
-            this.TimKiemBtn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.TimKiemBtn.ButtonText = "Tìm Kiếm";
-            this.TimKiemBtn.ButtonTextMarginLeft = 0;
-            this.TimKiemBtn.ColorContrastOnClick = 45;
-            this.TimKiemBtn.ColorContrastOnHover = 45;
-            this.TimKiemBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.TimKiemBtn.CustomizableEdges = borderEdges1;
-            this.TimKiemBtn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.TimKiemBtn.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.TimKiemBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.TimKiemBtn.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.TimKiemBtn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.TimKiemBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.TimKiemBtn.ForeColor = System.Drawing.Color.White;
-            this.TimKiemBtn.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.TimKiemBtn.IconMarginLeft = 11;
-            this.TimKiemBtn.IconPadding = 10;
-            this.TimKiemBtn.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.TimKiemBtn.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
-            this.TimKiemBtn.IdleBorderRadius = 3;
-            this.TimKiemBtn.IdleBorderThickness = 1;
-            this.TimKiemBtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
-            this.TimKiemBtn.IdleIconLeftImage = null;
-            this.TimKiemBtn.IdleIconRightImage = null;
-            this.TimKiemBtn.IndicateFocus = false;
-            this.TimKiemBtn.Location = new System.Drawing.Point(979, 50);
-            this.TimKiemBtn.Name = "TimKiemBtn";
-            stateProperties17.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(51)))));
-            stateProperties17.BorderRadius = 3;
-            stateProperties17.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties17.BorderThickness = 1;
-            stateProperties17.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(51)))));
-            stateProperties17.ForeColor = System.Drawing.Color.White;
-            stateProperties17.IconLeftImage = null;
-            stateProperties17.IconRightImage = null;
-            this.TimKiemBtn.onHoverState = stateProperties17;
-            stateProperties18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(122)))), ((int)(((byte)(0)))));
-            stateProperties18.BorderRadius = 3;
-            stateProperties18.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties18.BorderThickness = 1;
-            stateProperties18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(122)))), ((int)(((byte)(0)))));
-            stateProperties18.ForeColor = System.Drawing.Color.White;
-            stateProperties18.IconLeftImage = null;
-            stateProperties18.IconRightImage = null;
-            this.TimKiemBtn.OnPressedState = stateProperties18;
-            this.TimKiemBtn.Size = new System.Drawing.Size(93, 34);
-            this.TimKiemBtn.TabIndex = 26;
-            this.TimKiemBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.TimKiemBtn.TextMarginLeft = 0;
-            this.TimKiemBtn.UseDefaultRadiusAndThickness = true;
-            this.TimKiemBtn.Click += new System.EventHandler(this.TimKiemBtn_Click);
-            // 
-            // KhachHangDataGridView
-            // 
-            this.KhachHangDataGridView.AllowCustomTheming = false;
-            this.KhachHangDataGridView.AllowUserToAddRows = false;
-            this.KhachHangDataGridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.KhachHangDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.KhachHangDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.KhachHangDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.KhachHangDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.KhachHangDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.KhachHangDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.KhachHangDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.KhachHangDataGridView.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.KhachHangDataGridView.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.KhachHangDataGridView.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.KhachHangDataGridView.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.KhachHangDataGridView.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.KhachHangDataGridView.CurrentTheme.BackColor = System.Drawing.Color.White;
-            this.KhachHangDataGridView.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.KhachHangDataGridView.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
-            this.KhachHangDataGridView.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.KhachHangDataGridView.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.KhachHangDataGridView.CurrentTheme.Name = null;
-            this.KhachHangDataGridView.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.KhachHangDataGridView.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.KhachHangDataGridView.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.KhachHangDataGridView.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.KhachHangDataGridView.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.KhachHangDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
-            this.KhachHangDataGridView.EnableHeadersVisualStyles = false;
-            this.KhachHangDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.KhachHangDataGridView.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.KhachHangDataGridView.HeaderBgColor = System.Drawing.Color.Empty;
-            this.KhachHangDataGridView.HeaderForeColor = System.Drawing.Color.White;
-            this.KhachHangDataGridView.Location = new System.Drawing.Point(15, 101);
-            this.KhachHangDataGridView.Name = "KhachHangDataGridView";
-            this.KhachHangDataGridView.ReadOnly = true;
-            this.KhachHangDataGridView.RowHeadersVisible = false;
-            this.KhachHangDataGridView.RowTemplate.Height = 40;
-            this.KhachHangDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.KhachHangDataGridView.Size = new System.Drawing.Size(1057, 450);
-            this.KhachHangDataGridView.TabIndex = 27;
-            this.KhachHangDataGridView.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
-            // 
             // TimKiemKH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.KhachHangDataGridView);
-            this.Controls.Add(this.TimKiemBtn);
             this.Controls.Add(this.CMNDTxt);
             this.Controls.Add(this.SDTTxt);
             this.Controls.Add(this.EmailTxt);
             this.Controls.Add(this.HoTenKHTxt);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -545,7 +424,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TimKiemKH";
             this.Size = new System.Drawing.Size(1084, 563);
-            ((System.ComponentModel.ISupportInitialize)(this.KhachHangDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -557,11 +436,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox HoTenKHTxt;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox EmailTxt;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox SDTTxt;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox CMNDTxt;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton TimKiemBtn;
-        private Bunifu.UI.WinForms.BunifuDataGridView KhachHangDataGridView;
     }
 }

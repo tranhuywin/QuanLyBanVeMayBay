@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyBanVeMayBay.Components.ComponentsTimKiemKH
+namespace QuanLyBanVeMayBay.Components.ComponentsTimKiemVe
 {
-    public partial class TimKiemKH : UserControl
+    public partial class TimKiemVe : UserControl
     {
-        public TimKiemKH()
+        public TimKiemVe()
         {
             InitializeComponent();
         }
