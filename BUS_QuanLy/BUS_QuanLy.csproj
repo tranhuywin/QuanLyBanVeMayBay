@@ -47,6 +47,7 @@
     <Compile Include="BUS_HuyVe\BUS_HuyVe.cs" />
     <Compile Include="BUS_Login.cs" />
     <Compile Include="BUS_TaiKhoan\BUS_TaiKhoan.cs" />
+    <Compile Include="BUS_TaoTaiKhoan\BUS_TaoTaiKhoan.cs" />
     <Compile Include="BUS_TimKiemKH\BUS_TimKiemKH.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

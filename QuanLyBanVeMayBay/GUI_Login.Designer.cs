@@ -28,88 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            this.ExitBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.LoginLabel = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.ExitBtn = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.PasswordTxt = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.UserTxt = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.LoginBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.AnHienMatKhauCheckBox = new Bunifu.Framework.UI.BunifuCheckbox();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ExitBtn)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // ExitBtn
-            // 
-            this.ExitBtn.AllowToggling = false;
-            this.ExitBtn.AnimationSpeed = 200;
-            this.ExitBtn.AutoGenerateColors = false;
-            this.ExitBtn.BackColor = System.Drawing.Color.Transparent;
-            this.ExitBtn.BackColor1 = System.Drawing.Color.DodgerBlue;
-            this.ExitBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ExitBtn.BackgroundImage")));
-            this.ExitBtn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.ExitBtn.ButtonText = "Exit";
-            this.ExitBtn.ButtonTextMarginLeft = 0;
-            this.ExitBtn.ColorContrastOnClick = 45;
-            this.ExitBtn.ColorContrastOnHover = 45;
-            this.ExitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.ExitBtn.CustomizableEdges = borderEdges1;
-            this.ExitBtn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.ExitBtn.DisabledBorderColor = System.Drawing.Color.Empty;
-            this.ExitBtn.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.ExitBtn.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.ExitBtn.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.ExitBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
-            this.ExitBtn.ForeColor = System.Drawing.Color.White;
-            this.ExitBtn.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.ExitBtn.IconMarginLeft = 11;
-            this.ExitBtn.IconPadding = 10;
-            this.ExitBtn.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.ExitBtn.IdleBorderColor = System.Drawing.Color.DodgerBlue;
-            this.ExitBtn.IdleBorderRadius = 3;
-            this.ExitBtn.IdleBorderThickness = 1;
-            this.ExitBtn.IdleFillColor = System.Drawing.Color.DodgerBlue;
-            this.ExitBtn.IdleIconLeftImage = null;
-            this.ExitBtn.IdleIconRightImage = null;
-            this.ExitBtn.IndicateFocus = false;
-            this.ExitBtn.Location = new System.Drawing.Point(409, 10);
-            this.ExitBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ExitBtn.Name = "ExitBtn";
-            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties1.BorderRadius = 3;
-            stateProperties1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties1.BorderThickness = 1;
-            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties1.ForeColor = System.Drawing.Color.White;
-            stateProperties1.IconLeftImage = null;
-            stateProperties1.IconRightImage = null;
-            this.ExitBtn.onHoverState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties2.BorderRadius = 3;
-            stateProperties2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties2.BorderThickness = 1;
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties2.ForeColor = System.Drawing.Color.White;
-            stateProperties2.IconLeftImage = null;
-            stateProperties2.IconRightImage = null;
-            this.ExitBtn.OnPressedState = stateProperties2;
-            this.ExitBtn.Size = new System.Drawing.Size(58, 37);
-            this.ExitBtn.TabIndex = 1;
-            this.ExitBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ExitBtn.TextMarginLeft = 0;
-            this.ExitBtn.UseDefaultRadiusAndThickness = true;
-            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
             // LoginLabel
             // 
@@ -126,26 +67,52 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.ExitBtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(476, 446);
             this.panel1.TabIndex = 3;
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.ExitBtn);
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(473, 41);
+            this.panel3.TabIndex = 10;
+            // 
+            // ExitBtn
+            // 
+            this.ExitBtn.ErrorImage = ((System.Drawing.Image)(resources.GetObject("ExitBtn.ErrorImage")));
+            this.ExitBtn.Image = ((System.Drawing.Image)(resources.GetObject("ExitBtn.Image")));
+            this.ExitBtn.ImageActive = null;
+            this.ExitBtn.Location = new System.Drawing.Point(440, 3);
+            this.ExitBtn.Name = "ExitBtn";
+            this.ExitBtn.Size = new System.Drawing.Size(30, 30);
+            this.ExitBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ExitBtn.TabIndex = 9;
+            this.ExitBtn.TabStop = false;
+            this.ExitBtn.Zoom = 10;
+            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click_1);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.AnHienMatKhauCheckBox);
+            this.panel2.Controls.Add(this.bunifuCustomLabel2);
+            this.panel2.Controls.Add(this.bunifuCustomLabel1);
             this.panel2.Controls.Add(this.PasswordTxt);
             this.panel2.Controls.Add(this.UserTxt);
             this.panel2.Controls.Add(this.LoginBtn);
             this.panel2.Controls.Add(this.LoginLabel);
-            this.panel2.Location = new System.Drawing.Point(72, 140);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(74, 94);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(314, 231);
+            this.panel2.Size = new System.Drawing.Size(314, 310);
             this.panel2.TabIndex = 3;
             // 
             // PasswordTxt
@@ -157,13 +124,14 @@
             this.PasswordTxt.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.PasswordTxt.ForeColor = System.Drawing.Color.White;
             this.PasswordTxt.HintForeColor = System.Drawing.Color.White;
-            this.PasswordTxt.HintText = "Pasword";
-            this.PasswordTxt.isPassword = false;
+            this.PasswordTxt.HintText = "";
+            this.PasswordTxt.isPassword = true;
             this.PasswordTxt.LineFocusedColor = System.Drawing.Color.Blue;
             this.PasswordTxt.LineIdleColor = System.Drawing.Color.Gray;
             this.PasswordTxt.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.PasswordTxt.LineThickness = 3;
-            this.PasswordTxt.Location = new System.Drawing.Point(47, 133);
+            this.PasswordTxt.Location = new System.Drawing.Point(47, 148);
+            this.PasswordTxt.Margin = new System.Windows.Forms.Padding(4);
             this.PasswordTxt.MaxLength = 32767;
             this.PasswordTxt.Name = "PasswordTxt";
             this.PasswordTxt.Size = new System.Drawing.Size(230, 32);
@@ -179,13 +147,14 @@
             this.UserTxt.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.UserTxt.ForeColor = System.Drawing.Color.White;
             this.UserTxt.HintForeColor = System.Drawing.Color.White;
-            this.UserTxt.HintText = "Acccount";
+            this.UserTxt.HintText = "";
             this.UserTxt.isPassword = false;
             this.UserTxt.LineFocusedColor = System.Drawing.Color.Blue;
             this.UserTxt.LineIdleColor = System.Drawing.Color.Gray;
             this.UserTxt.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.UserTxt.LineThickness = 3;
             this.UserTxt.Location = new System.Drawing.Point(47, 83);
+            this.UserTxt.Margin = new System.Windows.Forms.Padding(4);
             this.UserTxt.MaxLength = 32767;
             this.UserTxt.Name = "UserTxt";
             this.UserTxt.Size = new System.Drawing.Size(230, 34);
@@ -198,7 +167,7 @@
             this.LoginBtn.AnimationSpeed = 200;
             this.LoginBtn.AutoGenerateColors = false;
             this.LoginBtn.BackColor = System.Drawing.Color.Transparent;
-            this.LoginBtn.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.LoginBtn.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
             this.LoginBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LoginBtn.BackgroundImage")));
             this.LoginBtn.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.LoginBtn.ButtonText = "log in";
@@ -222,30 +191,30 @@
             this.LoginBtn.IconMarginLeft = 11;
             this.LoginBtn.IconPadding = 10;
             this.LoginBtn.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.LoginBtn.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.LoginBtn.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
             this.LoginBtn.IdleBorderRadius = 3;
             this.LoginBtn.IdleBorderThickness = 1;
-            this.LoginBtn.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.LoginBtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
             this.LoginBtn.IdleIconLeftImage = null;
             this.LoginBtn.IdleIconRightImage = null;
             this.LoginBtn.IndicateFocus = false;
-            this.LoginBtn.Location = new System.Drawing.Point(128, 184);
-            this.LoginBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LoginBtn.Location = new System.Drawing.Point(128, 259);
+            this.LoginBtn.Margin = new System.Windows.Forms.Padding(2);
             this.LoginBtn.Name = "LoginBtn";
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
             stateProperties3.BorderRadius = 3;
             stateProperties3.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             stateProperties3.BorderThickness = 1;
-            stateProperties3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
             stateProperties3.ForeColor = System.Drawing.Color.White;
             stateProperties3.IconLeftImage = null;
             stateProperties3.IconRightImage = null;
             this.LoginBtn.onHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
             stateProperties4.BorderRadius = 3;
             stateProperties4.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             stateProperties4.BorderThickness = 1;
-            stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(138)))), ((int)(((byte)(0)))));
             stateProperties4.ForeColor = System.Drawing.Color.White;
             stateProperties4.IconLeftImage = null;
             stateProperties4.IconRightImage = null;
@@ -257,6 +226,59 @@
             this.LoginBtn.UseDefaultRadiusAndThickness = true;
             this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.panel3;
+            this.bunifuDragControl1.Vertical = true;
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(44, 66);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(55, 13);
+            this.bunifuCustomLabel1.TabIndex = 11;
+            this.bunifuCustomLabel1.Text = "Tài khoản";
+            // 
+            // bunifuCustomLabel2
+            // 
+            this.bunifuCustomLabel2.AutoSize = true;
+            this.bunifuCustomLabel2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(44, 131);
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(52, 13);
+            this.bunifuCustomLabel2.TabIndex = 12;
+            this.bunifuCustomLabel2.Text = "Mật khẩu";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
+            this.label5.Location = new System.Drawing.Point(74, 194);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(112, 16);
+            this.label5.TabIndex = 44;
+            this.label5.Text = "Ẩn, hiện mật khẩu";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // AnHienMatKhauCheckBox
+            // 
+            this.AnHienMatKhauCheckBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
+            this.AnHienMatKhauCheckBox.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.AnHienMatKhauCheckBox.Checked = true;
+            this.AnHienMatKhauCheckBox.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
+            this.AnHienMatKhauCheckBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnHienMatKhauCheckBox.ForeColor = System.Drawing.Color.White;
+            this.AnHienMatKhauCheckBox.Location = new System.Drawing.Point(48, 190);
+            this.AnHienMatKhauCheckBox.Name = "AnHienMatKhauCheckBox";
+            this.AnHienMatKhauCheckBox.Size = new System.Drawing.Size(20, 20);
+            this.AnHienMatKhauCheckBox.TabIndex = 43;
+            this.AnHienMatKhauCheckBox.OnChange += new System.EventHandler(this.AnHienMatKhauCheckBox_OnChange);
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -264,10 +286,12 @@
             this.ClientSize = new System.Drawing.Size(476, 446);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormLogin";
             this.Text = "Login";
             this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ExitBtn)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -275,13 +299,19 @@
         }
 
         #endregion
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton ExitBtn;
         private Bunifu.Framework.UI.BunifuCustomLabel LoginLabel;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton LoginBtn;
         private Bunifu.Framework.UI.BunifuMaterialTextbox PasswordTxt;
         private Bunifu.Framework.UI.BunifuMaterialTextbox UserTxt;
+        private System.Windows.Forms.Panel panel3;
+        private Bunifu.Framework.UI.BunifuImageButton ExitBtn;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+        private System.Windows.Forms.Label label5;
+        private Bunifu.Framework.UI.BunifuCheckbox AnHienMatKhauCheckBox;
     }
 }
 

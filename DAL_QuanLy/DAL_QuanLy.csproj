@@ -48,6 +48,7 @@
     <Compile Include="DAL_HuyVe\DAL_HuyVe.cs" />
     <Compile Include="DAL_Login.cs" />
     <Compile Include="DAL_TaiKhoan\DAL_TaiKhoan.cs" />
+    <Compile Include="DAL_TaoTaiKhoan\DAL_TaoTaiKhoan.cs" />
     <Compile Include="DAL_TimKiemKH\DAL_TimKiemKH.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">

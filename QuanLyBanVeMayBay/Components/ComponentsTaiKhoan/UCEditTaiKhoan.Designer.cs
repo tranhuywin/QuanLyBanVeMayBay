@@ -73,6 +73,7 @@
             this.TaiKhoanBtn = new Bunifu.Framework.UI.BunifuImageButton();
             this.MatKhauBtn = new Bunifu.Framework.UI.BunifuImageButton();
             this.NgaySinhBtn = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             ((System.ComponentModel.ISupportInitialize)(this.HoTenBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CMNDBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DiaChiBtn)).BeginInit();
@@ -216,7 +217,7 @@
             this.LuuBtn.IdleIconLeftImage = null;
             this.LuuBtn.IdleIconRightImage = null;
             this.LuuBtn.IndicateFocus = false;
-            this.LuuBtn.Location = new System.Drawing.Point(971, 515);
+            this.LuuBtn.Location = new System.Drawing.Point(977, 549);
             this.LuuBtn.Name = "LuuBtn";
             stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(51)))));
             stateProperties5.BorderRadius = 3;
@@ -709,10 +710,22 @@
             this.NgaySinhBtn.Zoom = 10;
             this.NgaySinhBtn.Click += new System.EventHandler(this.NgaySinhBtn_Click);
             // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(3, 10);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(215, 25);
+            this.bunifuCustomLabel1.TabIndex = 53;
+            this.bunifuCustomLabel1.Text = "Thông tin tài khoản";
+            // 
             // TimKiemVe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.NgaySinhBtn);
             this.Controls.Add(this.MatKhauBtn);
             this.Controls.Add(this.TaiKhoanBtn);
@@ -735,7 +748,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "TimKiemVe";
-            this.Size = new System.Drawing.Size(1086, 569);
+            this.Size = new System.Drawing.Size(1086, 602);
             this.Load += new System.EventHandler(this.TimKiemVe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.HoTenBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CMNDBtn)).EndInit();
@@ -770,5 +783,6 @@
         private Bunifu.Framework.UI.BunifuImageButton TaiKhoanBtn;
         private Bunifu.Framework.UI.BunifuImageButton MatKhauBtn;
         private Bunifu.Framework.UI.BunifuImageButton NgaySinhBtn;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
     }
 }

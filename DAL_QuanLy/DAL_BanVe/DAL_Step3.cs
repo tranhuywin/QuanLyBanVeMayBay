@@ -58,8 +58,8 @@ namespace DAL_QuanLy.DAL_BanVe
         }
         public bool InsertPhieu(DTO_PhieuDatCho dtoPhieuDatChoXuatPhat)
         {
-            /*try
-            {*/
+            try
+            {
                 OpenConection();
                 SqlCommand command = new SqlCommand();
                 command.Parameters.Add(new SqlParameter("@MaChuyenBay", dtoPhieuDatChoXuatPhat.MaChuyenBay));
@@ -68,15 +68,15 @@ namespace DAL_QuanLy.DAL_BanVe
                 command.Parameters.Add(new SqlParameter("@MaKH", dtoPhieuDatChoXuatPhat.MaKH.Remove(10)));
                 ExecuteQueriesStoredProcedure(command, "InsertPhieuDatCho");
                 return true;
-            /*}
+        }
             catch
             {
                 return false;
             }
             finally
-            {*/
+            {
                 CloseConnection();
-            //}
+            }
         }
     }
 }

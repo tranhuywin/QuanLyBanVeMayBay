@@ -235,3 +235,4 @@ C:\Users\tranh\Desktop\QL\QuanLyBanVeMayBay\obj\Debug\GUI_QuanLy.csproj.CoreComp
 C:\Users\tranh\Desktop\QL\QuanLyBanVeMayBay\obj\Debug\GUI_QuanLy.csproj.CopyComplete
 C:\Users\tranh\Desktop\QL\QuanLyBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.exe
 C:\Users\tranh\Desktop\QL\QuanLyBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.pdb
+C:\Users\tranh\Desktop\CNPM\QuanLyBanVeMayBay\QuanLyBanVeMayBay\obj\Debug\QuanLyBanVeMayBay.Components.ComponentsTaoTaiKhoan.UCTaoTaiKhoan.resources

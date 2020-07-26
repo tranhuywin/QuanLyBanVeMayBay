@@ -14,11 +14,6 @@ namespace QuanLyBanVeMayBay.Components.ComponentsBanVe
 {
     public partial class Step2 : UserControl
     {
-        private string generateID()
-        {
-            return Guid.NewGuid().ToString("N");
-        }
-
         private BUS_Step2 busStep2 = new BUS_Step2();
         public DTO_ChuyenBay dtoChuyenBayXuatPhat = new DTO_ChuyenBay { NgayGio = "", ThoiGianBay = "", SoGheHang1 = 0, SoGheHang2 = 0 };
         public DTO_TuyenBay dtoTuyenBayXuatPhat = new DTO_TuyenBay { SanBayDi = "", SanBayDen = "" };

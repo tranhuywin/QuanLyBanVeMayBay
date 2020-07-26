@@ -34,6 +34,7 @@
             this.MinisizeBtn = new Bunifu.Framework.UI.BunifuImageButton();
             this.ExitBtn = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.TaoTaiKhoanBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.DoanhThuBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.TimKHBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.TimVeBtn = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -43,6 +44,7 @@
             this.BanVeBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.HomeBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.ContentPanel = new System.Windows.Forms.Panel();
+            this.ucTaoTaiKhoan1 = new QuanLyBanVeMayBay.Components.ComponentsTaoTaiKhoan.UCTaoTaiKhoan();
             this.ucDoanhThu = new QuanLyBanVeMayBay.Components.UCDoanhThu();
             this.ucTimKiemKH1 = new QuanLyBanVeMayBay.Components.UCTimKiemKH();
             this.ucChinhSuaVe = new QuanLyBanVeMayBay.Components.ComponentsChinhSuaVe.UCChinhSuaVe();
@@ -102,6 +104,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.panel2.Controls.Add(this.TaoTaiKhoanBtn);
             this.panel2.Controls.Add(this.DoanhThuBtn);
             this.panel2.Controls.Add(this.TimKHBtn);
             this.panel2.Controls.Add(this.TimVeBtn);
@@ -116,6 +119,45 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(214, 604);
             this.panel2.TabIndex = 1;
+            // 
+            // TaoTaiKhoanBtn
+            // 
+            this.TaoTaiKhoanBtn.Active = false;
+            this.TaoTaiKhoanBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(230)))));
+            this.TaoTaiKhoanBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.TaoTaiKhoanBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.TaoTaiKhoanBtn.BorderRadius = 0;
+            this.TaoTaiKhoanBtn.ButtonText = "Tạo tài khoản";
+            this.TaoTaiKhoanBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TaoTaiKhoanBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.TaoTaiKhoanBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TaoTaiKhoanBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TaoTaiKhoanBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.TaoTaiKhoanBtn.Iconimage = ((System.Drawing.Image)(resources.GetObject("TaoTaiKhoanBtn.Iconimage")));
+            this.TaoTaiKhoanBtn.Iconimage_right = null;
+            this.TaoTaiKhoanBtn.Iconimage_right_Selected = null;
+            this.TaoTaiKhoanBtn.Iconimage_Selected = null;
+            this.TaoTaiKhoanBtn.IconMarginLeft = 10;
+            this.TaoTaiKhoanBtn.IconMarginRight = 10;
+            this.TaoTaiKhoanBtn.IconRightVisible = true;
+            this.TaoTaiKhoanBtn.IconRightZoom = 90D;
+            this.TaoTaiKhoanBtn.IconVisible = true;
+            this.TaoTaiKhoanBtn.IconZoom = 80D;
+            this.TaoTaiKhoanBtn.IsTab = false;
+            this.TaoTaiKhoanBtn.Location = new System.Drawing.Point(0, 456);
+            this.TaoTaiKhoanBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TaoTaiKhoanBtn.Name = "TaoTaiKhoanBtn";
+            this.TaoTaiKhoanBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.TaoTaiKhoanBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.TaoTaiKhoanBtn.OnHoverTextColor = System.Drawing.Color.White;
+            this.TaoTaiKhoanBtn.selected = false;
+            this.TaoTaiKhoanBtn.Size = new System.Drawing.Size(214, 57);
+            this.TaoTaiKhoanBtn.TabIndex = 15;
+            this.TaoTaiKhoanBtn.Text = "Tạo tài khoản";
+            this.TaoTaiKhoanBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TaoTaiKhoanBtn.Textcolor = System.Drawing.Color.White;
+            this.TaoTaiKhoanBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TaoTaiKhoanBtn.Click += new System.EventHandler(this.TaoTaiKhoanBtn_Click);
             // 
             // DoanhThuBtn
             // 
@@ -202,7 +244,7 @@
             this.TimVeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.TimVeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TimVeBtn.BorderRadius = 0;
-            this.TimVeBtn.ButtonText = "Tìm vé";
+            this.TimVeBtn.ButtonText = "Tài khoản";
             this.TimVeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TimVeBtn.DisabledColor = System.Drawing.Color.Gray;
             this.TimVeBtn.Dock = System.Windows.Forms.DockStyle.Top;
@@ -228,7 +270,7 @@
             this.TimVeBtn.selected = false;
             this.TimVeBtn.Size = new System.Drawing.Size(214, 57);
             this.TimVeBtn.TabIndex = 12;
-            this.TimVeBtn.Text = "Tìm vé";
+            this.TimVeBtn.Text = "Tài khoản";
             this.TimVeBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.TimVeBtn.Textcolor = System.Drawing.Color.White;
             this.TimVeBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -432,6 +474,7 @@
             // ContentPanel
             // 
             this.ContentPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.ContentPanel.Controls.Add(this.ucTaoTaiKhoan1);
             this.ContentPanel.Controls.Add(this.ucDoanhThu);
             this.ContentPanel.Controls.Add(this.ucTimKiemKH1);
             this.ContentPanel.Controls.Add(this.ucChinhSuaVe);
@@ -445,6 +488,13 @@
             this.ContentPanel.Name = "ContentPanel";
             this.ContentPanel.Size = new System.Drawing.Size(1086, 604);
             this.ContentPanel.TabIndex = 2;
+            // 
+            // ucTaoTaiKhoan1
+            // 
+            this.ucTaoTaiKhoan1.Location = new System.Drawing.Point(2, 2);
+            this.ucTaoTaiKhoan1.Name = "ucTaoTaiKhoan1";
+            this.ucTaoTaiKhoan1.Size = new System.Drawing.Size(1086, 602);
+            this.ucTaoTaiKhoan1.TabIndex = 12;
             // 
             // ucDoanhThu
             // 
@@ -554,5 +604,7 @@
         private Components.UCTimKiemKH ucTimKiemKH1;
         private Components.UCDoanhThu ucDoanhThu;
         private Bunifu.Framework.UI.BunifuFormFadeTransition bunifuFormFadeTransition1;
+        private Bunifu.Framework.UI.BunifuFlatButton TaoTaiKhoanBtn;
+        private Components.ComponentsTaoTaiKhoan.UCTaoTaiKhoan ucTaoTaiKhoan1;
     }
 }

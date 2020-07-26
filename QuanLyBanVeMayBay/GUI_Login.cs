@@ -15,11 +15,6 @@ namespace QuanLyBanVeMayBay
             InitializeComponent();
         }
 
-        private void ExitBtn_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void LoginBtn_Click(object sender, EventArgs e)
         {
             //khong su dung web api
@@ -56,6 +51,19 @@ namespace QuanLyBanVeMayBay
                     f.Show();       // hien form main
                 }
             }*/
+        }
+
+        private void ExitBtn_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void AnHienMatKhauCheckBox_OnChange(object sender, EventArgs e)
+        {
+            if (PasswordTxt.isPassword)
+                PasswordTxt.isPassword = false;
+            else
+                PasswordTxt.isPassword = true;
         }
     }
 }

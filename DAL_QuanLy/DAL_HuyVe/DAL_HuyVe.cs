@@ -20,7 +20,7 @@ namespace DAL_QuanLy.DAL_HuyVe
                 SqlCommand command = new SqlCommand();
                 command.Parameters.Add(new SqlParameter("@CMND", dtoKhachHang.CMND));
                 command.Parameters.Add(new SqlParameter("@MaVeChuyenBay", dtoVeChuyenbay.MaVeChuyenBay));
-                dt = ShowDataInTableStoredProcedure(command, "UpdateTrangThaiVeChuyenBay");
+                dt = ShowDataInTableStoredProcedure(command, "SelectVeMayBayDaDat");
                 return dt;
             }
             catch
@@ -34,7 +34,22 @@ namespace DAL_QuanLy.DAL_HuyVe
         }
         public bool DeleteVeChuyenBay(DTO_VeChuyenBay dtoVeChuyenBay)
         {
-            return true;
+            try
+            {
+                OpenConection();
+                SqlCommand command = new SqlCommand();
+                command.Parameters.Add(new SqlParameter("@MaVeChuyenBay", dtoVeChuyenBay.MaVeChuyenBay));
+                ExecuteQueriesStoredProcedure(command, "UpdateHuyVe");
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                CloseConnection();
+            }
         }
     }
 }

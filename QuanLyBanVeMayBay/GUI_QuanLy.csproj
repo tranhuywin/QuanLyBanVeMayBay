@@ -149,6 +149,12 @@
     <Compile Include="Components\ComponentsKhachHang\UCKhachHang.Designer.cs">
       <DependentUpon>UCKhachHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\ComponentsTaoTaiKhoan\UCTaoTaiKhoan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ComponentsTaoTaiKhoan\UCTaoTaiKhoan.Designer.cs">
+      <DependentUpon>UCTaoTaiKhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\ComponentsTimKiemKH\TimKiemKH.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -228,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Components\ComponentsKhachHang\UCKhachHang.resx">
       <DependentUpon>UCKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ComponentsTaoTaiKhoan\UCTaoTaiKhoan.resx">
+      <DependentUpon>UCTaoTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\ComponentsTimKiemKH\TimKiemKH.resx">
       <DependentUpon>TimKiemKH.cs</DependentUpon>
