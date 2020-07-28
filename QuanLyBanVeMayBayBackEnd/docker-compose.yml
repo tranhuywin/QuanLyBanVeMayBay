@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  connectapi_quanly:
+    image: ${DOCKER_REGISTRY-}connectapiquanly
+    build:
+      context: .
+      dockerfile: ConnectApi_QuanLy/Dockerfile
