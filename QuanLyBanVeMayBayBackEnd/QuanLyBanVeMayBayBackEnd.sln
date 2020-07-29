@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.29911.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConnectApi_QuanLy", "ConnectApi_QuanLy\ConnectApi_QuanLy.csproj", "{5A08DF45-DB6A-463D-BE5D-46C70B2E309A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL_QuanLy", "DAL_QuanLy\DAL_QuanLy.csproj", "{00141EEA-FFCC-499B-B3F4-8E9BF394BED7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL_QuanLy", "DAL_QuanLy\DAL_QuanLy.csproj", "{00141EEA-FFCC-499B-B3F4-8E9BF394BED7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BUS_QuanLy", "BUS_QuanLy\BUS_QuanLy.csproj", "{7315C5B9-FE9B-4410-A986-6518C29CFEF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BUS_QuanLy", "BUS_QuanLy\BUS_QuanLy.csproj", "{7315C5B9-FE9B-4410-A986-6518C29CFEF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO_QuanLy", "DTO_QuanLy\DTO_QuanLy.csproj", "{70249481-586F-427D-AB19-5439477FFCA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DTO_QuanLy", "DTO_QuanLy\DTO_QuanLy.csproj", "{70249481-586F-427D-AB19-5439477FFCA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

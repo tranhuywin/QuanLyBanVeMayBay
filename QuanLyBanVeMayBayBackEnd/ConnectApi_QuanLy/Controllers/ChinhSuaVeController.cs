@@ -12,7 +12,7 @@ namespace ConnectApi_QuanLy.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class ChínhuaVeController : ControllerBase
+    public class ChinhSuaVeController : ControllerBase
     {
         BUS_ThemChuyenBay busThemChuyenBay = new BUS_ThemChuyenBay();
         BUS_ChinhSuaVe busChinhSuaVe = new BUS_ChinhSuaVe();

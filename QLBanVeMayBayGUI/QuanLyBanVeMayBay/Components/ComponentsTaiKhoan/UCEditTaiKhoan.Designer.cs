@@ -214,7 +214,7 @@
             this.LuuBtn.IdleBorderRadius = 3;
             this.LuuBtn.IdleBorderThickness = 1;
             this.LuuBtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
-            this.LuuBtn.IdleIconLeftImage = null;
+            this.LuuBtn.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("LuuBtn.IdleIconLeftImage")));
             this.LuuBtn.IdleIconRightImage = null;
             this.LuuBtn.IndicateFocus = false;
             this.LuuBtn.Location = new System.Drawing.Point(977, 549);

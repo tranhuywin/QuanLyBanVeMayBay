@@ -59,15 +59,6 @@ namespace QuanLyBanVeMayBay.Components.ComponentsChinhSuaVe
             
         }
 
-        private void bunifuLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
         public void LoadDTOEditChuyenBay(DTO_ChiTietChuyenBay dtoChiTieTChuyenBay,DTO_ChuyenBay dtoChuyenBay,DTO_TuyenBay dtoTuyenBay)
         {
             this.dtoChiTieTChuyenBay = dtoChiTieTChuyenBay;
@@ -83,5 +74,9 @@ namespace QuanLyBanVeMayBay.Components.ComponentsChinhSuaVe
             TenMayBaytext.Text = dtoChuyenBay.TenMayBay;
         }
 
+        private void ExitBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

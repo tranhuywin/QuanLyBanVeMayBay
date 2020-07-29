@@ -174,10 +174,10 @@
             this.HuyVeBtn.IdleBorderRadius = 3;
             this.HuyVeBtn.IdleBorderThickness = 1;
             this.HuyVeBtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
-            this.HuyVeBtn.IdleIconLeftImage = null;
+            this.HuyVeBtn.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("HuyVeBtn.IdleIconLeftImage")));
             this.HuyVeBtn.IdleIconRightImage = null;
             this.HuyVeBtn.IndicateFocus = false;
-            this.HuyVeBtn.Location = new System.Drawing.Point(977, 45);
+            this.HuyVeBtn.Location = new System.Drawing.Point(964, 45);
             this.HuyVeBtn.Name = "HuyVeBtn";
             stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(51)))));
             stateProperties5.BorderRadius = 3;
@@ -197,7 +197,7 @@
             stateProperties6.IconLeftImage = null;
             stateProperties6.IconRightImage = null;
             this.HuyVeBtn.OnPressedState = stateProperties6;
-            this.HuyVeBtn.Size = new System.Drawing.Size(93, 34);
+            this.HuyVeBtn.Size = new System.Drawing.Size(106, 34);
             this.HuyVeBtn.TabIndex = 11;
             this.HuyVeBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.HuyVeBtn.TextMarginLeft = 0;
@@ -322,10 +322,10 @@
             this.TimKiemBtn.IdleBorderRadius = 3;
             this.TimKiemBtn.IdleBorderThickness = 1;
             this.TimKiemBtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
-            this.TimKiemBtn.IdleIconLeftImage = null;
+            this.TimKiemBtn.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("TimKiemBtn.IdleIconLeftImage")));
             this.TimKiemBtn.IdleIconRightImage = null;
             this.TimKiemBtn.IndicateFocus = false;
-            this.TimKiemBtn.Location = new System.Drawing.Point(836, 45);
+            this.TimKiemBtn.Location = new System.Drawing.Point(807, 45);
             this.TimKiemBtn.Name = "TimKiemBtn";
             stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(51)))));
             stateProperties11.BorderRadius = 3;
@@ -345,7 +345,7 @@
             stateProperties12.IconLeftImage = null;
             stateProperties12.IconRightImage = null;
             this.TimKiemBtn.OnPressedState = stateProperties12;
-            this.TimKiemBtn.Size = new System.Drawing.Size(93, 34);
+            this.TimKiemBtn.Size = new System.Drawing.Size(122, 34);
             this.TimKiemBtn.TabIndex = 14;
             this.TimKiemBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.TimKiemBtn.TextMarginLeft = 0;

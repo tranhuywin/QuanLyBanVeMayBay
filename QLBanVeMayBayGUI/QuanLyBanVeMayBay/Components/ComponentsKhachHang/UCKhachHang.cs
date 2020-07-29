@@ -26,6 +26,12 @@ namespace QuanLyBanVeMayBay.Components.ComponentsKhachHang
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             // end
+
+            // loi :D
+            ucUpdateKhachHang1.Show();
+            ucChinhSuaKH1.Show();
+            ucUpdateKhachHang1.Hide();
+            ucChinhSuaKH1.Hide();
         }
         private void Newbtn_Click_1(object sender, EventArgs e)
         {
@@ -63,9 +69,6 @@ namespace QuanLyBanVeMayBay.Components.ComponentsKhachHang
 
         }
        
-
-       
-
         private void EditBtn_Click(object sender, EventArgs e)
         {
             ucUpdateKhachHang1.LoadDTOKhachHang(dtoKhachHang);

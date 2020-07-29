@@ -68,6 +68,11 @@ namespace QuanLyBanVeMayBay.Components.ComponentsChinhSuaVe
 
             MaChuyenBaytext.Text=dtoChuyenBay.MaChuyenBay;
         }
+
+        private void ExitBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
     
 }

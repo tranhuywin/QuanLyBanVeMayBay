@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>QLBanVeMayBay</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{37f81476-36d9-47e6-a74b-c89a43215bf6}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>QLBanVeMayBay</RootNamespace>
+    <AssemblyName>QLBanVeMayBay</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\FK_ChuyenBay_ChiTietChuyenBay.sql" />
+    <Build Include="dbo\Tables\FK_ChuyenBay_PhieuDatCho.sql" />
+    <Build Include="dbo\Tables\FK_ChuyenBay_TuyenBay.sql" />
+    <Build Include="dbo\Tables\FK_HoaDon_KhachHang.sql" />
+    <Build Include="dbo\Tables\FK_HoaDon_TaiKhoan.sql" />
+    <Build Include="dbo\Tables\FK_PhieuDatCho_KhachHang.sql" />
+    <Build Include="dbo\Tables\FK_TuyenBay_SanBay.sql" />
+    <Build Include="dbo\Tables\FK_VeChuyenBay_DonGia.sql" />
+    <Build Include="dbo\Tables\FK_VeChuyenBay_PhieuDatCho.sql" />
+    <Build Include="dbo\Stored Procedures\CreateTaiKhoan.sql" />
+    <Build Include="dbo\Stored Procedures\EditChuyenBay.sql" />
+    <Build Include="dbo\Stored Procedures\INSERT_STEP3_KHACHHANG.sql" />
+    <Build Include="dbo\Stored Procedures\InsertPhieuDatCho.sql" />
+    <Build Include="dbo\Stored Procedures\SelectAllSanBay.sql" />
+    <Build Include="dbo\Stored Procedures\SelectChiTietTaiKhoan.sql" />
+    <Build Include="dbo\Stored Procedures\SelectKhachHang.sql" />
+    <Build Include="dbo\Stored Procedures\SelectKhachHangTheoTenVaCMND.sql" />
+    <Build Include="dbo\Stored Procedures\SelectKhachHangVaVeChuyenBay.sql" />
+    <Build Include="dbo\Stored Procedures\SelectTaiKhoan.sql" />
+    <Build Include="dbo\Stored Procedures\SelectTheoMaChuyenBay.sql" />
+    <Build Include="dbo\Stored Procedures\SelectVeMayBayDaDat.sql" />
+    <Build Include="dbo\Stored Procedures\SelectVeMayBayXuatPhat.sql" />
+    <Build Include="dbo\Stored Procedures\ThemMoiChuyenBay.sql" />
+    <Build Include="dbo\Stored Procedures\ThemMoiKhachHang.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateChiTietTaiKhoan.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateHuyVe.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateKhachHang.sql" />
+    <Build Include="dbo\Stored Procedures\UpdateTrangThaiVeChuyenBay.sql" />
+    <Build Include="dbo\Stored Procedures\XoaKH.sql" />
+    <None Include="Scripts\ScriptsIgnoredOnImport.sql" />
+  </ItemGroup>
+</Project>

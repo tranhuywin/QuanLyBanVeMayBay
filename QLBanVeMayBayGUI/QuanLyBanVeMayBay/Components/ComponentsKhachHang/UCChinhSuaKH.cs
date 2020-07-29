@@ -45,5 +45,14 @@ namespace QuanLyBanVeMayBay.Components.ComponentsKhachHang
             
         }
 
+        private void ExitBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void UCChinhSuaKH_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

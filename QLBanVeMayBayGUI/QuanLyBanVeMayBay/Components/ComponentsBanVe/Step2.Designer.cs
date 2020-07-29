@@ -144,7 +144,7 @@
             this.TiepBtn.IdleIconLeftImage = null;
             this.TiepBtn.IdleIconRightImage = null;
             this.TiepBtn.IndicateFocus = false;
-            this.TiepBtn.Location = new System.Drawing.Point(846, 464);
+            this.TiepBtn.Location = new System.Drawing.Point(803, 464);
             this.TiepBtn.Name = "TiepBtn";
             stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(51)))));
             stateProperties1.BorderRadius = 3;
@@ -205,10 +205,10 @@
             this.XongBtn.IdleBorderRadius = 3;
             this.XongBtn.IdleBorderThickness = 1;
             this.XongBtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
-            this.XongBtn.IdleIconLeftImage = null;
+            this.XongBtn.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("XongBtn.IdleIconLeftImage")));
             this.XongBtn.IdleIconRightImage = null;
             this.XongBtn.IndicateFocus = false;
-            this.XongBtn.Location = new System.Drawing.Point(991, 464);
+            this.XongBtn.Location = new System.Drawing.Point(973, 464);
             this.XongBtn.Name = "XongBtn";
             stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(51)))));
             stateProperties3.BorderRadius = 3;
@@ -228,7 +228,7 @@
             stateProperties4.IconLeftImage = null;
             stateProperties4.IconRightImage = null;
             this.XongBtn.OnPressedState = stateProperties4;
-            this.XongBtn.Size = new System.Drawing.Size(93, 45);
+            this.XongBtn.Size = new System.Drawing.Size(111, 45);
             this.XongBtn.TabIndex = 8;
             this.XongBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.XongBtn.TextMarginLeft = 0;

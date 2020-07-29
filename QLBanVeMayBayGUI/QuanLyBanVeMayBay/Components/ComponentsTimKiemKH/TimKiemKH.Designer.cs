@@ -158,10 +158,10 @@
             this.TimKiemBtn.IdleBorderRadius = 3;
             this.TimKiemBtn.IdleBorderThickness = 1;
             this.TimKiemBtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
-            this.TimKiemBtn.IdleIconLeftImage = null;
+            this.TimKiemBtn.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("TimKiemBtn.IdleIconLeftImage")));
             this.TimKiemBtn.IdleIconRightImage = null;
             this.TimKiemBtn.IndicateFocus = false;
-            this.TimKiemBtn.Location = new System.Drawing.Point(978, 54);
+            this.TimKiemBtn.Location = new System.Drawing.Point(950, 54);
             this.TimKiemBtn.Name = "TimKiemBtn";
             stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(51)))));
             stateProperties1.BorderRadius = 3;
@@ -181,7 +181,7 @@
             stateProperties2.IconLeftImage = null;
             stateProperties2.IconRightImage = null;
             this.TimKiemBtn.OnPressedState = stateProperties2;
-            this.TimKiemBtn.Size = new System.Drawing.Size(93, 34);
+            this.TimKiemBtn.Size = new System.Drawing.Size(121, 34);
             this.TimKiemBtn.TabIndex = 36;
             this.TimKiemBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.TimKiemBtn.TextMarginLeft = 0;

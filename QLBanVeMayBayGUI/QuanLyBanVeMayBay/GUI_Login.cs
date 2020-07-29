@@ -17,7 +17,7 @@ namespace QuanLyBanVeMayBay
         {
             using (var client = new HttpClient())   //khoi tao
             {
-                client.BaseAddress = new Uri("https://localhost:44309/");   //dia chi backend
+                client.BaseAddress = new Uri("https://qlbanvemaybay.azurewebsites.net/");   //dia chi backend
                 DTO_User dtoUser = new DTO_User { User = UserTxt.Text, Password = UserTxt.Text, ChucVu = "0" }; // khoi tao DTO user, truyen user, password cho DTO vua tao
                 var response = client.PostAsJsonAsync("login", dtoUser).Result;     // gui DTO user len web sever bang Method POST, va nhan ket qua tra ve
                 var a = response.Content.ReadAsStringAsync();   // khong biet

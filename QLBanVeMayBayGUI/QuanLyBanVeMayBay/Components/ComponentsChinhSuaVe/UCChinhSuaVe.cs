@@ -58,7 +58,7 @@ namespace QuanLyBanVeMayBay.Components.ComponentsChinhSuaVe
 
         private void Editbtn_Click(object sender, EventArgs e)
         {
-            ucEditChuyenBay1.LoadDTOEditChuyenBay(dtoChiTietChuyenBay,dtoChuyenBay,dtoTuyenBay);
+            ucEditChuyenBay1.LoadDTOEditChuyenBay(dtoChiTietChuyenBay, dtoChuyenBay, dtoTuyenBay);
             ucEditChuyenBay1.Show();
         }
 

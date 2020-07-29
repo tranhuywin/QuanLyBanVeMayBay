@@ -25,7 +25,7 @@ namespace QuanLyBanVeMayBay.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://localhost:44309/")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://qlbanvemaybay.azurewebsites.net/")]
         public string URLAddress {
             get {
                 return ((string)(this["URLAddress"]));

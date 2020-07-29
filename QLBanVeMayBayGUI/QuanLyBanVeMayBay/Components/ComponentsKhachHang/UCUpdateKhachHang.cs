@@ -34,11 +34,6 @@ namespace QuanLyBanVeMayBay.Components.ComponentsKhachHang
             CMNDtext.Text = dtoKhachHang.CMND;
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void LuuBtn_Click_1(object sender, EventArgs e)
         {
             dtoKhachHang = new DTO_KhachHang { MaKhachHang = MaKHtext.Text, HoTenKH = HoTentext.Text, CMND = CMNDtext.Text, SDT = SDTtext.Text, GioiTinh = GioiTinhtext.Text, Email = Emailtext.Text };
@@ -52,6 +47,11 @@ namespace QuanLyBanVeMayBay.Components.ComponentsKhachHang
             if (AddKh)
                 MessageBox.Show("Sửa thông tin Khách hàng thành công");
             else MessageBox.Show("Sửa thông tin khách hàng thất bại");
+            this.Hide();
+        }
+
+        private void ExitBtn_Click(object sender, EventArgs e)
+        {
             this.Hide();
         }
     }

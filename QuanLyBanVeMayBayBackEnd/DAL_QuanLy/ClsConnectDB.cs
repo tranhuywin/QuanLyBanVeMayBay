@@ -12,7 +12,7 @@ namespace DAL_QuanLy
     public class ClsConnectDB
     {
         //string ConnectionString = ConfigurationManager.AppSettings["ConnectionString"];
-        string ConnectionString = "Data Source=DESKTOP-GVIP3GB;Initial Catalog=QLBanVeMayBay;Integrated Security=True";
+        string ConnectionString = "Data Source=banvemaybay.database.windows.net;Initial Catalog=QuanlyLBanVeMayBay;User ID=tranhuywin;Password=122771535Win";
         SqlConnection con;
         public void OpenConection()
         {

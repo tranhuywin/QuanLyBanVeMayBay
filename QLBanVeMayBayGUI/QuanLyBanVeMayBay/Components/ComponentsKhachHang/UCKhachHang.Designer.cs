@@ -59,9 +59,9 @@
             this.CMNDTxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.Deletebtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.KhachHangDataGridView = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.EditBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.ucChinhSuaKH1 = new QuanLyBanVeMayBay.Components.ComponentsKhachHang.UCChinhSuaKH();
             this.ucUpdateKhachHang1 = new QuanLyBanVeMayBay.Components.ComponentsKhachHang.UCUpdateKhachHang();
-            this.EditBtn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             ((System.ComponentModel.ISupportInitialize)(this.KhachHangDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,11 +99,10 @@
             this.SearchBtn.IdleBorderRadius = 3;
             this.SearchBtn.IdleBorderThickness = 1;
             this.SearchBtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
-            this.SearchBtn.IdleIconLeftImage = null;
+            this.SearchBtn.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("SearchBtn.IdleIconLeftImage")));
             this.SearchBtn.IdleIconRightImage = null;
             this.SearchBtn.IndicateFocus = false;
-            this.SearchBtn.Location = new System.Drawing.Point(1165, 98);
-            this.SearchBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.SearchBtn.Location = new System.Drawing.Point(874, 80);
             this.SearchBtn.Name = "SearchBtn";
             stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(51)))));
             stateProperties1.BorderRadius = 3;
@@ -123,7 +122,7 @@
             stateProperties2.IconLeftImage = null;
             stateProperties2.IconRightImage = null;
             this.SearchBtn.OnPressedState = stateProperties2;
-            this.SearchBtn.Size = new System.Drawing.Size(108, 39);
+            this.SearchBtn.Size = new System.Drawing.Size(103, 32);
             this.SearchBtn.TabIndex = 12;
             this.SearchBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.SearchBtn.TextMarginLeft = 0;
@@ -135,9 +134,10 @@
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(254)))));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(53, 39);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(40, 32);
+            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(444, 32);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(347, 26);
             this.bunifuCustomLabel1.TabIndex = 9;
             this.bunifuCustomLabel1.Text = "Chỉnh sửa thông tin khách hàng";
             // 
@@ -175,11 +175,10 @@
             this.Newbtn.IdleBorderRadius = 3;
             this.Newbtn.IdleBorderThickness = 1;
             this.Newbtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
-            this.Newbtn.IdleIconLeftImage = null;
+            this.Newbtn.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("Newbtn.IdleIconLeftImage")));
             this.Newbtn.IdleIconRightImage = null;
             this.Newbtn.IndicateFocus = false;
-            this.Newbtn.Location = new System.Drawing.Point(1311, 98);
-            this.Newbtn.Margin = new System.Windows.Forms.Padding(4);
+            this.Newbtn.Location = new System.Drawing.Point(983, 80);
             this.Newbtn.Name = "Newbtn";
             stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(51)))));
             stateProperties3.BorderRadius = 3;
@@ -199,7 +198,7 @@
             stateProperties4.IconLeftImage = null;
             stateProperties4.IconRightImage = null;
             this.Newbtn.OnPressedState = stateProperties4;
-            this.Newbtn.Size = new System.Drawing.Size(103, 39);
+            this.Newbtn.Size = new System.Drawing.Size(90, 32);
             this.Newbtn.TabIndex = 14;
             this.Newbtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Newbtn.TextMarginLeft = 0;
@@ -233,10 +232,9 @@
             this.HoTenKHTxt.IconRight = null;
             this.HoTenKHTxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.HoTenKHTxt.Lines = new string[0];
-            this.HoTenKHTxt.Location = new System.Drawing.Point(28, 90);
-            this.HoTenKHTxt.Margin = new System.Windows.Forms.Padding(4);
+            this.HoTenKHTxt.Location = new System.Drawing.Point(21, 73);
             this.HoTenKHTxt.MaxLength = 32767;
-            this.HoTenKHTxt.MinimumSize = new System.Drawing.Size(133, 43);
+            this.HoTenKHTxt.MinimumSize = new System.Drawing.Size(100, 35);
             this.HoTenKHTxt.Modified = false;
             this.HoTenKHTxt.Multiline = false;
             this.HoTenKHTxt.Name = "HoTenKHTxt";
@@ -269,7 +267,7 @@
             this.HoTenKHTxt.SelectionLength = 0;
             this.HoTenKHTxt.SelectionStart = 0;
             this.HoTenKHTxt.ShortcutsEnabled = true;
-            this.HoTenKHTxt.Size = new System.Drawing.Size(360, 43);
+            this.HoTenKHTxt.Size = new System.Drawing.Size(270, 35);
             this.HoTenKHTxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.HoTenKHTxt.TabIndex = 23;
             this.HoTenKHTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -307,10 +305,9 @@
             this.CMNDTxt.IconRight = null;
             this.CMNDTxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.CMNDTxt.Lines = new string[0];
-            this.CMNDTxt.Location = new System.Drawing.Point(473, 90);
-            this.CMNDTxt.Margin = new System.Windows.Forms.Padding(4);
+            this.CMNDTxt.Location = new System.Drawing.Point(355, 73);
             this.CMNDTxt.MaxLength = 32767;
-            this.CMNDTxt.MinimumSize = new System.Drawing.Size(133, 43);
+            this.CMNDTxt.MinimumSize = new System.Drawing.Size(100, 35);
             this.CMNDTxt.Modified = false;
             this.CMNDTxt.Multiline = false;
             this.CMNDTxt.Name = "CMNDTxt";
@@ -343,7 +340,7 @@
             this.CMNDTxt.SelectionLength = 0;
             this.CMNDTxt.SelectionStart = 0;
             this.CMNDTxt.ShortcutsEnabled = true;
-            this.CMNDTxt.Size = new System.Drawing.Size(360, 43);
+            this.CMNDTxt.Size = new System.Drawing.Size(270, 35);
             this.CMNDTxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.CMNDTxt.TabIndex = 26;
             this.CMNDTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -389,11 +386,10 @@
             this.Deletebtn.IdleBorderRadius = 3;
             this.Deletebtn.IdleBorderThickness = 1;
             this.Deletebtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
-            this.Deletebtn.IdleIconLeftImage = null;
+            this.Deletebtn.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("Deletebtn.IdleIconLeftImage")));
             this.Deletebtn.IdleIconRightImage = null;
             this.Deletebtn.IndicateFocus = false;
-            this.Deletebtn.Location = new System.Drawing.Point(1013, 98);
-            this.Deletebtn.Margin = new System.Windows.Forms.Padding(4);
+            this.Deletebtn.Location = new System.Drawing.Point(772, 80);
             this.Deletebtn.Name = "Deletebtn";
             stateProperties13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(51)))));
             stateProperties13.BorderRadius = 3;
@@ -413,7 +409,7 @@
             stateProperties14.IconLeftImage = null;
             stateProperties14.IconRightImage = null;
             this.Deletebtn.OnPressedState = stateProperties14;
-            this.Deletebtn.Size = new System.Drawing.Size(108, 39);
+            this.Deletebtn.Size = new System.Drawing.Size(96, 32);
             this.Deletebtn.TabIndex = 29;
             this.Deletebtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Deletebtn.TextMarginLeft = 0;
@@ -470,35 +466,17 @@
             this.KhachHangDataGridView.HeaderBackColor = System.Drawing.Color.DodgerBlue;
             this.KhachHangDataGridView.HeaderBgColor = System.Drawing.Color.Empty;
             this.KhachHangDataGridView.HeaderForeColor = System.Drawing.Color.White;
-            this.KhachHangDataGridView.Location = new System.Drawing.Point(8, 145);
-            this.KhachHangDataGridView.Margin = new System.Windows.Forms.Padding(4);
+            this.KhachHangDataGridView.Location = new System.Drawing.Point(6, 118);
             this.KhachHangDataGridView.Name = "KhachHangDataGridView";
             this.KhachHangDataGridView.ReadOnly = true;
             this.KhachHangDataGridView.RowHeadersVisible = false;
             this.KhachHangDataGridView.RowHeadersWidth = 51;
             this.KhachHangDataGridView.RowTemplate.Height = 40;
             this.KhachHangDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.KhachHangDataGridView.Size = new System.Drawing.Size(1423, 592);
+            this.KhachHangDataGridView.Size = new System.Drawing.Size(1067, 481);
             this.KhachHangDataGridView.TabIndex = 30;
             this.KhachHangDataGridView.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.KhachHangDataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.KhachHangDataGridView_CellDoubleClick);
-            // 
-            // ucChinhSuaKH1
-            // 
-            this.ucChinhSuaKH1.Location = new System.Drawing.Point(302, 157);
-            this.ucChinhSuaKH1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ucChinhSuaKH1.Name = "ucChinhSuaKH1";
-            this.ucChinhSuaKH1.Size = new System.Drawing.Size(641, 436);
-            this.ucChinhSuaKH1.TabIndex = 27;
-            this.ucChinhSuaKH1.Visible = false;
-            // 
-            // ucUpdateKhachHang1
-            // 
-            this.ucUpdateKhachHang1.Location = new System.Drawing.Point(532, 159);
-            this.ucUpdateKhachHang1.Name = "ucUpdateKhachHang1";
-            this.ucUpdateKhachHang1.Size = new System.Drawing.Size(639, 434);
-            this.ucUpdateKhachHang1.TabIndex = 28;
-            this.ucUpdateKhachHang1.Visible = false;
             // 
             // EditBtn
             // 
@@ -535,11 +513,10 @@
             this.EditBtn.IdleBorderRadius = 3;
             this.EditBtn.IdleBorderThickness = 1;
             this.EditBtn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
-            this.EditBtn.IdleIconLeftImage = null;
+            this.EditBtn.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("EditBtn.IdleIconLeftImage")));
             this.EditBtn.IdleIconRightImage = null;
             this.EditBtn.IndicateFocus = false;
-            this.EditBtn.Location = new System.Drawing.Point(866, 98);
-            this.EditBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.EditBtn.Location = new System.Drawing.Point(676, 80);
             this.EditBtn.Name = "EditBtn";
             stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(51)))));
             stateProperties15.BorderRadius = 3;
@@ -559,16 +536,35 @@
             stateProperties16.IconLeftImage = null;
             stateProperties16.IconRightImage = null;
             this.EditBtn.OnPressedState = stateProperties16;
-            this.EditBtn.Size = new System.Drawing.Size(108, 39);
+            this.EditBtn.Size = new System.Drawing.Size(90, 32);
             this.EditBtn.TabIndex = 31;
             this.EditBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.EditBtn.TextMarginLeft = 0;
             this.EditBtn.UseDefaultRadiusAndThickness = true;
             this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
+            // ucChinhSuaKH1
+            // 
+            this.ucChinhSuaKH1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.ucChinhSuaKH1.Location = new System.Drawing.Point(240, 129);
+            this.ucChinhSuaKH1.Margin = new System.Windows.Forms.Padding(2);
+            this.ucChinhSuaKH1.Name = "ucChinhSuaKH1";
+            this.ucChinhSuaKH1.Size = new System.Drawing.Size(481, 354);
+            this.ucChinhSuaKH1.TabIndex = 27;
+            this.ucChinhSuaKH1.Visible = false;
+            // 
+            // ucUpdateKhachHang1
+            // 
+            this.ucUpdateKhachHang1.Location = new System.Drawing.Point(399, 129);
+            this.ucUpdateKhachHang1.Margin = new System.Windows.Forms.Padding(2);
+            this.ucUpdateKhachHang1.Name = "ucUpdateKhachHang1";
+            this.ucUpdateKhachHang1.Size = new System.Drawing.Size(479, 353);
+            this.ucUpdateKhachHang1.TabIndex = 28;
+            this.ucUpdateKhachHang1.Visible = false;
+            // 
             // UCKhachHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.EditBtn);
             this.Controls.Add(this.ucChinhSuaKH1);
@@ -580,9 +576,9 @@
             this.Controls.Add(this.Newbtn);
             this.Controls.Add(this.SearchBtn);
             this.Controls.Add(this.bunifuCustomLabel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UCKhachHang";
-            this.Size = new System.Drawing.Size(1448, 741);
+            this.Size = new System.Drawing.Size(1086, 602);
             ((System.ComponentModel.ISupportInitialize)(this.KhachHangDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

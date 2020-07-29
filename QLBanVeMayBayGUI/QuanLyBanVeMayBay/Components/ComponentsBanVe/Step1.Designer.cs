@@ -436,10 +436,10 @@
             this.NextStep2Btn.IdleBorderRadius = 3;
             this.NextStep2Btn.IdleBorderThickness = 1;
             this.NextStep2Btn.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(137)))), ((int)(((byte)(6)))));
-            this.NextStep2Btn.IdleIconLeftImage = null;
+            this.NextStep2Btn.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("NextStep2Btn.IdleIconLeftImage")));
             this.NextStep2Btn.IdleIconRightImage = null;
             this.NextStep2Btn.IndicateFocus = false;
-            this.NextStep2Btn.Location = new System.Drawing.Point(991, 464);
+            this.NextStep2Btn.Location = new System.Drawing.Point(965, 464);
             this.NextStep2Btn.Name = "NextStep2Btn";
             stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(160)))), ((int)(((byte)(51)))));
             stateProperties5.BorderRadius = 3;
@@ -459,7 +459,7 @@
             stateProperties6.IconLeftImage = null;
             stateProperties6.IconRightImage = null;
             this.NextStep2Btn.OnPressedState = stateProperties6;
-            this.NextStep2Btn.Size = new System.Drawing.Size(93, 45);
+            this.NextStep2Btn.Size = new System.Drawing.Size(119, 45);
             this.NextStep2Btn.TabIndex = 7;
             this.NextStep2Btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.NextStep2Btn.TextMarginLeft = 0;
